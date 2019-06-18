@@ -6,12 +6,12 @@
     <groupId>org.example.demo_cloud</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.1.1</version>
-    <relativePath>../../../</relativePath>
+    <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.demo_cloud.job</groupId>
-  <artifactId>jobRecupTacheValidee</artifactId>
+  <artifactId>jobMergingCampaign</artifactId>
   <version>0.1.0</version>
-  <name>DEMO_CLOUD jobRecupTacheValidee-0.1.0 (0.1,Jobs)</name>
+  <name>DEMO_CLOUD jobMergingCampaign-0.1.0 (0.1,Jobs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -19,29 +19,34 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>demo_cloud</talend.project.name.lowercase>
-    <talend.job.path>demo_cloud/jobrecuptachevalidee_0_1</talend.job.path>
+    <talend.job.path>demo_cloud/jobmergingcampaign_0_1</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>DEMO_CLOUD</talend.project.name>
     <talend.product.version>7.1.1.20190228_0243-patch</talend.product.version>
-    <talend.job.finalName>jobrecuptachevalidee_0_1</talend.job.finalName>
+    <talend.job.finalName>jobmergingcampaign_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.demo_cloud.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.demo_cloud.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
-    <talend.job.context>Default</talend.job.context>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8</talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
+    <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>jobRecupTacheValidee</talend.job.name>
-    <talend.job.id>_8I-y4N9LEeeMZvstGiD_lg</talend.job.id>
+    <talend.job.name>jobMergingCampaign</talend.job.name>
+    <talend.job.id>_eyVtEN5bEeezMqOPznMAbg</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
-    <talend.job.framework></talend.job.framework>
     <talend.job.folder></talend.job.folder>
+    <talend.job.framework></talend.job.framework>
+    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
   </properties>
   <dependencies>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>advancedPersistentLookupLib-1.2</artifactId>
+      <version>6.0.0</version>
+    </dependency>
     <dependency>
       <groupId>biz.aQute.bnd</groupId>
       <artifactId>annotation</artifactId>
@@ -71,6 +76,16 @@
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
       <version>1.10</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>commons-codec-1.7</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>commons-collections-3.2</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -183,6 +198,11 @@
       <version>3.1.0</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>jboss-serialization</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jcl-over-slf4j</artifactId>
       <version>1.7.25</version>
@@ -204,8 +224,23 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>mapdb-1.0.3</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>org.talend.dataquality</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>org.talend.dataquality.parser</artifactId>
       <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.dataquality</groupId>
+      <artifactId>org.talend.dataquality.record.linkage</artifactId>
+      <version>6.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.thoughtworks.paranamer</groupId>
@@ -224,7 +259,17 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>slf4j-api-1.7.5</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>slf4j-log4j12-1.7.2</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>slf4j-log4j12-1.7.5</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
@@ -245,6 +290,11 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>talendcsv</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>trove</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
@@ -369,8 +419,8 @@
       <properties>
         <talend.pigudf.excludes.set>org.talend.pigudf.${talend.project.name.lowercase}:*</talend.pigudf.excludes.set>
         <talend.libraries.excludes.set>${talend.libraries.includes.set}</talend.libraries.excludes.set>
-        <talend.code.excludes.set>org.talend.code.${talend.project.name.lowercase}:*</talend.code.excludes.set>
         <talend.jobs.excludes.set>${project.groupId}:*</talend.jobs.excludes.set>
+        <talend.code.excludes.set>org.talend.code.${talend.project.name.lowercase}:*</talend.code.excludes.set>
         <talend.libraries.includes.set>org.talend.libraries:*</talend.libraries.includes.set>
         <current.job.binaries.include>${project.groupId}:${project.artifactId}:${project.version}</current.job.binaries.include>
       </properties>
