@@ -227,15 +227,15 @@
       <column comment="text" key="false" length="-1" name="Prenom" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Nom" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Telephone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="date" key="false" length="-1" name="Date_Naissance" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="integer" key="false" length="-1" name="Age" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="date" key="false" length="-1" name="Date_Naissance" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="integer" key="false" length="-1" name="Age" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Integer" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Adresse" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="CP" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Region" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Ville" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Pays" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Mail" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="decimal" key="false" length="-1" name="Revenu" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="decimal" key="false" length="-1" name="Revenu" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Double" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Source" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="TDS_ID" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="TDS_STATE" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
@@ -259,15 +259,15 @@
         <mapperTableEntries expression="row1.Prenom" name="Prenom" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Nom" name="Nom" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Telephone" name="Telephone" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Date_Naissance" name="Date_Naissance" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Age" name="Age" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Date_Naissance" name="Date_Naissance" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Age" name="Age" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row1.Adresse" name="Adresse" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.CP" name="CP" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Region" name="Region" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Ville" name="Ville" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Pays" name="Pays" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Mail" name="Mail" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Revenu" name="Revenu" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Revenu" name="Revenu" nullable="true" type="id_Double"/>
         <mapperTableEntries expression="row1.Source" name="Source" type="id_String"/>
         <mapperTableEntries expression="row1.TDS_ID" name="TDS_ID" type="id_String"/>
         <mapperTableEntries expression="row1.TDS_STATE" name="TDS_STATE" type="id_String"/>
@@ -350,15 +350,15 @@
       <column comment="text" key="false" length="-1" name="Prenom" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Nom" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Telephone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="date" key="false" length="-1" name="Date_Naissance" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="integer" key="false" length="-1" name="Age" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="date" key="false" length="-1" name="Date_Naissance" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="integer" key="false" length="-1" name="Age" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Integer" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Adresse" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="CP" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Region" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Ville" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Pays" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Mail" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="decimal" key="false" length="-1" name="Revenu" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="decimal" key="false" length="-1" name="Revenu" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Double" usefulColumn="true"/>
       <column comment="text" key="false" length="-1" name="Source" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="TDS_ID" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="TDS_STATE" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
@@ -387,13 +387,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fafd18b9-2fb9-4655-85c1-f066deabdccd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zO/s2zpuMk+oXeIhBHxsJa8xM1eySftHbsGkw4dVL6wHFtyKa4EBldM57fZ55cRa++EiFNCyJxeu
-c3Ixw9PdHg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_84b8d97c-6650-4b69-993b-1e29c1cb2602"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>csTqT7k4w9vHERn0/vJWbPadaGwme4dgdcGOQreICstkstrMpBwEg71LN6IGVVTmqPOXD7sRGspQ
-7R1/SFfLkg==</DigestValue></Reference></SignedInfo><SignatureValue>is4CwEXkO6eXetn3aRhw8zgwxDcSlFO7K3SKN3TruptL1Cqg1v/s05KqIAU1Nhs7JISq07/rO7IF
-cIpEkFzCHj58i28BL4pr5aBOqQj8bg6qZDYYUOCv7TQ0drO0bLVoQa1FA9PHolB/xNDr4eGWBsdI
-Z8W4KY9cyKblqAReSnWFgdcFoMbqIQTsXh7czuYnK/0PnzRtAL0JnTTzqox7rrCHqbRluM8whXZn
-PMGMFV9tBfWlqC6lyRk3WrZIADmHUoGYJqMrAhgk2b7vLBSeFqcu0EvIW1+3YgBtmV1oYov3KoZb
-DL8bT7TiDVkiCbeFICBYfGrjYNrHlOVcEKQF0w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2d1b881a-0bd3-402a-8c78-bb77aaaabb80"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kPztIYFX0wVHy7kSupbTKAYRvAsWd1AiT+pL5dwRwlHxoYKyJ8L7T0dQgpEN+9DfjBVa+nAZxuaS
+higpV1J93A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_422c0773-fc3f-4317-aacf-7f8a9ad90c6b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>O8Def6x4HUemdqw0Kun5cjUpYfyJYikCfvdqZQYWuZV0wtttaOsMCqK7mkEMJC5oTNoTw/wTWao9
+YsjA4A7q8A==</DigestValue></Reference></SignedInfo><SignatureValue>U2haqK4GYW1jl7u75j7KAe/Vvv+MmX8AY84Moh/Kw18hFwZ6dEb1zdPQgY1W7VkHR/reIWFQ+B2W
+ZEVYAL3ET5EBIyFyRCuXOfXqWSISpjufczQXONchKssAMKrs5fBncxnRvokjsvsDKNXV2IPAHCT2
+zq5Zb2lR1KWov+5WAGHl+AWrCAfLyP/c4vD8alXR8wD3P+MRTIHnC3w0vPwqEf2EY8D3UYk7gC9p
+d7Qhhc1dBVN1cvpVFiZxMxbC+fNw/uENk/v2XPYSK5u8dxdoROBuiubojSkL8Tluwy8BUtwHIEhY
+ajikpsoMnoZl2MRYoUQRs0Hk3quTcgcacFkfZw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -417,4 +417,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_84b8d97c-6650-4b69-993b-1e29c1cb2602" Target="#_fafd18b9-2fb9-4655-85c1-f066deabdccd"><Timestamp>2019-06-18 11:36:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_422c0773-fc3f-4317-aacf-7f8a9ad90c6b" Target="#_2d1b881a-0bd3-402a-8c78-bb77aaaabb80"><Timestamp>2019-06-18 11:37:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
