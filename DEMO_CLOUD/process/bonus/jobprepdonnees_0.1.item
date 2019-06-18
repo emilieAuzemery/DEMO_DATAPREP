@@ -248,10 +248,8 @@
     <elementParameter field="TEXT" name="USERNAME" value="&quot;emilie.auzemery@nfr.businessdecision.com&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="iGTTaeaaaAspxT+C8ovobg=="/>
     <elementParameter field="CHECK" name="USE_PREP_PATH" value="false"/>
-    <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;d0d8b1ee-cf14-49d8-8fb9-7c03c0086393&quot;"/>
+    <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;03cf4737-6dc2-4c10-a3bd-3d3e0e175752&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_NAME" show="false" value="marketing_dataset_preparation"/>
-    <elementParameter field="DP_VERSION" name="VERSION_NAME" value=""/>
-    <elementParameter field="TEXT" name="VERSION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="PREPARATION_PATH" show="false" value="&quot;folder/preparation&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_VERSION" show="false" value="&quot;Current state&quot;"/>
     <elementParameter field="FETCH_SCHEMA" name="FETCH_SCHEMA" value=""/>
@@ -260,19 +258,19 @@
     <metadata connector="FLOW" label="clients_source_metadata" name="tDataprepRun_1">
       <column comment="" defaultValue="" key="false" length="-1" name="Ref_Client" nullable="false" originalDbColumnName="0000" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="Sexe" nullable="false" originalDbColumnName="0002" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PrA_nom" nullable="false" originalDbColumnName="0003" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Prenom" nullable="false" originalDbColumnName="0003" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="Nom" nullable="false" originalDbColumnName="0004" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="Telephone" nullable="false" originalDbColumnName="0005" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="Date_Naissance" nullable="false" originalDbColumnName="0006" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Age" nullable="false" originalDbColumnName="0014" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Tranche_Age" nullable="false" originalDbColumnName="0016" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Date_de_naissance_invalide" nullable="false" originalDbColumnName="0014" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Age" nullable="false" originalDbColumnName="0013" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Tranche_Age" nullable="false" originalDbColumnName="0015" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="CP" nullable="false" originalDbColumnName="0008" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Region" nullable="false" originalDbColumnName="0017" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Region" nullable="false" originalDbColumnName="0016" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="Ville" nullable="false" originalDbColumnName="0009" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="Pays" nullable="false" originalDbColumnName="0010" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="Mail" nullable="false" originalDbColumnName="0011" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="Revenu" nullable="false" originalDbColumnName="0012" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Source" nullable="false" originalDbColumnName="0013" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="96">
@@ -363,10 +361,11 @@
       <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Ref_Client" type="id_String"/>
         <mapperTableEntries name="Sexe" type="id_String"/>
-        <mapperTableEntries name="PrA_nom" type="id_String"/>
+        <mapperTableEntries name="Prenom" type="id_String"/>
         <mapperTableEntries name="Nom" type="id_String"/>
         <mapperTableEntries name="Telephone" type="id_String"/>
         <mapperTableEntries name="Date_Naissance" type="id_String"/>
+        <mapperTableEntries name="Date_de_naissance_invalide" type="id_String"/>
         <mapperTableEntries name="Age" type="id_String"/>
         <mapperTableEntries name="Tranche_Age" type="id_String"/>
         <mapperTableEntries name="CP" type="id_String"/>
@@ -375,7 +374,6 @@
         <mapperTableEntries name="Pays" type="id_String"/>
         <mapperTableEntries name="Mail" type="id_String"/>
         <mapperTableEntries name="Revenu" type="id_String"/>
-        <mapperTableEntries name="Source" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -383,7 +381,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/eauzemery/Desktop/PROJETS/AUTRES/Cloud - Demo TAS/Demo Talend DSC/inputFileTalendDPDS/inputFileTalendDPDS/export/final_clients_source_bonus.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/eauzemery/Desktop/PROJETS/AUTRES/Cloud - Demo TAS/data/export/bonus/final_clients_source_bonus.csv&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
@@ -433,7 +431,7 @@
     <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/eauzemery/Desktop/PROJETS/AUTRES/Cloud - Demo TAS/Demo Talend DSC/inputFileTalendDPDS/inputFileTalendDPDS/export/final_clients_source_bonus.xls&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/eauzemery/Desktop/PROJETS/AUTRES/Cloud - Demo TAS/data/export/bonus/final_clients_source_bonus.xls&quot;"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;clients&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
@@ -529,13 +527,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_88242e69-5e2b-4286-a4fe-e9f5e70ea020"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>c0E88hopaifPTzQbr1bEnGDMMWhEy5FCLh2d0MG03XT0t4UZchDpVvfqOYpoOXx7BMfkMJkajHIx
-Riu1LvKLAA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3ec1f01a-ed6f-441d-8fda-5317389558f5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>y4xxd7ljuleLueno1EzNmcSFdTw9pvVuqY7N8UE5Cm1IO6cHJDqWLiPmdzYNC2haOGjj2vKxnEIt
-Nwd9t3qZkA==</DigestValue></Reference></SignedInfo><SignatureValue>QYcqxalcF4lYF/Sts+Jp240m5U7N4zTvmysxALoXGRlzae9l0Yh9QCjHXSf1DXRmO/7y4zwQT5BA
-9Ox+oSf4qgu7Lgv+40gltiEa0NuCzgx6id5CmnNuY1+izIr2VRDR3oQjSQtvxOgkTmg/tIHxbQUb
-ZO2x1JyQjIGrBGaLAp1cy+m9njofQD571wThmB8iKmKJmewIy+q4fSqd6dqOXVH4ThXP0sH/hQ7J
-7jxl47l+EQgs6IQqqjuSBajSqCE2EU9RVWeSDTNUjZgeyrAoniW16QDGvoVBzjRhCCHnOhjM9du8
-QNeyK9XnmA+9smxS+E5sLChYovmsuGiAd80iIQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ce4f4301-fbd8-4bf1-9341-a90edd5776ca"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KVyqfGz0sxX3oqkKg+3vSu5cQiQQKZjWtWuntTionnNeoE5ekATgJ/7k/GCpgsJvJUgMYVUHDgRQ
+UpZVa1kfxg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_40908791-d5ac-4e8d-9884-9db8fe0367a5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CX0ACJOoj9BUzKwYit8MdT9/vod6hvcRJSIKBrTujKVyc3ewE27FxLeRLNB0VJhxEidtCvrBLrnm
+t6pw5IvjaA==</DigestValue></Reference></SignedInfo><SignatureValue>KfZS8NYHYow4pohfDx08Oreblgv2ec+FqfNCe6aHBP2Rb6Zg3tEXKxuUCKl1yCHqM6BN8dlICVP3
+K6+1aUwSpEsoB8EiG3dXjYyny+46CZDG1hdz/MxHmCfT7YdEmPWNHMm9HRfavg058O9CSeJ7Liik
+ogmo2ZxA2iHYXz0Xc/2ngRBdmgLc2Li8Xl6We7DaZFwXejtANZ34zUbJDVGMtDZbadqIAlzNv0tM
+GQwCKeuOupr4Tjr0jmltaxf/rOPD4bN4E/sqZCWTBnkVU+VySWg0bGGksip6z5T3zKv2fAMuW6jw
+c+gVCJQlWaTTvSHT94rKbGUN78OTX5t+33he3Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -559,4 +557,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3ec1f01a-ed6f-441d-8fda-5317389558f5" Target="#_88242e69-5e2b-4286-a4fe-e9f5e70ea020"><Timestamp>2019-06-18 10:49:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_40908791-d5ac-4e8d-9884-9db8fe0367a5" Target="#_ce4f4301-fbd8-4bf1-9341-a90edd5776ca"><Timestamp>2019-06-18 12:39:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
