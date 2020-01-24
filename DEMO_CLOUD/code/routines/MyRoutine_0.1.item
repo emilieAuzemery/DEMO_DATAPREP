@@ -75,6 +75,8 @@ public class MyRoutine {
 		  
 		  System.out.println("listcolumn :" +listColumn);
 		  
+		  System.out.println("nbSheets :" +wb.getNumberOfSheets());
+		  
 		  //System.out.println("cell :" + sheet.getRow(1).toString());
 		  
 		  for (int i = wb.getNumberOfSheets() - 1; i >= 0; i--) {
