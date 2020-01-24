@@ -95,6 +95,10 @@ public class MyRoutine {
 		  	
 		*/
 		  fs.close();
+		// save changes
+		  FileOutputStream fileOut = new FileOutputStream("C:/Users/eauzemery/Desktop/Test_EAU.xls");
+		  wb.write(fileOut);
+		  fileOut.close();
 		   
 		    } catch (FileNotFoundException e) {
 		      e.printStackTrace();
