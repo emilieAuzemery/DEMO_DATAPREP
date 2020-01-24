@@ -75,10 +75,13 @@ public class MyRoutine {
 		  
 		  System.out.println("listcolumn :" +listColumn);
 		  
+		  System.out.println("nbSheets :" +wb.getNumberOfSheets());
+		  
 		  //System.out.println("cell :" + sheet.getRow(1).toString());
 		  
 		  for (int i = wb.getNumberOfSheets() - 1; i > 0; i--) {
 		        if (!wb.getSheetName(i).contentEquals("BASE DE DONNEES")) //This is a place holder. You will insert your logic here to get the sheets that you want.  
+		        	System.out.println("sheetName :" +wb.getSheetName(i));
 		        	wb.removeSheetAt(i); //Just remove the sheets that don't match your criteria in the if statement above               
 		  }
 		  
