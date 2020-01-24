@@ -90,7 +90,7 @@ public class MyRoutine {
 			  if (i != index) {
 			  System.out.println("sheetName à supprimer:" +wb.getSheetName(i)+" index " +i);
 			  index = wb.getSheetIndex(wb.getSheet(wb.getSheetName(i)));
-			  wb.removeSheetAt(i); //Just remove the sheets that don't match your criteria in the if statement above  
+			  wb.removeSheetAt(index); //Just remove the sheets that don't match your criteria in the if statement above  
 			  }
 		  }
 		  
