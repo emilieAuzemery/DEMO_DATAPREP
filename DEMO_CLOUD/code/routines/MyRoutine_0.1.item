@@ -81,7 +81,7 @@ public class MyRoutine {
 		  
 		  for (int i = wb.getNumberOfSheets() - 1; i >= 0; i--) {
 			  System.out.println("sheetName en cours:" +wb.getSheetName(i));
-		        if (!wb.getSheetName(i).contentEquals("BASE DE DONNEES")) //This is a place holder. You will insert your logic here to get the sheets that you want.  
+		        if (!wb.getSheetName(i).contentEquals("BASE DE DONNEES") && !wb.getSheetName(i).contentEquals("1")) //This is a place holder. You will insert your logic here to get the sheets that you want.  
 		        	System.out.println("sheetName :" +wb.getSheetName(i));
 		        	wb.removeSheetAt(i); //Just remove the sheets that don't match your criteria in the if statement above               
 		  }
