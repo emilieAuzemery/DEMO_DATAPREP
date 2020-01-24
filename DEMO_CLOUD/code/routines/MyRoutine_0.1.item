@@ -83,8 +83,17 @@ public class MyRoutine {
 		  HSSFSheet sheetBD = wb.getSheet("BASE DE DONNEES"); // sheet to keep
 		  if(sheetBD != null)   {
 			  index = wb.getSheetIndex(sheetBD);
-		      wb.removeSheetAt(index);
+		      //wb.removeSheetAt(index);
 		  }
+		  
+		  for (int i = wb.getNumberOfSheets() - 1; i > 0; i--) {
+			  if (i != index) {
+			  System.out.println("sheetName en cours:" +wb.getSheetName(i));
+			  wb.removeSheetAt(i); //Just remove the sheets that don't match your criteria in the if statement above  
+			  }
+		  }
+		  
+
 		  /*
 		  for (int i = wb.getNumberOfSheets() - 1; i > 0; i--) {
 			  System.out.println("sheetName en cours:" +wb.getSheetName(i));
