@@ -38,7 +38,7 @@
     <talend.project.id>0</talend.project.id>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.framework></talend.job.framework>
-    <talend.job.folder>dataprep/</talend.job.folder>
+    <talend.job.folder>mutaero/</talend.job.folder>
     <talend.job.type>Standard</talend.job.type>
   </properties>
   <dependencies>
@@ -81,6 +81,11 @@
       <groupId>commons-collections</groupId>
       <artifactId>commons-collections</artifactId>
       <version>3.2.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>commons-collections4-4.1</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -156,6 +161,11 @@
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>fluent-hc</artifactId>
       <version>4.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>geronimo-stax-api_1.0_spec-1.0.1</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
@@ -259,6 +269,26 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>poi-3.16-20170419_modified_talend</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>poi-ooxml-3.16-20170419_modified_talend</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>poi-ooxml-schemas-3.16-20170419</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>poi-scratchpad-3.16-20170419</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>resty-0.3.2</artifactId>
       <version>6.0.0</version>
     </dependency>
@@ -289,12 +319,17 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>talendExcel-1.3-20180215</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>talend_file_enhanced_20070724</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>talendcsv</artifactId>
+      <artifactId>xmlbeans-2.6.0</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
