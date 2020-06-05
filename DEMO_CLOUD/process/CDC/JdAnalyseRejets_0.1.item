@@ -209,7 +209,7 @@
       <column comment="" key="false" length="-1" name="azctp" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="azseg" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="conto" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="d1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="d1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="d2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="autre" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" usefulColumn="true"/>
     </metadata>
@@ -222,7 +222,7 @@
       <column comment="" key="false" length="-1" name="azctp" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="azseg" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="conto" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="d1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="d1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="d2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="autre" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -263,7 +263,7 @@
         <mapperTableEntries name="azctp" nullable="true" type="id_String"/>
         <mapperTableEntries name="azseg" nullable="true" type="id_String"/>
         <mapperTableEntries name="conto" nullable="true" type="id_String"/>
-        <mapperTableEntries name="d1" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="d1" nullable="true" type="id_String"/>
         <mapperTableEntries name="d2" nullable="true" type="id_String"/>
         <mapperTableEntries name="autre" nullable="true" type="id_Dynamic"/>
       </inputTables>
@@ -435,7 +435,7 @@
       <column comment="" key="false" length="-1" name="azctp" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="azseg" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="conto" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="d1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="d1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="d2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="autre" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" usefulColumn="true"/>
     </metadata>
@@ -448,7 +448,7 @@
       <column comment="" key="false" length="-1" name="azctp" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="azseg" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="conto" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="d1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="d1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="d2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="autre" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -489,7 +489,7 @@
         <mapperTableEntries name="azctp" nullable="true" type="id_String"/>
         <mapperTableEntries name="azseg" nullable="true" type="id_String"/>
         <mapperTableEntries name="conto" nullable="true" type="id_String"/>
-        <mapperTableEntries name="d1" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="d1" nullable="true" type="id_String"/>
         <mapperTableEntries name="d2" nullable="true" type="id_String"/>
         <mapperTableEntries name="autre" nullable="true" type="id_Dynamic"/>
       </inputTables>
@@ -638,13 +638,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_73e1dd5f-0fd6-48c9-8a66-7003412287b9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6seYXYOPwfMPfaTDTPe1tlk76DpH+x9EIWmKH1eSDCp1B+xNuFjqXj//mXuU+SGWZzk73/hexjhn&#13;
-aShl3SljRA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_db319436-f194-4a2f-8500-e0bdf922b7f2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cZxOBb4KdEwmMNAMzMQ34ctDpb/5Cxm/z2YkIo3x079nd3OVBbvdTuqLW/2pvHCh1RD4rbG9oUB/&#13;
-bM4pGE/BAQ==</DigestValue></Reference></SignedInfo><SignatureValue>4dftuNmwl0QuffM5EnmQHUPHb1GcX3cV6aRQBQRyxIf+X2L27n6Q44PPoA7ceuqvPLEjIY3QPGwT&#13;
-oYoJBbernOfADPQBpdk2FREbJ3y97epfejQynE6ovHi6fwlDz91gIU2fBkTERqycqbhZqe/80DT5&#13;
-H7ZihCrxOF55ie1YdHf+eo2U6Vc9R21RRFmag/fvi2fu9b0iJ897CIp7e7yHj4zP5eBJxJJa9swz&#13;
-AZbVcCExdxNPisJUhd55rSmf72fjX0Crt64mKl1SGegYBGSSPato/T2/NvKl48RnRW1g4kUt9mX4&#13;
-Xp4Qk7q6K68YEEjB5mN7MvqhmdtAVXaBJvXlhw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_18c95ad7-957d-46e9-a9d7-a10c711723c9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BJdU/s/WAz/F7zjcTiR4/jVUYyMNMUtrhIbOKCq7+p771QLyYar//e3rJwM6qY8IT9lHaPsqhpns&#13;
+CrRLh4BEbA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2dc0cf7d-231a-4dc4-965b-701915dc13fb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>89sv93YwcrHTQOdK8nJxnzJ7IoAnV7eee5pSnN4bgw3KHc4sxauJ0UJk3UAkCD5aMm833bw9ZubM&#13;
+xj/PN2m44g==</DigestValue></Reference></SignedInfo><SignatureValue>wuDTqcp9K5acL236p4aLUrlpPRPCDeg7ghp9wB345UHBOPmKiVMyhT72EvtOTparjCufL/qiCbYx&#13;
+Yx9Xz3CX2FSRI1nSXEmmBeKwC2YNTXQ8rU/95U9UR7gCo33jrHfuNXTSH83sSbexkzuSgD96Wx/o&#13;
+RLchMu/MvKjMYVopr48lW8/I5KW1/3iGRxb7dkJQhtJBz9UeqRe9U9zpO74hMiwd1l7u6Rq5/nA7&#13;
+ljFM7HWIZVVUqdrOcKhk60Ml5OtjS/oKXEHsFg4JGmDridDfd4KbQijbw1GdDZDrADqWw7XNg8CL&#13;
+T8PXyHoj3NqX1dSKLDZZpsP8e/GQR9wnILPIog==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
@@ -668,4 +668,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_db319436-f194-4a2f-8500-e0bdf922b7f2" Target="#_73e1dd5f-0fd6-48c9-8a66-7003412287b9"><Timestamp>2020-06-05 13:28:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2dc0cf7d-231a-4dc4-965b-701915dc13fb" Target="#_18c95ad7-957d-46e9-a9d7-a10c711723c9"><Timestamp>2020-06-05 13:29:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
