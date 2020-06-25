@@ -158,6 +158,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="importo2"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="devise2"/>
+      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="prov"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="user"/>
@@ -211,6 +213,9 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="importo2"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="devise2"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="prov"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
@@ -248,6 +253,7 @@
       <column comment="" key="false" length="-1" name="importo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="devise" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="importo2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="devise2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prov" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="user" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="datemaj" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -305,6 +311,7 @@
       <column comment="" key="false" length="-1" name="importo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="devise" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="importo2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="devise2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prov" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="user" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="datemaj" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -328,6 +335,7 @@
         <mapperTableEntries expression="row1.importo " name="importo" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;'&quot;+row1.devise +&quot;'&quot; " name="devise" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.importo2 " name="importo2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;'&quot;+row1.devise2 +&quot;'&quot; " name="devise2" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;'&quot;+row1.prov +&quot;'&quot; " name="prov" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;'&quot;+row1.user +&quot;'&quot; " name="user" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.datemaj " name="datemaj" nullable="true" type="id_String"/>
@@ -348,6 +356,7 @@
         <mapperTableEntries name="importo" nullable="true" type="id_String"/>
         <mapperTableEntries name="devise" nullable="true" type="id_String"/>
         <mapperTableEntries name="importo2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="devise2" nullable="true" type="id_String"/>
         <mapperTableEntries name="prov" nullable="true" type="id_String"/>
         <mapperTableEntries name="user" nullable="true" type="id_String"/>
         <mapperTableEntries name="datemaj" nullable="true" type="id_String"/>
@@ -384,6 +393,7 @@
       <column comment="" key="false" length="-1" name="importo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="devise" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="importo2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="devise2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prov" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="user" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="datemaj" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -408,11 +418,12 @@
         <mapperTableEntries expression="out.importo" name="importo" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out.devise" name="devise" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out.importo2" name="importo2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out.devise2 " name="devise2" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out.prov" name="prov" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out.user" name="user" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out.datemaj" name="datemaj" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out.mdx" name="mdx" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out.id+&quot;,&quot;+out.scenario+&quot;,&quot;+out.periode+&quot;,&quot;+out.agence+&quot;,&quot;+out.conto+&quot;,&quot;+out.fonction+&quot;,&quot;+out.ei+&quot;,&quot;+out.perso+&quot;,&quot;+out.null1+&quot;,&quot;+out.null2+&quot;,&quot;+out.categ+&quot;,&quot;+out.importo+&quot;,&quot;+out.devise+&quot;,&quot;+out.importo2+&quot;,&quot;+out.prov+&quot;,&quot;+out.user+&quot;,&quot;+out.datemaj+&quot;,&quot;+out.mdx " name="req" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out.id+&quot;,&quot;+out.scenario+&quot;,&quot;+out.periode+&quot;,&quot;+out.agence+&quot;,&quot;+out.conto+&quot;,&quot;+out.fonction+&quot;,&quot;+out.ei+&quot;,&quot;+out.perso+&quot;,&quot;+out.null1+&quot;,&quot;+out.null2+&quot;,&quot;+out.categ+&quot;,&quot;+out.importo+&quot;,&quot;+out.devise+&quot;,&quot;+out.importo2+&quot;,&quot;+out.devise2+&quot;,&quot;+&quot;,&quot;+out.prov+&quot;,&quot;+out.user+&quot;,&quot;+out.datemaj+&quot;,&quot;+out.mdx " name="req" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="out" sizeState="INTERMEDIATE">
         <mapperTableEntries name="id" nullable="true" type="id_String"/>
@@ -429,6 +440,7 @@
         <mapperTableEntries name="importo" nullable="true" type="id_String"/>
         <mapperTableEntries name="devise" nullable="true" type="id_String"/>
         <mapperTableEntries name="importo2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="devise2" nullable="true" type="id_String"/>
         <mapperTableEntries name="prov" nullable="true" type="id_String"/>
         <mapperTableEntries name="user" nullable="true" type="id_String"/>
         <mapperTableEntries name="datemaj" nullable="true" type="id_String"/>
@@ -481,6 +493,8 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="importo2"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="devise2"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="prov"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="user"/>
@@ -519,6 +533,7 @@
       <column comment="" key="false" length="-1" name="importo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="devise" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="importo2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="devise2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prov" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="user" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="datemaj" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -550,6 +565,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="datemaj"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="devise2"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -609,6 +627,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="user"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="devise2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
@@ -616,6 +637,9 @@
   <connection connectorName="FLOW" label="out_fin" lineStyle="0" metaname="out_fin" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputExcel_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="req"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="devise2"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -627,13 +651,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_18ee39ec-a528-4042-8b4a-8aa3fd156e38"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uNtXljSDwfFyX9cUzrqS2tolLAVW8lrommZg1Oi9mFH7F1/etvb6SR26qmLuKWH/BsgSjXz7PEbT&#13;
-tA23x3Q7jg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_05afdc07-93ef-4508-b554-37328cba26ff"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>D8kxHg1XGcH8Vd5M8/+56XCmA1nGkxZahOEXgC+3cWHQmrayx/Y/G8uGSr46ggvTzNfHCQW2WBgv&#13;
-H9f+Rc+fTA==</DigestValue></Reference></SignedInfo><SignatureValue>2Rg34tRpnJUxfMthg3FxxYTJ3adLG69jgmWgA+MTIF2b8iyRuvSkGIuPqFss5XDilTw0TzZl3Qt8&#13;
-7st+9nkP0//rB3r5YRk7NAT8c1UzOy+4ykPVuKtVljY3YunRpj7mUaIPaHkJ3xpItgz/Ja4otdUF&#13;
-TXayvoF1x27gb+FD/cw+Jg/SToTgfLdW7APUWGdJ5XP+PE+lQYtP5yb1uib9Tu9zMx9IBybvwAp2&#13;
-FoaFOnymRJsrt15WKfLFTj6fMMlU71TT9BQIEqsnCnCIawuuIIpalEZ0HoQUOOyrm3iY6AtprBdr&#13;
-/uS8tLf11E2jNg/DVAlPMsQaUQGowLZW2QWl4w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_834605c8-1788-4e4f-a06e-bdf0ccd008a1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SaA0DjY0lxs/G6ISGx682BrZJTi0Qcyv4I5DYJU8RLV3Hw46GQw2v8uBW+mZI2PgJkh8gxUXsi7w&#13;
+eUcXJ2iMGw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bc69baa1-11c2-4877-869f-e4205060f6e0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QEUvs8SYYNuAvE3vukid3I4mG9zP3tBZVDQ5Jh2KtX5+XfAwhJJhreqjMDf9RejTUZMvUT1knNBK&#13;
+TwK/zprQRg==</DigestValue></Reference></SignedInfo><SignatureValue>QRvzSQBM8sV6f2dJDSFyTydkfuIl78usfxuph4svEfochmyb1BObfwoJZHnhDMCE9yFnDoo1/JLs&#13;
+qPNyEQx5fpi+jHHcHbiLty9iwiPNW7ocHuIxxX5dhwd+M90Ok8bwjhoad1NU63n4nJqeccGhMT8l&#13;
+CuGr1kYySed2X7bN2VUI2L7vvQDgFYsmK2KLqLIzzTceYhUNdhwqUo3aazBrnVfzutHRIoAxGBYp&#13;
+WyBqRw7QInJ3ZhApUGQ4a5XehI21cDcU7kufetWzMAfHbbw7Xe4BohAXdQwZofXfDc7c5HXYoGJO&#13;
+mgWpLPn0LdeHByJ9GAHnS/fhD3PFOxKV2UFrsw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
@@ -657,4 +681,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_05afdc07-93ef-4508-b554-37328cba26ff" Target="#_18ee39ec-a528-4042-8b4a-8aa3fd156e38"><Timestamp>2020-06-25 13:56:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bc69baa1-11c2-4877-869f-e4205060f6e0" Target="#_834605c8-1788-4e4f-a06e-bdf0ccd008a1"><Timestamp>2020-06-25 14:00:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
