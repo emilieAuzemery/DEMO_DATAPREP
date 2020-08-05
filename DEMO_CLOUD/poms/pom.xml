@@ -28,13 +28,14 @@
     <module>jobs/process/DEMO_PREP/jdpreparationdonnees_0.1</module>
     <module>jobs/process/DEMO_PREP/jdpreparationdonneesdynamique_0.1</module>
     <module>jobs/process/DEMO_PREP/jspreparationdonnees_0.1</module>
+    <module>jobs/process/DEMO_PREP/jspreparationdonnees2_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMO_CLOUD</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
