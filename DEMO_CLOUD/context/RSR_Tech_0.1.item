@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Dev" xmi:id="_bggZcCOBEeueDqA07KoUbA">
+    <contextParameter comment="Valeur maximal du niveau d'anomalie" name="IFir_max_ano" prompt="IFir_max_ano?" promptNeeded="false" type="id_Integer" value="3" xmi:id="_bggZcSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du job de doublon" name="IFir_Job_Db" prompt="IFir_Job_Db?" promptNeeded="false" type="id_String" value="" xmi:id="_bggZciOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du job de controle fonctionnel" name="IFir_Job_Cf" prompt="IFir_Job_Cf?" promptNeeded="false" type="id_String" value="" xmi:id="_bggZcyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du job d'intégration" name="IFir_Job_Int" prompt="IFir_Job_Int?" promptNeeded="false" type="id_String" value="" xmi:id="_bggZdCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Taille du curseur" name="IFir_batch" prompt="IFir_batch?" promptNeeded="false" type="id_Integer" value="1000" xmi:id="_bggZdSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Taille des lots" name="IFir_taille_lots" prompt="IFir_taille_lots?" promptNeeded="false" type="id_Integer" value="10000" xmi:id="_bggZdiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du job de rattrapage" name="IFir_Job_Ratt" prompt="IFir_Job_Ratt?" promptNeeded="false" type="id_String" value="JdFAITIntCoutLogAmoRatt" xmi:id="_bggZdyOBEeueDqA07KoUbA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Int" xmi:id="_bggZeCOBEeueDqA07KoUbA">
+    <contextParameter comment="Valeur maximal du niveau d'anomalie" name="IFir_max_ano" prompt="IFir_max_ano?" promptNeeded="false" type="id_Integer" value="3" xmi:id="_bggZeSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du job de doublon" name="IFir_Job_Db" prompt="IFir_Job_Db?" promptNeeded="false" type="id_String" value="" xmi:id="_bggZeiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du job de controle fonctionnel" name="IFir_Job_Cf" prompt="IFir_Job_Cf?" promptNeeded="false" type="id_String" value="" xmi:id="_bggZeyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du job d'intégration" name="IFir_Job_Int" prompt="IFir_Job_Int?" promptNeeded="false" type="id_String" value="" xmi:id="_bggZfCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Taille du curseur" name="IFir_batch" prompt="IFir_batch?" promptNeeded="false" type="id_Integer" value="1000" xmi:id="_bggZfSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Taille des lots" name="IFir_taille_lots" prompt="IFir_taille_lots?" promptNeeded="false" type="id_Integer" value="10000" xmi:id="_bggZfiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du job de rattrapage" name="IFir_Job_Ratt" prompt="IFir_Job_Ratt?" promptNeeded="false" type="id_String" value="" xmi:id="_bggZfyOBEeueDqA07KoUbA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Qualif" xmi:id="_bggZgCOBEeueDqA07KoUbA">
+    <contextParameter comment="Valeur maximal du niveau d'anomalie" name="IFir_max_ano" prompt="IFir_max_ano?" promptNeeded="false" type="id_Integer" value="3" xmi:id="_bggZgSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du job de doublon" name="IFir_Job_Db" prompt="IFir_Job_Db?" promptNeeded="false" type="id_String" value="" xmi:id="_bggZgiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du job de controle fonctionnel" name="IFir_Job_Cf" prompt="IFir_Job_Cf?" promptNeeded="false" type="id_String" value="" xmi:id="_bggZgyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du job d'intégration" name="IFir_Job_Int" prompt="IFir_Job_Int?" promptNeeded="false" type="id_String" value="" xmi:id="_bggZhCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Taille du curseur" name="IFir_batch" prompt="IFir_batch?" promptNeeded="false" type="id_Integer" value="1000" xmi:id="_bggZhSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Taille des lots" name="IFir_taille_lots" prompt="IFir_taille_lots?" promptNeeded="false" type="id_Integer" value="10000" xmi:id="_bggZhiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du job de rattrapage" name="IFir_Job_Ratt" prompt="IFir_Job_Ratt?" promptNeeded="false" type="id_String" value="" xmi:id="_bggZhyOBEeueDqA07KoUbA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c6fc14bd-20b7-43ba-adf1-a303097ae5aa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eihYeJl2v/Jx7nq4I43liqF2t6qkMS7Jv4+ZbUrFBzFjDTvEwFOavf7emKXLqUl5UUgMYTzsQwo2&#13;
+N9tippquPQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1333a765-89fa-431c-9102-bc15602ed653"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>f5s8rvnPwDs5kDIgssfaxZYZP6hQNNndsqgAEGMiExrrNfopzhqEb4F866U7TMROkeaO1753t84g&#13;
+vE29zbxmIg==</DigestValue></Reference></SignedInfo><SignatureValue>vhJM58zx5340PKEiaO7GCqmwy0WUsPZYv0H6CYT6JxejlcIHSLrvG7bV0qGcq66Ri57prTrAWZcB&#13;
+DwjMKYBeId+BQ5WsmD30BLPCKeQDNAnN4+9kUHxLu++7pDqT/XWGplAAa4w8sHCDjV563y95pMP8&#13;
+K3zGL8ePEX5XQzRC83XiGUonOq5F8Xq7/VI/zBpsAp89j31kcW/KD2hHdKVH3ro4dyWfKmATFKm7&#13;
+lliQYNiuoL93BW3QO9FaucqME+1c+IieeEBLhzjMeVroy4C1ClVrNe1fTbyqS2E2dvobJ/3fxbtF&#13;
+4ay+e+0r+42UnBIYFUz+ZpeVdLbBjjBLpvsqzA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg&#13;
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#13;
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq&#13;
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46&#13;
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb&#13;
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM&#13;
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE&#13;
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG&#13;
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu&#13;
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0&#13;
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ&#13;
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5&#13;
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ&#13;
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3&#13;
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn&#13;
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as&#13;
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13;
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1333a765-89fa-431c-9102-bc15602ed653" Target="#_c6fc14bd-20b7-43ba-adf1-a303097ae5aa"><Timestamp>2020-11-10 18:20:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

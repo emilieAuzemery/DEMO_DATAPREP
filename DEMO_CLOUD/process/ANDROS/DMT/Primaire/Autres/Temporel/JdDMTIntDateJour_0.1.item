@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Int" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="RSR_bdd_dmt_AditionnalParams" prompt="RSR_bdd_dmt_AditionnalParams?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Login" prompt="RSR_bdd_dmt_Login?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="RSRDMT_DEV"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Password" prompt="RSR_bdd_dmt_Password?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_Password" value="P4F1yBtEt28RQXyaXz4/+g=="/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Port" prompt="RSR_bdd_dmt_Port?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="1521"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Schema" prompt="RSR_bdd_dmt_Schema?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="RSRDMT_DEV"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Server" prompt="RSR_bdd_dmt_Server?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="10.0.171.225"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Sid" prompt="RSR_bdd_dmt_Sid?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="xe"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="RSR_SUIVI_DEV"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="rsr_suivi_dev"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="10.0.171.215"/>
+    <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+    <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="1"/>
+    <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="&lt;&gt;"/>
+    <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_File" value="C:/projets/AndrosRSR/param/rsr.properties"/>
+    <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="MT00000001"/>
+    <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+    <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="RF_XX_CODE.csv"/>
+    <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="18"/>
+    <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ILigneFictives" prompt="ILigneFictives?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="CF_FICTIVE"/>
+    <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDEV"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="HP/xWhNDmQWCaKDXJhrK9g=="/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Sid" prompt="RSR_bdd_dwh_Sid?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="xe"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDEV"/>
+  </context>
+  <context confirmationNeeded="false" name="Int">
+    <contextParameter comment="" name="RSR_bdd_dmt_AditionnalParams" prompt="RSR_bdd_dmt_AditionnalParams?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Login" prompt="RSR_bdd_dmt_Login?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="RSRDMT_INT"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Password" prompt="RSR_bdd_dmt_Password?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_Password" value="EX4K/SMCOZYn/vHZPPZkkw=="/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Port" prompt="RSR_bdd_dmt_Port?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="1521"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Schema" prompt="RSR_bdd_dmt_Schema?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="RSRDMT_INT"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Server" prompt="RSR_bdd_dmt_Server?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="10.0.171.225"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Sid" prompt="RSR_bdd_dmt_Sid?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="xe"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="RSR_SUIVI_INT"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="rsr_suivi_int"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="10.0.171.215"/>
+    <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_File" value="/opt/AndrosRSR/INT/param/rsr.properties"/>
+    <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="NV"/>
+    <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+    <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="RF_XX_CODE.csv"/>
+    <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="18"/>
+    <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ILigneFictives" prompt="ILigneFictives?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="CF_FICTIVE"/>
+    <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWHINT"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="kAeNw1uFxNCpu8zbA4QVKQ=="/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Sid" prompt="RSR_bdd_dwh_Sid?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="xe"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWHINT"/>
+  </context>
+  <context confirmationNeeded="false" name="Qualif">
+    <contextParameter comment="" name="RSR_bdd_dmt_AditionnalParams" prompt="RSR_bdd_dmt_AditionnalParams?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Login" prompt="RSR_bdd_dmt_Login?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="RSRDMT"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Password" prompt="RSR_bdd_dmt_Password?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_Password" value="vPRI4D+ilDQ="/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Port" prompt="RSR_bdd_dmt_Port?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="1521"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Schema" prompt="RSR_bdd_dmt_Schema?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="RSRDMT"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Server" prompt="RSR_bdd_dmt_Server?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="10.0.171.225"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Sid" prompt="RSR_bdd_dmt_Sid?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="xe"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="RSR_SUIVI_QUALIF"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="rsr_suivi_qualif"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="10.0.171.215"/>
+    <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_File" value="/opt/AndrosRSR/QUALIF/param/rsr.properties"/>
+    <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="001"/>
+    <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+    <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="18"/>
+    <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ILigneFictives" prompt="ILigneFictives?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="CF_FICTIVE"/>
+    <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWH"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="l3ONiFMQ2Ws="/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Sid" prompt="RSR_bdd_dwh_Sid?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="xe"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWH"/>
+  </context>
+  <context confirmationNeeded="false" name="Int">
+    <contextParameter comment="" name="RSR_bdd_dmt_AditionnalParams" prompt="RSR_bdd_dmt_AditionnalParams?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Login" prompt="RSR_bdd_dmt_Login?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="RSRDMT_INT"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="RSR_SUIVI_INT"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Schema" prompt="RSR_bdd_dmt_Schema?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="RSRDMT_INT"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Password" prompt="RSR_bdd_dmt_Password?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_Password" value="EX4K/SMCOZYn/vHZPPZkkw=="/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Port" prompt="RSR_bdd_dmt_Port?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="1521"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="rsr_suivi_int"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Sid" prompt="RSR_bdd_dmt_Sid?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="xe"/>
+    <contextParameter comment="" name="RSR_bdd_dmt_Server" prompt="RSR_bdd_dmt_Server?" promptNeeded="false" repositoryContextId="_RmuDYD8eEeiQx4VHrT4XCg" type="id_String" value="10.0.171.225"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="10.0.171.215"/>
+    <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_File" value="/opt/AndrosRSR/INT/param/rsr.properties"/>
+    <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="NV"/>
+    <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+    <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="RF_XX_CODE.csv"/>
+    <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="18"/>
+    <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ILigneFictives" prompt="ILigneFictives?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="CF_FICTIVE"/>
+    <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWHINT"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="kAeNw1uFxNCpu8zbA4QVKQ=="/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Sid" prompt="RSR_bdd_dwh_Sid?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="xe"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWHINT"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="128"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/flaurent/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_nGJhgI-OEeads5l-Um9p1w" name="DataOperation"/>
+    <routinesParameter id="_nIPzQI-OEeads5l-Um9p1w" name="Mathematical"/>
+    <routinesParameter id="_nKRzkI-OEeads5l-Um9p1w" name="Numeric"/>
+    <routinesParameter id="_nMTz4I-OEeads5l-Um9p1w" name="Relational"/>
+    <routinesParameter id="_nCtzAo-OEeads5l-Um9p1w" name="SQLike"/>
+    <routinesParameter id="_nN_18I-OEeads5l-Um9p1w" name="StringHandling"/>
+    <routinesParameter id="_nQUKII-OEeads5l-Um9p1w" name="TalendDataGenerator"/>
+    <routinesParameter id="_nR8h0I-OEeads5l-Um9p1w" name="TalendDate"/>
+    <routinesParameter id="_nTn80I-OEeads5l-Um9p1w" name="TalendString"/>
+    <routinesParameter id="_7WVzoCXZEeibLOeKh3RMTQ" name="Cast_String_INT"/>
+    <routinesParameter id="_LfGaIFnTEei1n9wOZIvYug" name="CheckColumnCvs"/>
+    <routinesParameter id="_ciT_sOSbEeaJTP7wMa4OVg" name="CheckColumn"/>
+    <routinesParameter id="_4I-3MIo6Eea8Ut5bsIN75A" name="Commun"/>
+    <routinesParameter id="_ur-ygJiPEeeo26yHF-gwEw" name="Copy_of_CheckColumn"/>
+    <routinesParameter id="_Q5FvAOobEea2HvCMfz9Zrw" name="DateJPlus1"/>
+    <routinesParameter id="_peVlAKsmEeaFWdq13Wi6ng" name="DateJ_1"/>
+    <routinesParameter id="_rgFpIHxSEeeGANoera4yaQ" name="MetaServlet"/>
+    <routinesParameter id="_6lYoMIo6Eea8Ut5bsIN75A" name="RSR"/>
+    <routinesParameter id="_mbbswHLsEee-BJcgi1PfWQ" name="SplitConditionCode"/>
+  </parameters>
+  <node componentName="JlTECJd" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="JlTECJd_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="JlTECJd"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="2" offsetLabelY="0" posX="128" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Début - Alimentation DMT temporel Date Jour&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="Info"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_TGG_RTCH_BUI_RBUI" name="tWarn_1">
+      <column comment="" key="true" length="38" name="RBUI_ID_RTCH_BUI" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="RBUI_ID_BUI_GPE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="RBUI_ID_RGP_BUI_GPE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="RBUI_DT_DEB" nullable="false" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="RBUI_DT_FIN" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="RBUI_FLG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Fin - Alimentation DMT temporel Date Jour&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="Info"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_2"/>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="HOST" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="context.RSR_bdd_dwh_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TS_TPS_JOUR_TJO&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.DT_FACT, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.DT_FACT_ORDRE, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_DT_FACT_FRA, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_DT_FACT_ENG, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_DT_FACT_ESP, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.ANNEE_FACT, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.SEMESTRE_FACT, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_SEMESTRE_FACT_FRA, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_SEMESTRE_FACT_ENG, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_SEMESTRE_FACT_ESP, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.TRIMESTRE_FACT, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_TRIMESTRE_FACT_FRA, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_TRIMESTRE_FACT_ENG, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_TRIMESTRE_FACT_ESP, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.MOIS_FACT, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.MOIS_FACT_COURT, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_MOIS_FACT_FRA, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_MOIS_FACT_ENG, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_MOIS_FACT_ESP, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.SEMAINE_FACT, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_SEMAINE_FACT, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.LIB_SEMAINE_FACT_COURT, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.JOUR_ANNEE_FACT, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.FLG_FERIE_FACT_FRA, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO.FLG_OUVRE_FACT_FRA&#10;FROM &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TS_TPS_JOUR_TJO&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.RSR_bdd_dwh_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DT_FACT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DT_FACT_ORDRE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_DT_FACT_FRA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_DT_FACT_ENG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_DT_FACT_ESP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANNEE_FACT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEMESTRE_FACT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_SEMESTRE_FACT_FRA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_SEMESTRE_FACT_ENG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_SEMESTRE_FACT_ESP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRIMESTRE_FACT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_TRIMESTRE_FACT_FRA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_TRIMESTRE_FACT_ENG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_TRIMESTRE_FACT_ESP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOIS_FACT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOIS_FACT_COURT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_MOIS_FACT_FRA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_MOIS_FACT_ENG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_MOIS_FACT_ESP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEMAINE_FACT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_SEMAINE_FACT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_SEMAINE_FACT_COURT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JOUR_ANNEE_FACT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLG_FERIE_FACT_FRA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLG_OUVRE_FACT_FRA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_TS_TPS_JOUR_TJO" name="tOracleInput_1">
+      <column comment="" key="true" length="7" name="DT_FACT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="DT_FACT_ORDRE" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_DT_FACT_FRA" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_DT_FACT_ENG" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_DT_FACT_ESP" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="ANNEE_FACT" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="SEMESTRE_FACT" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_SEMESTRE_FACT_FRA" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_SEMESTRE_FACT_ENG" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_SEMESTRE_FACT_ESP" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="TRIMESTRE_FACT" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_TRIMESTRE_FACT_FRA" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_TRIMESTRE_FACT_ENG" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_TRIMESTRE_FACT_ESP" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="MOIS_FACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="MOIS_FACT_COURT" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_MOIS_FACT_FRA" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_MOIS_FACT_ENG" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_MOIS_FACT_ESP" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="SEMAINE_FACT" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="LIB_SEMAINE_FACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="LIB_SEMAINE_FACT_COURT" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="JOUR_ANNEE_FACT" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="FLG_FERIE_FACT_FRA" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="FLG_OUVRE_FACT_FRA" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_v1adoGTQEeimjaSwp5qQEA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Mapping"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DMT_D_TPS_JOUR_TJO" name="Out_Date_Jour">
+      <column comment="" key="true" length="7" name="DT_FACT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="ID_JOUR_ORDRE" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_DT_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_DT_FACT_ENG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_DT_FACT_ESP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="ANNEE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="SEMESTRE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_SEMESTRE_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_SEMESTRE_FACT_ENG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_SEMESTRE_FACT_ESP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="TRIMESTRE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_TRIMESTRE_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_TRIMESTRE_FACT_ENG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_TRIMESTRE_FACT_ESP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="MOIS_FACT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="MOIS_FACT_COURT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_MOIS_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_MOIS_FACT_ENG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_MOIS_FACT_ESP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="SEMAINE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="LIB_SEMAINE_FACT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="LIB_SEMAINE_FACT_COURT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="JOUR_ANNEE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="FLG_FERIE_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="FLG_OUVRE_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="Out_Date_Jour" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="In_TJO.DT_FACT " name="DT_FACT" type="id_Date"/>
+        <mapperTableEntries expression="In_TJO.DT_FACT_ORDRE " name="ID_JOUR_ORDRE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="In_TJO.LIB_DT_FACT_FRA " name="LIB_DT_FACT_FRA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.LIB_DT_FACT_ENG " name="LIB_DT_FACT_ENG" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.LIB_DT_FACT_ESP " name="LIB_DT_FACT_ESP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.ANNEE_FACT " name="ANNEE_FACT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="In_TJO.SEMESTRE_FACT " name="SEMESTRE_FACT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="In_TJO.LIB_SEMESTRE_FACT_FRA " name="LIB_SEMESTRE_FACT_FRA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.LIB_SEMESTRE_FACT_ENG " name="LIB_SEMESTRE_FACT_ENG" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.LIB_SEMESTRE_FACT_ESP " name="LIB_SEMESTRE_FACT_ESP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.TRIMESTRE_FACT " name="TRIMESTRE_FACT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="In_TJO.LIB_TRIMESTRE_FACT_FRA " name="LIB_TRIMESTRE_FACT_FRA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.LIB_TRIMESTRE_FACT_ENG " name="LIB_TRIMESTRE_FACT_ENG" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.LIB_TRIMESTRE_FACT_ESP " name="LIB_TRIMESTRE_FACT_ESP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.MOIS_FACT " name="MOIS_FACT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.MOIS_FACT_COURT " name="MOIS_FACT_COURT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="In_TJO.LIB_MOIS_FACT_FRA " name="LIB_MOIS_FACT_FRA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.LIB_MOIS_FACT_ENG " name="LIB_MOIS_FACT_ENG" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.LIB_MOIS_FACT_ESP " name="LIB_MOIS_FACT_ESP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.SEMAINE_FACT " name="SEMAINE_FACT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="In_TJO.LIB_SEMAINE_FACT " name="LIB_SEMAINE_FACT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.LIB_SEMAINE_FACT_COURT " name="LIB_SEMAINE_FACT_COURT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="In_TJO.JOUR_ANNEE_FACT " name="JOUR_ANNEE_FACT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="In_TJO.FLG_FERIE_FACT_FRA " name="FLG_FERIE_FACT_FRA" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="In_TJO.FLG_OUVRE_FACT_FRA " name="FLG_OUVRE_FACT_FRA" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="In_TJO" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="DT_FACT" type="id_Date"/>
+        <mapperTableEntries name="DT_FACT_ORDRE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="LIB_DT_FACT_FRA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_DT_FACT_ENG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_DT_FACT_ESP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ANNEE_FACT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="SEMESTRE_FACT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="LIB_SEMESTRE_FACT_FRA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_SEMESTRE_FACT_ENG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_SEMESTRE_FACT_ESP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TRIMESTRE_FACT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="LIB_TRIMESTRE_FACT_FRA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_TRIMESTRE_FACT_ENG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_TRIMESTRE_FACT_ESP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MOIS_FACT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MOIS_FACT_COURT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="LIB_MOIS_FACT_FRA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_MOIS_FACT_ENG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_MOIS_FACT_ESP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SEMAINE_FACT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="LIB_SEMAINE_FACT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_SEMAINE_FACT_COURT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="JOUR_ANNEE_FACT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="FLG_FERIE_FACT_FRA" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="FLG_OUVRE_FACT_FRA" nullable="true" type="id_Integer"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_bDgmkD8hEeiQx4VHrT4XCg"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dmt_Server"/>
+    <elementParameter field="TEXT" name="HOST" value="context.RSR_bdd_dmt_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.RSR_bdd_dmt_Port"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.RSR_bdd_dmt_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dmt_Sid"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" value="context.RSR_bdd_dmt_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dmt_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/GBKlBDrVWa8r+kLVznPwLE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DMT_D_TPS_JOUR_TJO&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.RSR_bdd_dmt_AditionnalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DT_FACT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_JOUR_ORDRE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_DT_FACT_FRA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_DT_FACT_ENG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_DT_FACT_ESP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ANNEE_FACT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEMESTRE_FACT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_SEMESTRE_FACT_FRA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_SEMESTRE_FACT_ENG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_SEMESTRE_FACT_ESP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRIMESTRE_FACT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_TRIMESTRE_FACT_FRA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_TRIMESTRE_FACT_ENG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_TRIMESTRE_FACT_ESP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOIS_FACT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOIS_FACT_COURT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_MOIS_FACT_FRA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_MOIS_FACT_ENG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_MOIS_FACT_ESP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEMAINE_FACT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_SEMAINE_FACT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_SEMAINE_FACT_COURT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JOUR_ANNEE_FACT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLG_FERIE_FACT_FRA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLG_OUVRE_FACT_FRA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" show="false" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DMT_D_TPS_JOUR_TJO" name="tOracleOutput_1">
+      <column comment="" key="true" length="7" name="DT_FACT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="ID_JOUR_ORDRE" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_DT_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_DT_FACT_ENG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_DT_FACT_ESP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="ANNEE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="SEMESTRE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_SEMESTRE_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_SEMESTRE_FACT_ENG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_SEMESTRE_FACT_ESP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="TRIMESTRE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_TRIMESTRE_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_TRIMESTRE_FACT_ENG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_TRIMESTRE_FACT_ESP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="MOIS_FACT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="MOIS_FACT_COURT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_MOIS_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_MOIS_FACT_ENG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_MOIS_FACT_ESP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="SEMAINE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="LIB_SEMAINE_FACT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="LIB_SEMAINE_FACT_COURT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="JOUR_ANNEE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="FLG_FERIE_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="FLG_OUVRE_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="DMT_D_TPS_JOUR_TJO" name="REJECT">
+      <column comment="" key="true" length="7" name="DT_FACT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="ID_JOUR_ORDRE" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_DT_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_DT_FACT_ENG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_DT_FACT_ESP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="ANNEE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="SEMESTRE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_SEMESTRE_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_SEMESTRE_FACT_ENG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_SEMESTRE_FACT_ESP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="TRIMESTRE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_TRIMESTRE_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_TRIMESTRE_FACT_ENG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_TRIMESTRE_FACT_ESP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="MOIS_FACT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="MOIS_FACT_COURT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_MOIS_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_MOIS_FACT_ENG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LIB_MOIS_FACT_ESP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="SEMAINE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="LIB_SEMAINE_FACT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="LIB_SEMAINE_FACT_COURT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="JOUR_ANNEE_FACT" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="FLG_FERIE_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="FLG_OUVRE_FACT_FRA" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_1" offsetLabelX="0" offsetLabelY="0" source="tWarn_1" target="tOracleInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="In_TJO" lineStyle="0" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="In_TJO"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tWarn_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="Out_Date_Jour" lineStyle="0" metaname="Out_Date_Jour" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tOracleOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Out_Date_Jour"/>
+  </connection>
+  <note opaque="true" posX="352" posY="0" sizeHeight="129" sizeWidth="577" text="DESCRIPTION :&#13;&#10;- Intégration des données dans le DTM temporel Date Jour&#13;&#10;&#13;&#10;VERSIONNING :">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="228;179;229"/>
+    <elementParameter field="COLOR" name="NOTE_LINECOLOR" value="0;128;255"/>
+  </note>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="JlTECJd_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Insertion de la table temporelle Date Jour"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_96009978-daf0-45a9-b530-039beefa28d0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ah3MlJBsa1hWyFjPwLi5ffsBL58N1mYnf7gLzEO3n0+0b4Hx7V0TFv7qKrpUVHdvcwSyXkXKPLa9&#13;
+n6fl2inJkw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f9a50cf2-d5e9-498c-9f73-d4e9d90c01cc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ASAAukShJ+2hWmIrj2LS30B2mvExBySukfSEx3gazErYGS7uubTmC6PxPVEOqX8jKqjBrImbNNCp&#13;
+wc+hXd0suA==</DigestValue></Reference></SignedInfo><SignatureValue>PsTZanxb4Vp0oTVmXj0sTblmwdAiMjD5fWTRcRRld74jJwQeVMhJic82x+M3alXRnFrRLoZ8WgWb&#13;
+w5Qyd4WoLWkUh9EriMZbbu7oBoyqZR2xPZizlh8nFQISKse+I6wOEbrDdBc3rIlTZZ0mBeywPkNL&#13;
+MdlkRG8QfHY55m24bpMTPaya8bCyXbnm9kd0zJ5RxeSaJUYXdB6LYRLMBtj/VzB5FJgGoo2Tm73n&#13;
+0NJRJ3M36dmKlsyI4th1Bhgt/l8pE5bGtogePP4kVh0ccRgJdxj3Lp+SlI2n6Hwz/BmHfQgNnCRI&#13;
+EKykn386XISyR8eUv4pDeJAAHdqmgTvyLdSB/A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg&#13;
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#13;
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq&#13;
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46&#13;
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb&#13;
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM&#13;
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE&#13;
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG&#13;
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu&#13;
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0&#13;
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ&#13;
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5&#13;
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ&#13;
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3&#13;
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn&#13;
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as&#13;
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13;
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f9a50cf2-d5e9-498c-9f73-d4e9d90c01cc" Target="#_96009978-daf0-45a9-b530-039beefa28d0"><Timestamp>2020-11-10 18:21:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

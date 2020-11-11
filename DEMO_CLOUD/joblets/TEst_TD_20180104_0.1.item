@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default"/>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/Users/hamiar/Documents/TalendWorkspace/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_nGJhgI-OEeads5l-Um9p1w" name="DataOperation"/>
+      <routinesParameter id="_nIPzQI-OEeads5l-Um9p1w" name="Mathematical"/>
+      <routinesParameter id="_nKRzkI-OEeads5l-Um9p1w" name="Numeric"/>
+      <routinesParameter id="_nMTz4I-OEeads5l-Um9p1w" name="Relational"/>
+      <routinesParameter id="_nCtzAo-OEeads5l-Um9p1w" name="SQLike"/>
+      <routinesParameter id="_nN_18I-OEeads5l-Um9p1w" name="StringHandling"/>
+      <routinesParameter id="_nQUKII-OEeads5l-Um9p1w" name="TalendDataGenerator"/>
+      <routinesParameter id="_nR8h0I-OEeads5l-Um9p1w" name="TalendDate"/>
+      <routinesParameter id="_nTn80I-OEeads5l-Um9p1w" name="TalendString"/>
+      <routinesParameter id="_ciT_sOSbEeaJTP7wMa4OVg" name="CheckColumn"/>
+      <routinesParameter id="_4I-3MIo6Eea8Ut5bsIN75A" name="Commun"/>
+      <routinesParameter id="_ur-ygJiPEeeo26yHF-gwEw" name="Copy_of_CheckColumn"/>
+      <routinesParameter id="_Q5FvAOobEea2HvCMfz9Zrw" name="DateJPlus1"/>
+      <routinesParameter id="_peVlAKsmEeaFWdq13Wi6ng" name="DateJ_1"/>
+      <routinesParameter id="_rgFpIHxSEeeGANoera4yaQ" name="MetaServlet"/>
+      <routinesParameter id="_6lYoMIo6Eea8Ut5bsIN75A" name="RSR"/>
+      <routinesParameter id="_mbbswHLsEee-BJcgi1PfWQ" name="SplitConditionCode"/>
+    </parameters>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="128">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_5fYOUPFdEeemgrDybzkwxg-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="meta_TDBUI" name="ConditionSPLIT">
+        <column comment="" key="true" length="15" name="Priorite" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Condition_EJG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Entite_juridique_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Condition_Tiers_point_de_vente" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Tiers_point_de_vente_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionNiveau_hierarchie_Client_Groupe_MDM" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Niveau_hierarchie_Client_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Condition_Cat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Categorie_de_produit_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Condition_rayon" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Type_de_rayon_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionHierFamille" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Niveau_hierarchie_famille_produit_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionMarque" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Niveau_hierarchie_marque_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditioRR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Reseau_resultant_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionZA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Zone_administrative_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionSite" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Site_groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="15" name="Code_BUI_Groupe_MDM" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="8" name="Date_d_application" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="8" name="Date_de_desactivation" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Flag_de_desactivation" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties shellMaximized="true"/>
+        <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+        <outputTables name="ConditionSPLIT" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="Priorite" type="id_Integer"/>
+          <mapperTableEntries name="Condition_EJG" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Entite_juridique_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Condition_Tiers_point_de_vente" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Tiers_point_de_vente_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ConditionNiveau_hierarchie_Client_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Niveau_hierarchie_Client_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Condition_Cat" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Categorie_de_produit_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Condition_rayon" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Type_de_rayon_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ConditionHierFamille" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Niveau_hierarchie_famille_produit_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ConditionMarque" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Niveau_hierarchie_marque_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ConditioRR" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Reseau_resultant_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ConditionZA" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Zone_administrative_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ConditionSite" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Site_groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_BUI_Groupe_MDM" type="id_String"/>
+          <mapperTableEntries name="Date_d_application" nullable="true" type="id_Date"/>
+          <mapperTableEntries name="Date_de_desactivation" nullable="true" type="id_Date"/>
+          <mapperTableEntries name="Flag_de_desactivation" type="id_Integer"/>
+        </outputTables>
+        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="Priorite" type="id_Integer"/>
+          <mapperTableEntries name="Condition_EJG" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Entite_juridique_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Condition_Tiers_point_de_vente" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Tiers_point_de_vente_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ConditionNiveau_hierarchie_Client_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Niveau_hierarchie_Client_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Condition_Cat" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Categorie_de_produit_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Condition_rayon" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Type_de_rayon_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ConditionHierFamille" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Niveau_hierarchie_famille_produit_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ConditionMarque" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Niveau_hierarchie_marque_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ConditioRR" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Reseau_resultant_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ConditionZA" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Zone_administrative_Groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ConditionSite" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_Site_groupe_MDM" nullable="true" type="id_String"/>
+          <mapperTableEntries name="Code_BUI_Groupe_MDM" type="id_String"/>
+          <mapperTableEntries name="Date_d_application" nullable="true" type="id_Date"/>
+          <mapperTableEntries name="Date_de_desactivation" nullable="true" type="id_Date"/>
+          <mapperTableEntries name="Flag_de_desactivation" type="id_Integer"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+    </connection>
+    <connection connectorName="FLOW" label="ConditionSPLIT" lineStyle="0" metaname="ConditionSPLIT" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="OUTPUT_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ConditionSPLIT"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="INPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="INPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="meta_TDBUI" name="INPUT_1">
+        <column comment="" key="true" length="15" name="Priorite" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Condition_EJG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Entite_juridique_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Condition_Tiers_point_de_vente" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Tiers_point_de_vente_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionNiveau_hierarchie_Client_Groupe_MDM" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Niveau_hierarchie_Client_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Condition_Cat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Categorie_de_produit_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Condition_rayon" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Type_de_rayon_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionHierFamille" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Niveau_hierarchie_famille_produit_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionMarque" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Niveau_hierarchie_marque_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditioRR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Reseau_resultant_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionZA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Zone_administrative_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionSite" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Site_groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="15" name="Code_BUI_Groupe_MDM" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="8" name="Date_d_application" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="8" name="Date_de_desactivation" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Flag_de_desactivation" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="128">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="OUTPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="meta_TDBUI" name="OUTPUT_1">
+        <column comment="" key="true" length="15" name="Priorite" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Condition_EJG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Entite_juridique_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Condition_Tiers_point_de_vente" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Tiers_point_de_vente_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionNiveau_hierarchie_Client_Groupe_MDM" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Niveau_hierarchie_Client_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Condition_Cat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Categorie_de_produit_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Condition_rayon" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Type_de_rayon_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionHierFamille" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Niveau_hierarchie_famille_produit_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionMarque" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Niveau_hierarchie_marque_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditioRR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Reseau_resultant_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionZA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Zone_administrative_Groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ConditionSite" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Code_Site_groupe_MDM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="15" name="Code_BUI_Groupe_MDM" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="8" name="Date_d_application" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="8" name="Date_de_desactivation" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Flag_de_desactivation" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c1a74a2e-1d7f-41fa-8c0c-1292babab2fe"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7lgpqq1D80GGrRHFW6Kp+vREY6CXp7o0Vqwe/SrvbQVs5QCGFSyLGIDb3IOcwsPbUgzUnS+lEwCW&#13;
+7uOBDL4KBQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3668e347-b089-49c4-a705-b5e13ca48c11"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>n2LN8lq7OPdL3GkU6XuPR3IKDYeRQXXgjpgxLvXAErEu6Q87c5kSttAkf8d/bpsR43C8BanK6jvz&#13;
+M/u3BxLOVQ==</DigestValue></Reference></SignedInfo><SignatureValue>IXwVwGn9X+xb/RPrZhRR0ZKsPYFwm2RDIfUcFC3jPDfsLGhjFBUZiSIyt3GBgfyddbJsmW3b6Zt4&#13;
+b4dNgdy5Sud8j4LI0MdUNLo3eU9XcumkjyVP67yArZ/LoguddXuEjPU8GoPS0RlTXYmPZf9YmeGc&#13;
+St7FM9fDm8wIeps7et9BOcWVTstBJEVeREhyE3WRU8SzPfaCTmxYlh+Jay2PEZuYv+oiI+zIJQ/h&#13;
+Q6OoPuSGlkKh3G0VwueKo05QzTqv4buiUXbSRyTSptfUn3q5IqqNndW/E21/2eZCUNxIFHnoNN19&#13;
+JmcAe3wgzF+fChcQJ+JYGtPpbmri0KPuteDHFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg&#13;
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#13;
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq&#13;
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46&#13;
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb&#13;
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM&#13;
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE&#13;
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG&#13;
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu&#13;
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0&#13;
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ&#13;
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5&#13;
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ&#13;
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3&#13;
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn&#13;
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as&#13;
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13;
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3668e347-b089-49c4-a705-b5e13ca48c11" Target="#_c1a74a2e-1d7f-41fa-8c0c-1292babab2fe"><Timestamp>2020-11-10 18:20:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

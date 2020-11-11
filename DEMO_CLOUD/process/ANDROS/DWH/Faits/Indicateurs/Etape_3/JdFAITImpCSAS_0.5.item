@@ -1,0 +1,1822 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDEV"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="HP/xWhNDmQWCaKDXJhrK9g=="/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDEV"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Sid" prompt="RSR_bdd_dwh_Sid?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="xe"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="RSR_SUIVI_DEV"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="rsr_suivi_dev"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="10.0.171.215"/>
+    <contextParameter comment="Période Courante" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20170401"/>
+    <contextParameter comment="Répertoire temporaire" name="GRepTemp" prompt="GRepTemp?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="C:\projets\AndrosRSR\tmp\"/>
+    <contextParameter comment="Valeur null pour les Id lignes de commande null" name="Indicateurs_IdLigneCdeNull" prompt="Indicateurs_IdLigneCdeNull?" promptNeeded="false" repositoryContextId="_SCfMYF9qEeipptyVS5E8ZQ" type="id_String" value="idnull"/>
+    <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+    <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="1"/>
+    <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="&lt;&gt;"/>
+    <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_File" value="C:/projets/AndrosRSR/param/rsr.properties"/>
+    <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="MT00000001"/>
+    <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+    <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="RF_XX_CODE.csv"/>
+    <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="18"/>
+    <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ILigneFictives" prompt="ILigneFictives?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="CF_FICTIVE"/>
+    <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+    <contextParameter comment="Taille du curseur" name="IFir_batch" prompt="IFir_batch?" promptNeeded="false" repositoryContextId="_tjuM8CqREee8qIdQaKn07A" type="id_Integer" value="1000"/>
+  </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDEV"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="HP/xWhNDmQWCaKDXJhrK9g=="/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDEV"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Sid" prompt="RSR_bdd_dwh_Sid?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="xe"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="RSR_SUIVI_DEV"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="rsr_suivi_dev"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="10.0.171.215"/>
+    <contextParameter comment="Période Courante" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20170401"/>
+    <contextParameter comment="Répertoire temporaire" name="GRepTemp" prompt="GRepTemp?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="C:\projets\AndrosRSR\tmp\"/>
+    <contextParameter comment="Valeur null pour les Id lignes de commande null" name="Indicateurs_IdLigneCdeNull" prompt="Indicateurs_IdLigneCdeNull?" promptNeeded="false" repositoryContextId="_SCfMYF9qEeipptyVS5E8ZQ" type="id_String" value="idnull"/>
+    <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+    <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="1"/>
+    <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="&lt;&gt;"/>
+    <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_File" value="C:/projets/AndrosRSR/param/rsr.properties"/>
+    <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="MT00000001"/>
+    <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+    <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="RF_XX_CODE.csv"/>
+    <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="18"/>
+    <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ILigneFictives" prompt="ILigneFictives?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="CF_FICTIVE"/>
+    <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+    <contextParameter comment="Taille du curseur" name="IFir_batch" prompt="IFir_batch?" promptNeeded="false" repositoryContextId="_tjuM8CqREee8qIdQaKn07A" type="id_Integer" value="1000"/>
+  </context>
+  <context confirmationNeeded="false" name="Qualif">
+    <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWH"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="l3ONiFMQ2Ws="/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWH"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Sid" prompt="RSR_bdd_dwh_Sid?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="xe"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="RSR_SUIVI_QUALIF"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="rsr_suivi_qualif"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="10.0.171.215"/>
+    <contextParameter comment="Période Courante" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20180201"/>
+    <contextParameter comment="Répertoire temporaire" name="GRepTemp" prompt="GRepTemp?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/QUALIF/tmp/"/>
+    <contextParameter comment="Valeur null pour les Id lignes de commande null" name="Indicateurs_IdLigneCdeNull" prompt="Indicateurs_IdLigneCdeNull?" promptNeeded="false" repositoryContextId="_SCfMYF9qEeipptyVS5E8ZQ" type="id_String" value="idnull"/>
+    <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_File" value="/opt/AndrosRSR/QUALIF/param/rsr.properties"/>
+    <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="001"/>
+    <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+    <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="18"/>
+    <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ILigneFictives" prompt="ILigneFictives?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="CF_FICTIVE"/>
+    <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="Taille du curseur" name="IFir_batch" prompt="IFir_batch?" promptNeeded="false" repositoryContextId="_tjuM8CqREee8qIdQaKn07A" type="id_Integer" value="1000"/>
+  </context>
+  <context confirmationNeeded="false" name="Int">
+    <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWHINT"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="kAeNw1uFxNCpu8zbA4QVKQ=="/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWHINT"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Sid" prompt="RSR_bdd_dwh_Sid?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="xe"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="RSR_SUIVI_INT"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="rsr_suivi_int"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="10.0.171.215"/>
+    <contextParameter comment="Période Courante" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20171101"/>
+    <contextParameter comment="Répertoire temporaire" name="GRepTemp" prompt="GRepTemp?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/INT/tmp/"/>
+    <contextParameter comment="Valeur null pour les Id lignes de commande null" name="Indicateurs_IdLigneCdeNull" prompt="Indicateurs_IdLigneCdeNull?" promptNeeded="false" repositoryContextId="_SCfMYF9qEeipptyVS5E8ZQ" type="id_String" value="idnull"/>
+    <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+    <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_File" value="/opt/AndrosRSR/INT/param/rsr.properties"/>
+    <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="NV"/>
+    <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+    <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="RF_XX_CODE.csv"/>
+    <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="18"/>
+    <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+    <contextParameter comment="" name="ILigneFictives" prompt="ILigneFictives?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="CF_FICTIVE"/>
+    <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+    <contextParameter comment="Taille du curseur" name="IFir_batch" prompt="IFir_batch?" promptNeeded="false" repositoryContextId="_tjuM8CqREee8qIdQaKn07A" type="id_Integer" value="1000"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Trace"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="32"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/flaurent/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_nGJhgI-OEeads5l-Um9p1w" name="DataOperation"/>
+    <routinesParameter id="_nIPzQI-OEeads5l-Um9p1w" name="Mathematical"/>
+    <routinesParameter id="_nKRzkI-OEeads5l-Um9p1w" name="Numeric"/>
+    <routinesParameter id="_nMTz4I-OEeads5l-Um9p1w" name="Relational"/>
+    <routinesParameter id="_nCtzAo-OEeads5l-Um9p1w" name="SQLike"/>
+    <routinesParameter id="_nN_18I-OEeads5l-Um9p1w" name="StringHandling"/>
+    <routinesParameter id="_nQUKII-OEeads5l-Um9p1w" name="TalendDataGenerator"/>
+    <routinesParameter id="_nR8h0I-OEeads5l-Um9p1w" name="TalendDate"/>
+    <routinesParameter id="_nTn80I-OEeads5l-Um9p1w" name="TalendString"/>
+    <routinesParameter id="_7WVzoCXZEeibLOeKh3RMTQ" name="Cast_String_INT"/>
+    <routinesParameter id="_LfGaIFnTEei1n9wOZIvYug" name="CheckColumnCvs"/>
+    <routinesParameter id="_ciT_sOSbEeaJTP7wMa4OVg" name="CheckColumn"/>
+    <routinesParameter id="_4I-3MIo6Eea8Ut5bsIN75A" name="Commun"/>
+    <routinesParameter id="_ur-ygJiPEeeo26yHF-gwEw" name="Copy_of_CheckColumn"/>
+    <routinesParameter id="_Q5FvAOobEea2HvCMfz9Zrw" name="DateJPlus1"/>
+    <routinesParameter id="_peVlAKsmEeaFWdq13Wi6ng" name="DateJ_1"/>
+    <routinesParameter id="_rgFpIHxSEeeGANoera4yaQ" name="MetaServlet"/>
+    <routinesParameter id="_6lYoMIo6Eea8Ut5bsIN75A" name="RSR"/>
+    <routinesParameter id="_mbbswHLsEee-BJcgi1PfWQ" name="SplitConditionCode"/>
+  </parameters>
+  <node componentName="JlTECJd" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="JlTECJd_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="JlTECJd"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
+    <elementParameter field="FILE" name="TNS_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="context.RSR_bdd_dwh_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.RSR_bdd_dwh_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="RSR_dwh"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Début imputation des indicateurs Etape 3&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="INFO"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <node componentName="tOracleClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="992">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="RSR_dwh"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Fin imputation des indicateurs Etape 3&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="INFO"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_2"/>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.RSR_bdd_dwh_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RSR_bdd_dwh_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TF_CT_SPEC_AUT_SOC_CSAS&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &#13;&#10;  CSAS.CSAS_ID_CT_SPEC_AUT_SOC, &#13;&#10;  CSAS.CSAS_ID_ENT_JUR_GPE, &#13;&#10;  CSAS.CSAS_CODE_CONTRAT, &#13;&#10;  CSAS.CSAS_ID_CLI_GPE, &#13;&#10;  MAR.MAR_CO_MAR_COML, &#13;&#10;  N04FG.N04FG_CO_N04, &#13;&#10;  CSAS.CSAS_ID_DEV_GPE, &#13;&#10;  CSAS.CSAS_PER, &#13;&#10;  CSAS.CSAS_MTT_TPORT_AVA, &#13;&#10;  CSAS.CSAS_MTT_PREP_AVA, &#13;&#10;  CSAS.CSAS_MTT_ECO_EMB&#13;&#10;from DWH_TF_CT_SPEC_AUT_SOC_CSAS CSAS&#13;&#10;left outer join DWH_TRG_MAR_COM_MAR MAR on MAR.MAR_ID_MAR_COML = CSAS.CSAS_ID_MAR_COML&#13;&#10;left outer join DWH_TRG_NIV_04_N04FG N04FG on N04FG.N04FG_ID_N04 = CSAS.CSAS_ID_N04FG&#13;&#10;where trunc(CSAS.CSAS_PER, 'MONTH') = (select max(trunc(CSAS.CSAS_PER, 'MONTH')) from DWH_TF_CT_SPEC_AUT_SOC_CSAS)&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.RSR_bdd_dwh_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="true"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="context.IFir_batch"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSAS_ID_CT_SPEC_AUT_SOC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSAS_ID_ENT_JUR_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSAS_CODE_CONTRAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSAS_ID_CLI_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAR_CO_MAR_COML"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N04FG_CO_N04"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSAS_ID_DEV_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSAS_PER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSAS_MTT_TPORT_AVA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSAS_MTT_PREP_AVA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSAS_MTT_ECO_EMB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_1">
+      <column comment="" key="false" length="30" name="CSAS_ID_CT_SPEC_AUT_SOC" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="CSAS_ID_ENT_JUR_GPE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CSAS_CODE_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="CSAS_ID_CLI_GPE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="MAR_CO_MAR_COML" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="N04FG_CO_N04" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="CSAS_ID_DEV_GPE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CSAS_PER" nullable="true" originalLength="-1" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="CSAS_MTT_TPORT_AVA" nullable="true" originalLength="-1" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="CSAS_MTT_PREP_AVA" nullable="true" originalLength="-1" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="CSAS_MTT_ECO_EMB" nullable="true" originalLength="-1" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.RSR_bdd_dwh_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RSR_bdd_dwh_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &#13;&#10;  ECDH.ECDH_ID_ENT_JUR_GPE,&#13;&#10;  CFFSH.CFFSH_ID_LNE_CDE_FACT_SH, &#13;&#10;  '&quot; + context.Indicateurs_IdLigneCdeNull + &quot;' as CHTSH_ID_LNE_CDE_HTAR_SH,&#13;&#10;  ECDH.ECDH_ID_CLI_LF_GPE,&#13;&#10;  AVLG.AVLG_ID_ART,&#13;&#10;  CFFSH.CFFSH_DT_FACT,&#13;&#10;  CFFSH.CFFSH_S5_CO_CONTRAT, &#13;&#10;  CFFSH.CFFSH_S4_CO_CONTRAT, &#13;&#10;  CFFSH.CFFSH_S3_CO_CONTRAT, &#13;&#10;  CFFSH.CFFSH_S2_CO_CONTRAT, &#13;&#10;  CFFSH.CFFSH_S1_CO_CONTRAT,&#13;&#10;  CFFSH.CFFSH_ID_TYP_LNE_TCV, &#13;&#10;  CFFSH.CFFSH_ID_TYP_LNE_CT_AV, &#13;&#10;  CFFSH.CFFSH_ID_TYP_LNE_CP_AV,&#13;&#10;  CFFSH.CFFSH_VTE_KG_NET&#13;&#10;from DWH_TF_ENTET_CDE_H_ECDH ECDH &#13;&#10;inner join DWH_TF_LNE_CDE_VAL_SH_CFFSH CFFSH on CFFSH.CFFSH_ID_ENT_CDE_H = ECDH.ECDH_ID_ENT_CDE_H&#13;&#10;inner join DWH_TRG_ART_VAVL_GPE_AVLG AVLG on AVLG.AVLG_ID_ART_VAVL = CFFSH.CFFSH_ID_ART_VAVL_GPE&#13;&#10;WHERE CFFSH.CFFSH_LNE_ANNUL=0&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.RSR_bdd_dwh_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="true"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="context.IFir_batch"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="true"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_ID_ENT_JUR_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_ID_LNE_CDE_FACT_SH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_ID_LNE_CDE_HTAR_SH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_ECDH_ID_CLI_LF_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_ID_ART"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_DT_FACT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_S5_CO_CONTRAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_S4_CO_CONTRAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_S3_CO_CONTRAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_S2_CO_CONTRAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_S1_CO_CONTRAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_ID_TYP_LNE_TCV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_ID_TYP_LNE_CT_AV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_ID_TYP_LNE_CP_AV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_CFFSH_VTE_KG_NET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="LigneCommandeSH"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_2">
+      <column comment="" defaultValue="" key="false" length="38" name="CommandeSH_ID_ENT_JUR_GPE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CommandeSH_ECDH_ID_CLI_LF_GPE" nullable="true" originalLength="38" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CommandeSH_ID_ART" nullable="true" originalLength="38" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CommandeSH_DT_FACT" nullable="true" originalLength="8" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S5_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S4_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S3_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S2_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S1_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="CommandeSH_ID_TYP_LNE_TCV" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="CommandeSH_ID_TYP_LNE_CT_AV" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="CommandeSH_ID_TYP_LNE_CP_AV" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CommandeSH_CFFSH_VTE_KG_NET" nullable="true" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_3"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.RSR_bdd_dwh_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RSR_bdd_dwh_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_TYP_LNE_IND_PL_TLIP&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  TLIP.TLIP_ID_TYP_LNE_IND_PL_GPE, &#10;  TLIP.TLIP_CO_TYP_LNE_IND_PL_GPE&#10;FROM &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_TYP_LNE_IND_PL_TLIP TLIP&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.RSR_bdd_dwh_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TLIP_ID_TYP_LNE_IND_PL_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TLIP_CO_TYP_LNE_IND_PL_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_TRG_TYP_LNE_IND_PL_TLIP" name="tOracleInput_3">
+      <column comment="" key="true" length="38" name="TLIP_ID_TYP_LNE_IND_PL_GPE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="TLIP_CO_TYP_LNE_IND_PL_GPE" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_XPMUwHknEeimWbUSx-HtGw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="criteres obligatoires"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Critères obligatoires : &#13;&#10;- Code entité juridique&#13;&#10;- Code client groupe&#13;&#10;- Code contrat (égalité sur au moins un des 5 codes contrats de la ligne de commande)&#13;&#10;&#13;&#10;A noter : chaque coût n'est valorisé que si le type de ligne est 3"/>
+    <metadata connector="FLOW" label="int_" name="int_crit_oblig">
+      <column comment="" key="true" length="30" name="CSAS_ID_CT_SPEC_AUT_SOC" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CSAS_ID_ENT_JUR_GPE" nullable="false" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CSAS_CODE_CONTRAT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CSAS_ID_CLI_GPE" nullable="false" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CSAS_MAR_CO_MAR_COML" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CSAS_N04FG_CO_N04" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CSAS_ID_DEV_GPE" nullable="false" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CSAS_PER" nullable="false" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CT_AV" nullable="true" pattern="" precision="6" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CP_AV" nullable="true" pattern="" precision="6" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="TCV" nullable="true" pattern="" precision="6" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CommandeSH_DT_FACT" nullable="true" originalLength="8" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="N04FG_CO_N04" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="MAR_CO_MAR_COML" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="in_CSAS.CSAS_CODE_CONTRAT.equals(Lkp_LigneCommandeSH.CommandeSH_S5_CO_CONTRAT) || in_CSAS.CSAS_CODE_CONTRAT.equals(Lkp_LigneCommandeSH.CommandeSH_S4_CO_CONTRAT) || in_CSAS.CSAS_CODE_CONTRAT.equals(Lkp_LigneCommandeSH.CommandeSH_S3_CO_CONTRAT) || in_CSAS.CSAS_CODE_CONTRAT.equals(Lkp_LigneCommandeSH.CommandeSH_S2_CO_CONTRAT) || in_CSAS.CSAS_CODE_CONTRAT.equals(Lkp_LigneCommandeSH.CommandeSH_S1_CO_CONTRAT) " name="testCodeContrat" type="id_Boolean"/>
+        <mapperTableEntries expression="BigDecimal.valueOf(-1.0)" name="MoinsUn" type="id_BigDecimal"/>
+        <mapperTableEntries expression="in_CSAS.CSAS_MTT_TPORT_AVA.multiply(BigDecimal.valueOf(Lkp_LigneCommandeSH.CommandeSH_CFFSH_VTE_T_NET)).multiply(Var.MoinsUn) " name="IND0540" type="id_BigDecimal"/>
+        <mapperTableEntries expression="in_CSAS.CSAS_MTT_PREP_AVA.multiply(BigDecimal.valueOf(Lkp_LigneCommandeSH.CommandeSH_CFFSH_VTE_T_NET)).multiply(Var.MoinsUn) " name="IND0550" type="id_BigDecimal"/>
+        <mapperTableEntries expression="in_CSAS.CSAS_MTT_ECO_EMB.multiply(BigDecimal.valueOf(Lkp_LigneCommandeSH.CommandeSH_CFFSH_VTE_T_NET)).multiply(Var.MoinsUn) " name="IND0490" type="id_BigDecimal"/>
+      </varTables>
+      <outputTables activateExpressionFilter="true" expressionFilter="Var.testCodeContrat " name="int_crit_oblig" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="in_CSAS.CSAS_ID_CT_SPEC_AUT_SOC " name="CSAS_ID_CT_SPEC_AUT_SOC" type="id_String"/>
+        <mapperTableEntries expression="in_CSAS.CSAS_ID_ENT_JUR_GPE " name="CSAS_ID_ENT_JUR_GPE" type="id_Integer"/>
+        <mapperTableEntries expression="in_CSAS.CSAS_CODE_CONTRAT " name="CSAS_CODE_CONTRAT" type="id_String"/>
+        <mapperTableEntries expression="in_CSAS.CSAS_ID_CLI_GPE " name="CSAS_ID_CLI_GPE" type="id_Integer"/>
+        <mapperTableEntries expression="in_CSAS.MAR_CO_MAR_COML " name="CSAS_MAR_CO_MAR_COML" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="in_CSAS.N04FG_CO_N04 " name="CSAS_N04FG_CO_N04" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="in_CSAS.CSAS_ID_DEV_GPE " name="CSAS_ID_DEV_GPE" type="id_Integer"/>
+        <mapperTableEntries expression="in_CSAS.CSAS_PER " name="CSAS_PER" type="id_Date"/>
+        <mapperTableEntries expression="Lkp_LigneCommandeSH.isTypeL3CT_AV ? Var.IND0540 : null " name="CT_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Lkp_LigneCommandeSH.isTypeL3CP_AV ? Var.IND0550: null " name="CP_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Lkp_LigneCommandeSH.isTypeL3TCV ? Var.IND0490 : null " name="TCV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Lkp_LigneCommandeSH.CommandeSH_ID_LNE_CDE_FACT_SH  " name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Lkp_LigneCommandeSH.CommandeSH_ID_LNE_CDE_HTAR_SH  " name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Lkp_LigneCommandeSH.CommandeSH_DT_FACT " name="CommandeSH_DT_FACT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Lkp_LigneCommandeSH.N04FG_CO_N04 " name="N04FG_CO_N04" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Lkp_LigneCommandeSH.MAR_CO_MAR_COML " name="MAR_CO_MAR_COML" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="in_CSAS" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="CSAS_ID_CT_SPEC_AUT_SOC" type="id_String"/>
+        <mapperTableEntries name="CSAS_ID_ENT_JUR_GPE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CSAS_CODE_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CSAS_ID_CLI_GPE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="MAR_CO_MAR_COML" nullable="true" type="id_String"/>
+        <mapperTableEntries name="N04FG_CO_N04" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CSAS_ID_DEV_GPE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CSAS_PER" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="CSAS_MTT_TPORT_AVA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CSAS_MTT_PREP_AVA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CSAS_MTT_ECO_EMB" nullable="true" type="id_BigDecimal"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" lookupMode="LOAD_ONCE" matchingMode="ALL_MATCHES" name="Lkp_LigneCommandeSH" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="in_CSAS.CSAS_ID_ENT_JUR_GPE " name="CommandeSH_ID_ENT_JUR_GPE" nullable="true" operator="=" type="id_Integer"/>
+        <mapperTableEntries name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="in_CSAS.CSAS_ID_CLI_GPE " name="CommandeSH_ECDH_ID_CLI_LF_GPE" nullable="true" operator="=" type="id_Integer"/>
+        <mapperTableEntries name="CommandeSH_DT_FACT" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="N04FG_CO_N04" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MAR_CO_MAR_COML" nullable="true" type="id_String"/>
+        <mapperTableEntries name="isTypeL3TCV" type="id_Boolean"/>
+        <mapperTableEntries name="isTypeL3CT_AV" type="id_Boolean"/>
+        <mapperTableEntries name="isTypeL3CP_AV" type="id_Boolean"/>
+        <mapperTableEntries name="CommandeSH_S5_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_S4_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_S3_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_S2_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_S1_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_CFFSH_VTE_T_NET" type="id_Double"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_4"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.RSR_bdd_dwh_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RSR_bdd_dwh_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_TYP_LNE_IND_PL_TLIP&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  TLIP.TLIP_ID_TYP_LNE_IND_PL_GPE, &#10;  TLIP.TLIP_CO_TYP_LNE_IND_PL_GPE&#10;FROM &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_TYP_LNE_IND_PL_TLIP TLIP&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.RSR_bdd_dwh_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TLIP_ID_TYP_LNE_IND_PL_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TLIP_CO_TYP_LNE_IND_PL_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_TRG_TYP_LNE_IND_PL_TLIP" name="tOracleInput_4">
+      <column comment="" key="true" length="38" name="TLIP_ID_TYP_LNE_IND_PL_GPE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="TLIP_CO_TYP_LNE_IND_PL_GPE" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_XPMUwHknEeimWbUSx-HtGw-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="filtre_TypeLigne3"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="int_type_ligne3" name="int_type_ligne3">
+      <column comment="" defaultValue="" key="false" length="38" name="CommandeSH_ID_ENT_JUR_GPE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CommandeSH_ECDH_ID_CLI_LF_GPE" nullable="true" originalLength="38" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CommandeSH_ID_ART" nullable="true" originalLength="38" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CommandeSH_DT_FACT" nullable="true" originalLength="8" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isTypeL3TCV" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isTypeL3CT_AV" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isTypeL3CP_AV" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S5_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S4_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S3_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S2_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S1_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="18" name="CommandeSH_CFFSH_VTE_T_NET" nullable="false" originalLength="18" pattern="" precision="5" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="&quot;TYPLIGPL3&quot;.equals(lkp_tlip_TCV.TLIP_CO_TYP_LNE_IND_PL_GPE)" name="isTypeL3TCV" type="id_Boolean"/>
+        <mapperTableEntries expression="&quot;TYPLIGPL3&quot;.equals(lkp_tlip_CT_AV.TLIP_CO_TYP_LNE_IND_PL_GPE) " name="isTypeL3CT_AV" type="id_Boolean"/>
+        <mapperTableEntries expression="&quot;TYPLIGPL3&quot;.equals(lkp_tlip_CP_AV.TLIP_CO_TYP_LNE_IND_PL_GPE) " name="isTypeL3CP_AV" type="id_Boolean"/>
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_CFFSH_VTE_KG_NET*0.001 " name="CommandeSH_CFFSH_VTE_T_NET" type="id_Double"/>
+      </varTables>
+      <outputTables activateExpressionFilter="true" expressionFilter="Var.isTypeL3TCV || Var.isTypeL3CT_AV || Var.isTypeL3CP_AV " name="int_type_ligne3" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_ID_ENT_JUR_GPE " name="CommandeSH_ID_ENT_JUR_GPE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_ID_LNE_CDE_FACT_SH " name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_ID_LNE_CDE_HTAR_SH " name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_ECDH_ID_CLI_LF_GPE " name="CommandeSH_ECDH_ID_CLI_LF_GPE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_ID_ART " name="CommandeSH_ID_ART" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_DT_FACT " name="CommandeSH_DT_FACT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Var.isTypeL3TCV  " name="isTypeL3TCV" type="id_Boolean"/>
+        <mapperTableEntries expression="Var.isTypeL3CT_AV  " name="isTypeL3CT_AV" type="id_Boolean"/>
+        <mapperTableEntries expression="Var.isTypeL3CP_AV  " name="isTypeL3CP_AV" type="id_Boolean"/>
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_S5_CO_CONTRAT " name="CommandeSH_S5_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_S4_CO_CONTRAT " name="CommandeSH_S4_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_S3_CO_CONTRAT " name="CommandeSH_S3_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_S2_CO_CONTRAT " name="CommandeSH_S2_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_S1_CO_CONTRAT " name="CommandeSH_S1_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.CommandeSH_CFFSH_VTE_T_NET " name="CommandeSH_CFFSH_VTE_T_NET" type="id_Double"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="in_ligne_commande" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="CommandeSH_ID_ENT_JUR_GPE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_ECDH_ID_CLI_LF_GPE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CommandeSH_ID_ART" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CommandeSH_DT_FACT" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="CommandeSH_S5_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_S4_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_S3_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_S2_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_S1_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_ID_TYP_LNE_TCV" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CommandeSH_ID_TYP_LNE_CT_AV" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CommandeSH_ID_TYP_LNE_CP_AV" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CommandeSH_CFFSH_VTE_KG_NET" nullable="true" type="id_Double"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="lkp_tlip_TCV" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_ID_TYP_LNE_TCV " name="TLIP_ID_TYP_LNE_IND_PL_GPE" operator="=" type="id_Integer"/>
+        <mapperTableEntries name="TLIP_CO_TYP_LNE_IND_PL_GPE" type="id_String"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="lkp_tlip_CT_AV" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_ID_TYP_LNE_CT_AV  " name="TLIP_ID_TYP_LNE_IND_PL_GPE" operator="=" type="id_Integer"/>
+        <mapperTableEntries name="TLIP_CO_TYP_LNE_IND_PL_GPE" type="id_String"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="lkp_tlip_CP_AV" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="in_ligne_commande.CommandeSH_ID_TYP_LNE_CP_AV " name="TLIP_ID_TYP_LNE_IND_PL_GPE" operator="=" type="id_Integer"/>
+        <mapperTableEntries name="TLIP_CO_TYP_LNE_IND_PL_GPE" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_5"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.RSR_bdd_dwh_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RSR_bdd_dwh_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_TYP_LNE_IND_PL_TLIP&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  TLIP.TLIP_ID_TYP_LNE_IND_PL_GPE, &#10;  TLIP.TLIP_CO_TYP_LNE_IND_PL_GPE&#10;FROM &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_TYP_LNE_IND_PL_TLIP TLIP&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.RSR_bdd_dwh_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TLIP_ID_TYP_LNE_IND_PL_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TLIP_CO_TYP_LNE_IND_PL_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_TRG_TYP_LNE_IND_PL_TLIP" name="tOracleInput_5">
+      <column comment="" key="true" length="38" name="TLIP_ID_TYP_LNE_IND_PL_GPE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="TLIP_CO_TYP_LNE_IND_PL_GPE" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_6"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Oracle"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &#13;&#10;    RFARTG.RFARTG_ID_ART,&#13;&#10;    N04FG.N04FG_CO_N04&#13;&#10;from DWH_TGG_RTCH_FAM_ARTG_RFARTG RFARTG&#13;&#10;inner join DWH_TRG_NIV_07_N07FG N07FG on N07FG.N07FG_ID_N07 = RFARTG.RFARTG_ID_N07&#13;&#10;inner join DWH_TRG_NIV_06_N06FG N06FG on N06FG.N06FG_ID_N06 = N07FG.N07FG_ID_N06&#13;&#10;inner join DWH_TRG_NIV_05_N05FG N05FG on N05FG.N05FG_ID_N05 = N06FG.N06FG_ID_N05&#13;&#10;inner join DWH_TRG_NIV_04_N04FG N04FG on N04FG.N04FG_ID_N04 = N05FG.N05FG_ID_N04&#13;&#10;where RFARTG.RFARTG_DT_FIN = to_date('31129999', 'DDMMYYYY')&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="RFARTG_ID_ART"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N04FG_CO_N04"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Hierarchie Famille"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Propose le N04FG_CO_N04 (Code sous-famille) à partir du ID_ART (identifiant article groupe)&#13;&#10;On prend les lignes avec la date de fin au 31/12/9999"/>
+    <metadata connector="FLOW" name="tOracleInput_6">
+      <column comment="" defaultValue="" key="false" length="38" name="RFARTG_ID_ART" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="N04FG_CO_N04" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="864" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_XPMUwHknEeimWbUSx-HtGw-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="recup codes"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Lkp_LigneCommandeSH" name="Lkp_LigneCommandeSH">
+      <column comment="" defaultValue="" key="false" length="38" name="CommandeSH_ID_ENT_JUR_GPE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CommandeSH_ECDH_ID_CLI_LF_GPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CommandeSH_DT_FACT" nullable="true" originalLength="8" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="N04FG_CO_N04" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="MAR_CO_MAR_COML" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isTypeL3TCV" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isTypeL3CT_AV" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isTypeL3CP_AV" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S5_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S4_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S3_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S2_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CommandeSH_S1_CO_CONTRAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="18" name="CommandeSH_CFFSH_VTE_T_NET" nullable="false" originalLength="18" pattern="" precision="5" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="Lkp_LigneCommandeSH" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_ID_ENT_JUR_GPE " name="CommandeSH_ID_ENT_JUR_GPE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_ID_LNE_CDE_FACT_SH " name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_ID_LNE_CDE_HTAR_SH " name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_ECDH_ID_CLI_LF_GPE " name="CommandeSH_ECDH_ID_CLI_LF_GPE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_DT_FACT " name="CommandeSH_DT_FACT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="lkp_N04.N04FG_CO_N04 " name="N04FG_CO_N04" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="lkp_mar.MAR_CO_MAR_COML " name="MAR_CO_MAR_COML" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_type_ligne3.isTypeL3TCV " name="isTypeL3TCV" type="id_Boolean"/>
+        <mapperTableEntries expression="int_type_ligne3.isTypeL3CT_AV " name="isTypeL3CT_AV" type="id_Boolean"/>
+        <mapperTableEntries expression="int_type_ligne3.isTypeL3CP_AV " name="isTypeL3CP_AV" type="id_Boolean"/>
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_S5_CO_CONTRAT " name="CommandeSH_S5_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_S4_CO_CONTRAT " name="CommandeSH_S4_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_S3_CO_CONTRAT " name="CommandeSH_S3_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_S2_CO_CONTRAT " name="CommandeSH_S2_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_S1_CO_CONTRAT " name="CommandeSH_S1_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_CFFSH_VTE_T_NET " name="CommandeSH_CFFSH_VTE_T_NET" type="id_Double"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="int_type_ligne3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="CommandeSH_ID_ENT_JUR_GPE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_ECDH_ID_CLI_LF_GPE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CommandeSH_ID_ART" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CommandeSH_DT_FACT" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="isTypeL3TCV" type="id_Boolean"/>
+        <mapperTableEntries name="isTypeL3CT_AV" type="id_Boolean"/>
+        <mapperTableEntries name="isTypeL3CP_AV" type="id_Boolean"/>
+        <mapperTableEntries name="CommandeSH_S5_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_S4_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_S3_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_S2_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_S1_CO_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_CFFSH_VTE_T_NET" type="id_Double"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="lkp_N04" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_ID_ART " name="RFARTG_ID_ART" nullable="true" operator="=" type="id_Integer"/>
+        <mapperTableEntries name="N04FG_CO_N04" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="lkp_mar" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="int_type_ligne3.CommandeSH_ID_ART " name="RMARTG_ID_ART" nullable="true" operator="=" type="id_Integer"/>
+        <mapperTableEntries name="MAR_CO_MAR_COML" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_7"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Oracle"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &#13;&#10;    RMARTG.RMARTG_ID_ART,&#13;&#10;    MAR.MAR_CO_MAR_COML&#13;&#10;from DWH_TGG_RTCH_MARQ_ARTG_RMARTG RMARTG&#13;&#10;inner join DWH_TRG_NIV_TEC_NIV NIV on NIV.NIV_ID_NIV_TEC = RMARTG.RMARTG_ID_NIV_TEC&#13;&#10;inner join DWH_TRG_MAR_COM_MAR MAR on MAR.MAR_ID_MAR_COML = NIV.NIV_ID_MAR&#13;&#10;where RMARTG.RMARTG_DT_FIN = to_date('31129999', 'DDMMYYYY')&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="RMARTG_ID_ART"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAR_CO_MAR_COML"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Hierarchie Marque"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Propose le MAR_CO_MAR_COML (Marque commerciale) à partir du ID_ART (identifiant article groupe)&#13;&#10;On prend les lignes avec la date de fin au 31/12/9999"/>
+    <metadata connector="FLOW" name="tOracleInput_7">
+      <column comment="" defaultValue="" key="false" length="38" name="RMARTG_ID_ART" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="MAR_CO_MAR_COML" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_XPMUwHknEeimWbUSx-HtGw-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="criteres facultatifs"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Génération des 4 groupes de critères facultatifs pour gérer les priorités dans les 2 composants qui suivent"/>
+    <metadata connector="FLOW" label="int_tri_criteres_facultatifs" name="int_tri_crit_fac">
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="CSAS_ID_CT_SPEC_AUT_SOC" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CSAS_ID_ENT_JUR_GPE" nullable="false" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CommandeSH_DT_FACT" nullable="true" originalLength="8" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="TCV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CT_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CP_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GROUPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="int_crit_oblig.CSAS_N04FG_CO_N04 == null " name="isNullN04FG" type="id_Boolean"/>
+        <mapperTableEntries expression="int_crit_oblig.CSAS_MAR_CO_MAR_COML == null " name="isNullMAR_COML" type="id_Boolean"/>
+      </varTables>
+      <outputTables activateExpressionFilter="true" expressionFilter="!Var.isNullN04FG &amp;&amp; int_crit_oblig.CSAS_N04FG_CO_N04.equals(  int_crit_oblig.N04FG_CO_N04 ) &amp;&amp; !Var.isNullMAR_COML &amp;&amp;  int_crit_oblig.CSAS_MAR_CO_MAR_COML.equals(  int_crit_oblig.MAR_CO_MAR_COML )" name="int_tri_crit_fac" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="int_crit_oblig.CommandeSH_ID_LNE_CDE_FACT_SH " name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_crit_oblig.CommandeSH_ID_LNE_CDE_HTAR_SH " name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_crit_oblig.CSAS_ID_CT_SPEC_AUT_SOC  " name="CSAS_ID_CT_SPEC_AUT_SOC" type="id_String"/>
+        <mapperTableEntries expression="int_crit_oblig.CSAS_ID_ENT_JUR_GPE  " name="CSAS_ID_ENT_JUR_GPE" type="id_Integer"/>
+        <mapperTableEntries expression="int_crit_oblig.CommandeSH_DT_FACT " name="CommandeSH_DT_FACT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="int_crit_oblig.TCV  " name="TCV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="int_crit_oblig.CT_AV  " name="CT_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="int_crit_oblig.CP_AV  " name="CP_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="1" name="GROUPE" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <outputTables activateExpressionFilter="true" expressionFilter="!Var.isNullN04FG &amp;&amp; int_crit_oblig.CSAS_N04FG_CO_N04.equals(  int_crit_oblig.N04FG_CO_N04 ) &amp;&amp;   Var.isNullMAR_COML" isJoinTableOf="int_tri_crit_fac" name="G2" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="int_crit_oblig.CommandeSH_ID_LNE_CDE_FACT_SH  " name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_crit_oblig.CommandeSH_ID_LNE_CDE_HTAR_SH  " name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_crit_oblig.CSAS_ID_CT_SPEC_AUT_SOC  " name="CSAS_ID_CT_SPEC_AUT_SOC" type="id_String"/>
+        <mapperTableEntries expression="int_crit_oblig.CSAS_ID_ENT_JUR_GPE  " name="CSAS_ID_ENT_JUR_GPE" type="id_Integer"/>
+        <mapperTableEntries expression="int_crit_oblig.CommandeSH_DT_FACT " name="CommandeSH_DT_FACT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="int_crit_oblig.TCV  " name="TCV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="int_crit_oblig.CT_AV  " name="CT_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="int_crit_oblig.CP_AV  " name="CP_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="2" name="GROUPE" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <outputTables activateExpressionFilter="true" expressionFilter="!Var.isNullMAR_COML &amp;&amp; int_crit_oblig.CSAS_MAR_CO_MAR_COML.equals(  int_crit_oblig.MAR_CO_MAR_COML ) &amp;&amp; Var.isNullN04FG" isJoinTableOf="int_tri_crit_fac" name="G3" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="int_crit_oblig.CommandeSH_ID_LNE_CDE_FACT_SH  " name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_crit_oblig.CommandeSH_ID_LNE_CDE_HTAR_SH  " name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_crit_oblig.CSAS_ID_CT_SPEC_AUT_SOC  " name="CSAS_ID_CT_SPEC_AUT_SOC" type="id_String"/>
+        <mapperTableEntries expression="int_crit_oblig.CSAS_ID_ENT_JUR_GPE  " name="CSAS_ID_ENT_JUR_GPE" type="id_Integer"/>
+        <mapperTableEntries expression="int_crit_oblig.CommandeSH_DT_FACT " name="CommandeSH_DT_FACT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="int_crit_oblig.TCV  " name="TCV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="int_crit_oblig.CT_AV  " name="CT_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="int_crit_oblig.CP_AV  " name="CP_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="3" name="GROUPE" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <outputTables activateExpressionFilter="true" expressionFilter="Var.isNullN04FG &amp;&amp; Var.isNullMAR_COML" isJoinTableOf="int_tri_crit_fac" name="G4" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="int_crit_oblig.CommandeSH_ID_LNE_CDE_FACT_SH  " name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_crit_oblig.CommandeSH_ID_LNE_CDE_HTAR_SH  " name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="int_crit_oblig.CSAS_ID_CT_SPEC_AUT_SOC  " name="CSAS_ID_CT_SPEC_AUT_SOC" type="id_String"/>
+        <mapperTableEntries expression="int_crit_oblig.CSAS_ID_ENT_JUR_GPE  " name="CSAS_ID_ENT_JUR_GPE" type="id_Integer"/>
+        <mapperTableEntries expression="int_crit_oblig.CommandeSH_DT_FACT " name="CommandeSH_DT_FACT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="int_crit_oblig.TCV  " name="TCV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="int_crit_oblig.CT_AV  " name="CT_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="int_crit_oblig.CP_AV  " name="CP_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="4" name="GROUPE" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="int_crit_oblig" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="CSAS_ID_CT_SPEC_AUT_SOC" type="id_String"/>
+        <mapperTableEntries name="CSAS_ID_ENT_JUR_GPE" type="id_Integer"/>
+        <mapperTableEntries name="CSAS_CODE_CONTRAT" type="id_String"/>
+        <mapperTableEntries name="CSAS_ID_CLI_GPE" type="id_Integer"/>
+        <mapperTableEntries name="CSAS_MAR_CO_MAR_COML" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CSAS_N04FG_CO_N04" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CSAS_ID_DEV_GPE" type="id_Integer"/>
+        <mapperTableEntries name="CSAS_PER" type="id_Date"/>
+        <mapperTableEntries name="CT_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CP_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TCV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_DT_FACT" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="N04FG_CO_N04" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MAR_CO_MAR_COML" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSortRow_1"/>
+    <elementParameter field="TABLE" name="CRITERIA">
+      <elementValue elementRef="COLNAME" value="CommandeSH_ID_LNE_CDE_FACT_SH"/>
+      <elementValue elementRef="SORT" value="alpha"/>
+      <elementValue elementRef="ORDER" value="asc"/>
+      <elementValue elementRef="COLNAME" value="CommandeSH_ID_LNE_CDE_HTAR_SH"/>
+      <elementValue elementRef="SORT" value="alpha"/>
+      <elementValue elementRef="ORDER" value="asc"/>
+      <elementValue elementRef="COLNAME" value="GROUPE"/>
+      <elementValue elementRef="SORT" value="num"/>
+      <elementValue elementRef="ORDER" value="asc"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EXTERNAL" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMPFILE" show="false" value="&quot;C:/Users/nsaumande/Documents/06. Workspaces/Talend/DevAndros4/temp&quot;"/>
+    <elementParameter field="CHECK" name="CREATEDIR" show="false" value="true"/>
+    <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" show="false" value="1000000"/>
+    <elementParameter field="TEXT" name="LABEL" value="tri_priorite"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="int_tri_criteres_facultatifs" name="tSortRow_1">
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="CSAS_ID_CT_SPEC_AUT_SOC" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CSAS_ID_ENT_JUR_GPE" nullable="false" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CommandeSH_DT_FACT" nullable="true" originalLength="8" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="TCV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CT_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CP_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GROUPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterColumns" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFilterColumns_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="int_tri_criteres_facultatifs" name="tFilterColumns_1">
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="CSAS_ID_CT_SPEC_AUT_SOC" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CSAS_ID_ENT_JUR_GPE" nullable="false" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CommandeSH_DT_FACT" nullable="true" originalLength="8" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="TCV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CT_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CP_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tUniqRow_1"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_ID_LNE_CDE_FACT_SH"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_ID_LNE_CDE_HTAR_SH"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSAS_ID_CT_SPEC_AUT_SOC"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSAS_ID_ENT_JUR_GPE"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommandeSH_DT_FACT"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TCV"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CT_AV"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CP_AV"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" show="false" value="M"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" show="false" value=""/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Priorisation"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="On ne garde que la première priorité pour chaque ligne de commande"/>
+    <metadata connector="FLOW" label="int_tri_criteres_facultatifs" name="tUniqRow_1">
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="CSAS_ID_CT_SPEC_AUT_SOC" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CSAS_ID_ENT_JUR_GPE" nullable="false" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CommandeSH_DT_FACT" nullable="true" originalLength="8" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="TCV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CT_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CP_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" label="int_tri_criteres_facultatifs" name="UNIQUE">
+      <column comment="" key="true" length="30" name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CSAS_ID_CT_SPEC_AUT_SOC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CSAS_ID_ENT_JUR_GPE" nullable="false" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CommandeSH_DT_FACT" nullable="true" originalLength="8" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="TCV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CT_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CP_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" label="int_tri_criteres_facultatifs" name="DUPLICATE">
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="CSAS_ID_CT_SPEC_AUT_SOC" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CSAS_ID_ENT_JUR_GPE" nullable="false" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CommandeSH_DT_FACT" nullable="true" originalLength="8" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="TCV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CT_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CP_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1536" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_8"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.RSR_bdd_dwh_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RSR_bdd_dwh_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_DEV_GPE_DEG&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10; DEG.DEG_ID_DEV_GPE, &#10;  DEG.DEG_CO_DEV_GPE&#10;FROM DWH_TRG_DEV_GPE_DEG DEG&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.RSR_bdd_dwh_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEG_ID_DEV_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEG_CO_DEV_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_TRG_DEV_GPE_DEG" name="tOracleInput_8">
+      <column comment="" key="true" length="38" name="DEG_ID_DEV_GPE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="DEG_CO_DEV_GPE" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1408" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_9"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.RSR_bdd_dwh_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RSR_bdd_dwh_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_ENT_JUR_GPE_EJG&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  EJG.EJG_ID_ENT_JUR_GPE, &#10;  EJG.EJG_ID_DEV_GPE&#10;FROM DWH_TRG_ENT_JUR_GPE_EJG EJG&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.RSR_bdd_dwh_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EJG_ID_ENT_JUR_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EJG_ID_DEV_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_TRG_ENT_JUR_GPE_EJG" name="tOracleInput_9">
+      <column comment="" key="true" length="38" name="EJG_ID_ENT_JUR_GPE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="EJG_ID_DEV_GPE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1536" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_5"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_XPMUwHknEeimWbUSx-HtGw-tMap_5-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Conversion_Devise"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="int_tri_criteres_facultatifs" name="out_etape3">
+      <column comment="" key="true" length="30" name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CSAS_ID_CT_SPEC_AUT_SOC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CSAS_ID_ENT_JUR_GPE" nullable="false" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="TCV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CT_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CP_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="&quot;EUR&quot;.equals(DEG.DEG_CO_DEV_GPE) ? true : false " name="Is_EUR" type="id_Boolean"/>
+        <mapperTableEntries expression="!Relational.ISNULL(TCG.TCG_ID_DEV_GPE) ? true : false " name="Lkp_TCG" type="id_Boolean"/>
+        <mapperTableEntries expression="Var.Lkp_TCG ? TalendDate.compareDate(out_imputations.CommandeSH_DT_FACT, TCG.TCG_DT_DEB,&quot;yyyyMMdd&quot;) &gt;= 0 ? true : false : false " name="DateOK_TCG" type="id_Boolean"/>
+        <mapperTableEntries expression="Var.DateOK_TCG ? BigDecimal.valueOf(TCG.TCG_TX_CHG_EUR) : BigDecimal.valueOf(1.0) " name="TauxChange" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.Is_EUR || out_imputations.TCV == null ? out_imputations.TCV  : &#13;&#10;Var.DateOK_TCG ? out_imputations.TCV.multiply(Var.TauxChange) :  BigDecimal.valueOf(0.0) " name="Convert_TCV" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.Is_EUR || out_imputations.CT_AV == null ? out_imputations.CT_AV  : &#13;&#10;Var.DateOK_TCG ? out_imputations.CT_AV.multiply(Var.TauxChange) :  BigDecimal.valueOf(0.0) " name="Convert_CT_AV" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.Is_EUR || out_imputations.CP_AV == null ? out_imputations.CP_AV  : &#13;&#10;Var.DateOK_TCG ? out_imputations.CP_AV.multiply(Var.TauxChange) :  BigDecimal.valueOf(0.0) " name="Convert_CP_AV" type="id_BigDecimal"/>
+      </varTables>
+      <outputTables name="out_etape3" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="out_imputations.CommandeSH_ID_LNE_CDE_FACT_SH  " name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out_imputations.CommandeSH_ID_LNE_CDE_HTAR_SH  " name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out_imputations.CSAS_ID_CT_SPEC_AUT_SOC  " name="CSAS_ID_CT_SPEC_AUT_SOC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out_imputations.CSAS_ID_ENT_JUR_GPE  " name="CSAS_ID_ENT_JUR_GPE" type="id_Integer"/>
+        <mapperTableEntries expression="Var.Convert_TCV " name="TCV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.Convert_CT_AV " name="CT_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.Convert_CP_AV " name="CP_AV" nullable="true" type="id_BigDecimal"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="out_imputations" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CSAS_ID_CT_SPEC_AUT_SOC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CSAS_ID_ENT_JUR_GPE" type="id_Integer"/>
+        <mapperTableEntries name="CommandeSH_DT_FACT" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="TCV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CT_AV" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CP_AV" nullable="true" type="id_BigDecimal"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="EJG" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="out_imputations.CSAS_ID_ENT_JUR_GPE  " name="EJG_ID_ENT_JUR_GPE" operator="=" type="id_Integer"/>
+        <mapperTableEntries expression="" name="EJG_ID_DEV_GPE" type="id_Integer"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="DEG" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="EJG.EJG_ID_DEV_GPE " name="DEG_ID_DEV_GPE" operator="=" type="id_Integer"/>
+        <mapperTableEntries name="DEG_CO_DEV_GPE" type="id_String"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="TCG" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="EJG.EJG_ID_DEV_GPE " name="TCG_ID_DEV_GPE" type="id_Integer"/>
+        <mapperTableEntries expression="" name="TCG_DT_DEB" type="id_Date"/>
+        <mapperTableEntries expression="" name="TCG_TX_CHG_EUR" type="id_Double"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_10"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.RSR_bdd_dwh_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.RSR_bdd_dwh_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RSR_bdd_dwh_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_TX_CHG_GPE_TCG&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  TCG.TCG_ID_DEV_GPE,&#13;&#10;  TCG.TCG_DT_DEB,&#10;  TCG.TCG_TX_CHG_EUR&#10;FROM DWH_TRG_TX_CHG_GPE_TCG TCG&#13;&#10;WHERE TCG.TCG_CO_DEV_EUR = 'EUR'&#13;&#10;AND TCG.TCG_TX_CHG_BUDG = 1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.RSR_bdd_dwh_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TCG_ID_DEV_GPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TCG_DT_DEB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TCG_TX_CHG_EUR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_TRG_TX_CHG_GPE_TCG" name="tOracleInput_10">
+      <column comment="" key="false" length="38" name="TCG_ID_DEV_GPE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="TCG_DT_DEB" nullable="false" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="TCG_TX_CHG_EUR" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.GRepTemp + &quot;Indicateurs_Etape4_CSAS_Fin_Etape3&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="false"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="Indicateurs_Etape3_Int1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" label="int_tri_criteres_facultatifs" name="tFileOutputDelimited_1">
+      <column comment="" key="true" length="30" name="CommandeSH_ID_LNE_CDE_FACT_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="CommandeSH_ID_LNE_CDE_HTAR_SH" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CSAS_ID_CT_SPEC_AUT_SOC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="CSAS_ID_ENT_JUR_GPE" nullable="false" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="TCV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CT_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CP_AV" nullable="true" pattern="" precision="6" sourceType="VARCHAR2" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tOracleConnection_1" offsetLabelX="0" offsetLabelY="0" source="tOracleConnection_1" target="tOracleInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tWarn_1" offsetLabelX="0" offsetLabelY="0" source="tWarn_1" target="tOracleConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tOracleClose_1" offsetLabelX="0" offsetLabelY="0" source="tOracleClose_1" target="tWarn_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="in_CSAS" lineStyle="0" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="in_CSAS"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tOracleClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="in_ligne_commande" lineStyle="0" metaname="tOracleInput_2" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_2" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_ECDH_ID_CLI_LF_GPE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_ID_ART"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_DT_FACT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_CFFSH_VTE_KG_NET"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="in_ligne_commande"/>
+  </connection>
+  <connection connectorName="FLOW" label="lkp_tlip_TCV" lineStyle="8" metaname="tOracleInput_3" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_3" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="lkp_tlip_TCV"/>
+  </connection>
+  <connection connectorName="FLOW" label="int_crit_oblig" lineStyle="0" metaname="int_crit_oblig" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MAR_CO_MAR_COML"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="N04FG_CO_N04"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_ID_CT_SPEC_AUT_SOC_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_ID_ENT_JUR_GPE_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CP_AV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CT_AV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_N04FG_CO_N04"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MAR_CO_MAR_COML_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_MAR_CO_MAR_COML"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_DT_FACT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_MTT_TPORT_AVA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_CFFSH_VTE_T_NET"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_MTT_ECO_EMB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_MTT_PREP_AVA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="int_crit_oblig"/>
+  </connection>
+  <connection connectorName="FLOW" label="lkp_tlip_CT_AV" lineStyle="8" metaname="tOracleInput_4" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_4" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="lkp_tlip_CT_AV"/>
+  </connection>
+  <connection connectorName="FLOW" label="int_type_ligne3" lineStyle="0" metaname="int_type_ligne3" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="TYP_LNE_TCV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYP_LNE_CT_AV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_S5_CO_CONTRAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_S4_CO_CONTRAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_S3_CO_CONTRAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_S2_CO_CONTRAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_S1_CO_CONTRAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_ECDH_ID_CLI_LF_GPE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_ID_ART"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="isTypeL3CT_AV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="isTypeL3TCV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_DT_FACT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_CFFSH_VTE_T_NET"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="int_type_ligne3"/>
+  </connection>
+  <connection connectorName="FLOW" label="lkp_tlip_CP_AV" lineStyle="8" metaname="tOracleInput_5" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_5" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="lkp_tlip_CP_AV"/>
+  </connection>
+  <connection connectorName="FLOW" label="lkp_N04" lineStyle="8" metaname="tOracleInput_6" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_6" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="lkp_N04"/>
+  </connection>
+  <connection connectorName="FLOW" label="Lkp_LigneCommandeSH" lineStyle="8" metaname="Lkp_LigneCommandeSH" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="isTypeL3CT_AV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="isTypeL3TCV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="isTypeL3CP_AV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_DT_FACT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_CFFSH_VTE_T_NET"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Lkp_LigneCommandeSH"/>
+  </connection>
+  <connection connectorName="FLOW" label="lkp_mar" lineStyle="8" metaname="tOracleInput_7" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_7" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="lkp_mar"/>
+  </connection>
+  <connection connectorName="FLOW" label="int_tri_crit_fac" lineStyle="0" metaname="int_tri_crit_fac" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tSortRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="GROUPE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_ID_CT_SPEC_AUT_SOC_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_ID_ENT_JUR_GPE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CT_AV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TCV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_ID_CT_SPEC_AUT_SOC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_DT_FACT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="int_tri_crit_fac"/>
+  </connection>
+  <connection connectorName="FLOW" label="int_tri_crit_fac_out" lineStyle="0" metaname="tSortRow_1" offsetLabelX="0" offsetLabelY="0" source="tSortRow_1" target="tFilterColumns_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="int_tri_crit_fac_out"/>
+  </connection>
+  <connection connectorName="FLOW" label="int_uniq_crit_fac" lineStyle="0" metaname="tFilterColumns_1" offsetLabelX="0" offsetLabelY="0" source="tFilterColumns_1" target="tUniqRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_ID_CT_SPEC_AUT_SOC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_ID_ENT_JUR_GPE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CP_AV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CT_AV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TCV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_DT_FACT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="int_uniq_crit_fac"/>
+  </connection>
+  <connection connectorName="UNIQUE" label="out_imputations" lineStyle="0" metaname="tUniqRow_1" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_1" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_imputations"/>
+  </connection>
+  <connection connectorName="FLOW" label="DEG" lineStyle="8" metaname="tOracleInput_8" offsetLabelX="2" offsetLabelY="-28" source="tOracleInput_8" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DEG"/>
+  </connection>
+  <connection connectorName="FLOW" label="EJG" lineStyle="8" metaname="tOracleInput_9" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_9" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="EJG"/>
+  </connection>
+  <connection connectorName="FLOW" label="out_etape3" lineStyle="0" metaname="out_etape3" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_ID_LNE_CDE_FACT_SH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CP_AV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CT_AV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_ID_CT_SPEC_AUT_SOC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TCV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CommandeSH_ID_LNE_CDE_HTAR_SH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSAS_ID_ENT_JUR_GPE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_etape3"/>
+  </connection>
+  <connection connectorName="FLOW" label="TCG" lineStyle="8" metaname="tOracleInput_10" offsetLabelX="-12" offsetLabelY="1" source="tOracleInput_10" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TCG"/>
+  </connection>
+  <note opaque="false" posX="320" posY="-32" sizeHeight="257" sizeWidth="705" text="DESCRIPTION :&#13;&#10;Calcul des indicateurs étape 3 pour les coûts spécifiques autres sociétés (IND0490, IND0540, IND0550)&#13;&#10;&#13;&#10;&#13;&#10;VERSIONING :&#13;&#10;- V.0.1 : Création du job - 02/07/2018&#13;&#10;- V.0.2 : Ticket 378748 - 01/10/2018&#13;&#10;- V.0.3 : Ticket 382738 - 16/01/2018&#13;&#10;- V.0.5 : Exclusion des lignes annulées - 01/02/2019&#13;&#10;&#13;&#10;EAD :&#13;&#10;Indicateurs et imputations données calcul marge v2.1">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="255;255;255"/>
+    <elementParameter field="COLOR" name="NOTE_LINECOLOR" value="0;128;255"/>
+  </note>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="JlTECJd_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Génération des lignes à imputer"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_549446f6-9cce-4da4-8c3d-9d56e4444df4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YfbSZgbKhI5+Ecnt0veVNaJ7+AIKNnzzx24AWdB+76d9XYROy8zhbK9iGRW7Zaab6ZFPTb/ikLrD&#13;
+atVptiz1oQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a70d1fd7-dea3-4f33-88a3-c4c4bb8131b9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nkKOlpXEJ1NKVg7A485J5o7aRaL165H5ldecmFahjnC76guvKAT2A6OD7tmcSzFStQ4dEMszA0WN&#13;
+19gFRizM8A==</DigestValue></Reference></SignedInfo><SignatureValue>Wj9S4luTNHOgQbBP+ROznnISBmPtMDEJVCSBb1xooJVAPeI50iNwoKawzY/lUU7d1zsm/4v6qvwX&#13;
+jHkcZ4B/slgrN0QFHdClktaza8zpd045EpOAyIFJOny3WgLwTH32gs0nca/9v+HCb0Hkg/vLNwRO&#13;
+vnEXi3Xah3OgVoafNnyUthi50Ov/nygeeSBwRkj6iDYLA4A+CszMM9U0ByqsTOspi5wzweVnaJj2&#13;
+XFjAP4FcOqob31xEaS0G68olgCU1jjy0uLs/dbocDS5HVADRuzHny31vgsGnu+fl8xJAK1K3zy8z&#13;
+G+ju0brLe/yBLTvDBsOddk+0x/BzvbLqyqVX6g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg&#13;
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#13;
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq&#13;
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46&#13;
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb&#13;
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM&#13;
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE&#13;
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG&#13;
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu&#13;
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0&#13;
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ&#13;
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5&#13;
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ&#13;
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3&#13;
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn&#13;
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as&#13;
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13;
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a70d1fd7-dea3-4f33-88a3-c4c4bb8131b9" Target="#_549446f6-9cce-4da4-8c3d-9d56e4444df4"><Timestamp>2020-11-10 18:28:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

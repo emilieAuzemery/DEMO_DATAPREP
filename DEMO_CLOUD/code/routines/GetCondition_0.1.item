@@ -1,0 +1,27 @@
+package routines;
+
+public class GetCondition {
+
+    /**
+     * Fonction permettant de verifier si les deux premiers caracteres du champs code sont <> si oui mettre 0 
+     * sinon 1 afin d'enrichir les colonnes condition du flag. 
+     * 
+     * {talendTypes} Integer
+     * 
+     * {Category} User Defined
+     * 
+     * {param} Integer("Flag de la condition") input: Code comprennant dans les deux premiers caractères la condition <> ou pas. 
+     * 
+     */
+    public static int GestionConditiontest(String Condition, String CodeTD, Integer FlagEgal, Integer FlagDiff) {
+        Integer ReturnFlag;
+        if(!Relational.ISNULL(CodeTD)
+        	&& 
+        	(CodeTD.length()) >=2
+				&&
+				StringHandling.LEFT(CodeTD ,2).equals(Condition))
+				{ReturnFlag = FlagDiff;}
+		    	else {ReturnFlag = FlagEgal;}
+	    		return ReturnFlag;
+    }
+} 

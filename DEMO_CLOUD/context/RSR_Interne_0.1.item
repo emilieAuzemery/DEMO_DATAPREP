@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Dev" xmi:id="_beF-oCOBEeueDqA07KoUbA">
+    <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" type="id_Integer" value="18" xmi:id="_beF-oSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_beF-oiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" type="id_Integer" value="" xmi:id="_beF-oyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" type="id_File" value="C:/projets/AndrosRSR/param/rsr.properties" xmi:id="_beF-pCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" type="id_String" value="RF_XX_CODE.csv" xmi:id="_beF-pSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" type="id_String" value="DATA_XXXX" xmi:id="_beF-piOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" type="id_Integer" value="" xmi:id="_beF-pyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" type="id_String" value="MT00000001" xmi:id="_beF-qCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_beF-qSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_beF-qiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" type="id_String" value="&lt;&gt;" xmi:id="_beF-qyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="ILigneFictives" prompt="ILigneFictives?" promptNeeded="false" type="id_String" value="CF_FICTIVE" xmi:id="_beF-rCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Identifiant des valeurs vides des référentiels" name="IIdValeurVide" prompt="IIdValeurVide?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_beF-rSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Identifiant du fichier complémentaire traité" name="IFir_Comp_EJ" prompt="IFir_Comp_EJ?" promptNeeded="false" type="id_String" value="AF" xmi:id="_beF-riOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Liste des EJ pour le DMT" name="IDMT_list_EJ" prompt="IDMT_list_EJ?" promptNeeded="false" type="id_String" value="('AF','NV','MT00000001','MT00000018')" xmi:id="_beF-ryOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="type_ded" prompt="type_ded?" promptNeeded="false" type="id_String" value="SH" xmi:id="_beF-sCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Liste type de commande a supprimer de la cible avant chargement DMT" name="ITYP_DATA" prompt="ITYP_DATA?" promptNeeded="false" type="id_String" value="(1, 2)" xmi:id="_beF-sSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Date max ligne de commande historisé dans le Datamart primaire" name="IDateMaxHisto" prompt="IDateMaxHisto?" promptNeeded="false" type="id_Integer" value="1314" xmi:id="_beF-siOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Liste des EJ(ID) pour le DMT" name="IDMT_list_ID_EJ" prompt="IDMT_list_ID_EJ?" promptNeeded="false" type="id_String" value="(1,2,7,22)" xmi:id="_beF-syOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Liste le nom des EJ utilisé dans le nom des fichiers sources" name="IListEJ" prompt="IListEJ?" promptNeeded="false" type="id_String" value="'AF','NV'" xmi:id="_beF-tCOBEeueDqA07KoUbA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Int" xmi:id="_beF-tSOBEeueDqA07KoUbA">
+    <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" type="id_Integer" value="18" xmi:id="_beF-tiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_beF-tyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" type="id_Integer" value="" xmi:id="_beF-uCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" type="id_File" value="/opt/AndrosRSR/INT/param/rsr.properties" xmi:id="_beF-uSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" type="id_String" value="RF_XX_CODE.csv" xmi:id="_beF-uiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" type="id_String" value="DATA_XXXX" xmi:id="_beF-uyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" type="id_Integer" value="" xmi:id="_beF-vCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" type="id_String" value="NV" xmi:id="_beF-vSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" type="id_Integer" value="" xmi:id="_beF-viOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" type="id_Integer" value="" xmi:id="_beF-vyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" type="id_String" value="" xmi:id="_beF-wCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="ILigneFictives" prompt="ILigneFictives?" promptNeeded="false" type="id_String" value="CF_FICTIVE" xmi:id="_beF-wSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Identifiant des valeurs vides des référentiels" name="IIdValeurVide" prompt="IIdValeurVide?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_beF-wiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Identifiant du fichier complémentaire traité" name="IFir_Comp_EJ" prompt="IFir_Comp_EJ?" promptNeeded="false" type="id_String" value="NV" xmi:id="_beF-wyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Liste des EJ pour le DMT" name="IDMT_list_EJ" prompt="IDMT_list_EJ?" promptNeeded="false" type="id_String" value="" xmi:id="_beF-xCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="type_ded" prompt="type_ded?" promptNeeded="false" type="id_String" value="" xmi:id="_beF-xSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Liste type de commande a supprimer de la cible avant chargement DMT" name="ITYP_DATA" prompt="ITYP_DATA?" promptNeeded="false" type="id_String" value="(1, 2)" xmi:id="_beF-xiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Date max ligne de commande historisé dans le Datamart primaire" name="IDateMaxHisto" prompt="IDateMaxHisto?" promptNeeded="false" type="id_Integer" value="100" xmi:id="_beF-xyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Liste des EJ(ID) pour le DMT" name="IDMT_list_ID_EJ" prompt="IDMT_list_ID_EJ?" promptNeeded="false" type="id_String" value="(1,2)" xmi:id="_beF-yCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Liste le nom des EJ utilisé dans le nom des fichiers sources" name="IListEJ" prompt="IListEJ?" promptNeeded="false" type="id_String" value="'AF','NV'" xmi:id="_beF-ySOBEeueDqA07KoUbA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Qualif" xmi:id="_beF-yiOBEeueDqA07KoUbA">
+    <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" type="id_Integer" value="18" xmi:id="_beF-yyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_beF-zCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" type="id_Integer" value="" xmi:id="_beF-zSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" type="id_File" value="/opt/AndrosRSR/QUALIF/param/rsr.properties" xmi:id="_beF-ziOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" type="id_String" value="" xmi:id="_beF-zyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" type="id_String" value="" xmi:id="_beF-0COBEeueDqA07KoUbA"/>
+    <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" type="id_Integer" value="" xmi:id="_beF-0SOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" type="id_String" value="001" xmi:id="_beF-0iOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" type="id_Integer" value="" xmi:id="_beF-0yOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" type="id_Integer" value="" xmi:id="_beF-1COBEeueDqA07KoUbA"/>
+    <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" type="id_String" value="" xmi:id="_beF-1SOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="ILigneFictives" prompt="ILigneFictives?" promptNeeded="false" type="id_String" value="CF_FICTIVE" xmi:id="_beF-1iOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Identifiant des valeurs vides des référentiels" name="IIdValeurVide" prompt="IIdValeurVide?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_beF-1yOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Identifiant du fichier complémentaire traité" name="IFir_Comp_EJ" prompt="IFir_Comp_EJ?" promptNeeded="false" type="id_String" value="001" xmi:id="_beF-2COBEeueDqA07KoUbA"/>
+    <contextParameter comment="Liste des EJ pour le DMT" name="IDMT_list_EJ" prompt="IDMT_list_EJ?" promptNeeded="false" type="id_String" value="" xmi:id="_beF-2SOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="type_ded" prompt="type_ded?" promptNeeded="false" type="id_String" value="" xmi:id="_beF-2iOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Liste type de commande a supprimer de la cible avant chargement DMT" name="ITYP_DATA" prompt="ITYP_DATA?" promptNeeded="false" type="id_String" value="(1, 2)" xmi:id="_beF-2yOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Date max ligne de commande historisé dans le Datamart primaire" name="IDateMaxHisto" prompt="IDateMaxHisto?" promptNeeded="false" type="id_Integer" value="1351" xmi:id="_beF-3COBEeueDqA07KoUbA"/>
+    <contextParameter comment="Liste des EJ(ID) pour le DMT" name="IDMT_list_ID_EJ" prompt="IDMT_list_ID_EJ?" promptNeeded="false" type="id_String" value="(1,2)" xmi:id="_beF-3SOBEeueDqA07KoUbA"/>
+    <contextParameter comment="Liste le nom des EJ utilisé dans le nom des fichiers sources" name="IListEJ" prompt="IListEJ?" promptNeeded="false" type="id_String" value="'AF','NV'" xmi:id="_beF-3iOBEeueDqA07KoUbA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_487daab7-be94-458e-8e3a-f879bdb9457c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vB9F0nBd/+lpqTZyS6+vtUGqUCNzSaLnyzFxCCA6z8kLlRb+aPOYW3AvPbRVSTRQ8Fyompsyg6ax&#13;
+U3INSe9r5w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1b452c27-761e-4510-841b-10a0e9a65b9d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3YsRjL60qwHidawPo0hw1in+tNx+j7fEZFA3z9YBnvSbACwuRg3wRYF14jrNvZXzu1+jDzcgX/FI&#13;
+aVw/mVAdDQ==</DigestValue></Reference></SignedInfo><SignatureValue>fWe4q5A3/7Y0bKq45T7RcsiBaU8XEq1sIuLstbu7/NyID5XZ0HaiES6Ht2cc4rWn+m3miveIvsMh&#13;
+VF8uACALYwFAE7PILF41xWZ5mUYU/B0ZOuL3Hs8K7muECHjbSZdhKvDxFEWPK5wnmlmvFnbhZn2A&#13;
+f9chZX9tMC30scPGyjtOKTNnzPb9YSV8BJJQ1Zsy8OJQHNZ1jp2jtXV0CP/MnKCh9c2JomHj6Lz5&#13;
+7YMukmSLK1e3eWeBKIClQRhZsgQXbA3ALvQi+ZuDcPu3/DBB4AS4X0oNpe+1qvgZ6+LrSRX/kx1W&#13;
+v9Bd1h4MprR7VAmojKX/tkkKxFXqS7qKpIdgow==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg&#13;
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#13;
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq&#13;
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46&#13;
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb&#13;
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM&#13;
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE&#13;
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG&#13;
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu&#13;
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0&#13;
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ&#13;
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5&#13;
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ&#13;
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3&#13;
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn&#13;
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as&#13;
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13;
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1b452c27-761e-4510-841b-10a0e9a65b9d" Target="#_487daab7-be94-458e-8e3a-f879bdb9457c"><Timestamp>2020-11-10 18:20:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

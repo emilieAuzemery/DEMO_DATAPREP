@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDEV"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="HP/xWhNDmQWCaKDXJhrK9g=="/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDEV"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Sid" prompt="RSR_bdd_dwh_Sid?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="xe"/>
+      <contextParameter comment="Date de traitement" name="GDateTraitement" prompt="GDateTraitement?" promptNeeded="false" type="id_String" value="20170410"/>
+      <contextParameter comment="Nom du répertoire de réception à scruter" name="GDir_ToFilter" prompt="GDir_ToFilter?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="XferEntree"/>
+      <contextParameter comment="Nom du fichier" name="GFile" prompt="GFile?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="RF_AF_ARTL.csv"/>
+      <contextParameter comment="Expression régulière pour le filtrage des fichiers de données" name="GFile_Data_RegEx" prompt="GFile_Data_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^[A-Z|0-9]{2,30}_[A-Z|0-9]{2,30}(.xml|(_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).csv))&quot;"/>
+      <contextParameter comment="Expression régulière pour le filtrage des fichiers référentiels" name="GFile_Ref_RegEx" prompt="GFile_Ref_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^RF_[A-Z]{2,3}_[A-Z|0-9]{2,30}(.xml|(_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).csv))&quot;"/>
+      <contextParameter comment="Chemin du fichier" name="GFilepath" prompt="GFilepath?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="_"/>
+      <contextParameter comment="Code correspondant à la valeur &quot;inconnu&quot;" name="GParam_INCONNU" prompt="GParam_INCONNU?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="INCONNU"/>
+      <contextParameter comment="Période Courante" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20170401"/>
+      <contextParameter comment="Nom du répertoire de dépot" name="GRepDepot" prompt="GRepDepot?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+      <contextParameter comment="Répertoire de récéption des fichiers" name="GRepIn" prompt="GRepIn?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="C:\projets\AndrosRSR\recep\"/>
+      <contextParameter comment="Répertoire temporaire" name="GRepTemp" prompt="GRepTemp?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="C:\projets\AndrosRSR\tmp\"/>
+      <contextParameter comment="Répertoire de travail Entrées" name="GRepWorkEnt" prompt="GRepWorkEnt?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="C:\projets\AndrosRSR\work\Entrees\"/>
+      <contextParameter comment="Répertoire de travail Sorties" name="GRepWorkSort" prompt="GRepWorkSort?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="C:\projets\AndrosRSR\work\Sorties\"/>
+      <contextParameter comment="Schema de BDD" name="GSchema" prompt="GSchema?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="_"/>
+      <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+      <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="1"/>
+      <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="&lt;&gt;"/>
+      <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_File" value="C:/projets/AndrosRSR/param/rsr.properties"/>
+      <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+      <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="MT00000001"/>
+      <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+      <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="RF_XX_CODE.csv"/>
+      <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="18"/>
+      <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+      <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+    </context>
+    <context confirmationNeeded="false" name="Dev">
+      <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDEV"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="HP/xWhNDmQWCaKDXJhrK9g=="/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDEV"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Sid" prompt="RSR_bdd_dwh_Sid?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="xe"/>
+      <contextParameter comment="Date de traitement" name="GDateTraitement" prompt="GDateTraitement?" promptNeeded="false" type="id_String" value="20170410"/>
+      <contextParameter comment="Nom du répertoire de réception à scruter" name="GDir_ToFilter" prompt="GDir_ToFilter?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="XferEntree"/>
+      <contextParameter comment="Nom du fichier" name="GFile" prompt="GFile?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="RF_AF_ARTL.csv"/>
+      <contextParameter comment="Expression régulière pour le filtrage des fichiers de données" name="GFile_Data_RegEx" prompt="GFile_Data_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^[A-Z|0-9]{2,30}_[A-Z|0-9]{2,30}(.xml|(_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).csv))&quot;"/>
+      <contextParameter comment="Expression régulière pour le filtrage des fichiers référentiels" name="GFile_Ref_RegEx" prompt="GFile_Ref_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^RF_[A-Z]{2,3}_[A-Z|0-9]{2,30}(.xml|(_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).csv))&quot;"/>
+      <contextParameter comment="Chemin du fichier" name="GFilepath" prompt="GFilepath?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="_"/>
+      <contextParameter comment="Code correspondant à la valeur &quot;inconnu&quot;" name="GParam_INCONNU" prompt="GParam_INCONNU?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="INCONNU"/>
+      <contextParameter comment="Période Courante" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20170401"/>
+      <contextParameter comment="Nom du répertoire de dépot" name="GRepDepot" prompt="GRepDepot?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+      <contextParameter comment="Répertoire de récéption des fichiers" name="GRepIn" prompt="GRepIn?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="C:\projets\AndrosRSR\recep\"/>
+      <contextParameter comment="Répertoire temporaire" name="GRepTemp" prompt="GRepTemp?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="C:\projets\AndrosRSR\tmp\"/>
+      <contextParameter comment="Répertoire de travail Entrées" name="GRepWorkEnt" prompt="GRepWorkEnt?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="C:\projets\AndrosRSR\work\Entrees\"/>
+      <contextParameter comment="Répertoire de travail Sorties" name="GRepWorkSort" prompt="GRepWorkSort?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="C:\projets\AndrosRSR\work\Sorties\"/>
+      <contextParameter comment="Schema de BDD" name="GSchema" prompt="GSchema?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="_"/>
+      <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+      <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="1"/>
+      <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="&lt;&gt;"/>
+      <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_File" value="C:/projets/AndrosRSR/param/rsr.properties"/>
+      <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+      <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="MT00000001"/>
+      <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+      <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="RF_XX_CODE.csv"/>
+      <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="18"/>
+      <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+      <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+    </context>
+    <context confirmationNeeded="false" name="Qualif">
+      <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWH"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="l3ONiFMQ2Ws="/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWH"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Sid" prompt="RSR_bdd_dwh_Sid?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="xe"/>
+      <contextParameter comment="Date de traitement" name="GDateTraitement" prompt="GDateTraitement?" promptNeeded="false" type="id_String" value="20161217"/>
+      <contextParameter comment="Nom du répertoire de réception à scruter" name="GDir_ToFilter" prompt="GDir_ToFilter?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="XferEntree"/>
+      <contextParameter comment="Nom du fichier" name="GFile" prompt="GFile?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="RF_AF_ARTL.csv"/>
+      <contextParameter comment="Expression régulière pour le filtrage des fichiers de données" name="GFile_Data_RegEx" prompt="GFile_Data_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^[A-Z|0-9]{2,30}_[A-Z|0-9]{2,30}(.xml|(_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).csv))&quot;"/>
+      <contextParameter comment="Expression régulière pour le filtrage des fichiers référentiels" name="GFile_Ref_RegEx" prompt="GFile_Ref_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^RF_[A-Z]{2,3}_[A-Z|0-9]{2,30}(.xml|(_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).csv))&quot;"/>
+      <contextParameter comment="Chemin du fichier" name="GFilepath" prompt="GFilepath?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="_"/>
+      <contextParameter comment="Code correspondant à la valeur &quot;inconnu&quot;" name="GParam_INCONNU" prompt="GParam_INCONNU?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="INCONNU"/>
+      <contextParameter comment="Période Courante" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20171201"/>
+      <contextParameter comment="Nom du répertoire de dépot" name="GRepDepot" prompt="GRepDepot?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+      <contextParameter comment="Répertoire de récéption des fichiers" name="GRepIn" prompt="GRepIn?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/QUALIF/recep/"/>
+      <contextParameter comment="Répertoire temporaire" name="GRepTemp" prompt="GRepTemp?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/QUALIF/tmp/"/>
+      <contextParameter comment="Répertoire de travail Entrées" name="GRepWorkEnt" prompt="GRepWorkEnt?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/QUALIF/work/"/>
+      <contextParameter comment="Répertoire de travail Sorties" name="GRepWorkSort" prompt="GRepWorkSort?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/QUALIF/output/"/>
+      <contextParameter comment="Schema de BDD" name="GSchema" prompt="GSchema?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="_"/>
+      <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+      <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+      <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+      <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_File" value="/opt/AndrosRSR/QUALIF/param/rsr.properties"/>
+      <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+      <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="001"/>
+      <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+      <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+      <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="18"/>
+      <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+      <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+    </context>
+    <context confirmationNeeded="false" name="Int">
+      <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWHINT"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="HP/xWhNDmQWCaKDXJhrK9g=="/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWHINT"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
+      <contextParameter comment="" name="RSR_bdd_dwh_Sid" prompt="RSR_bdd_dwh_Sid?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="xe"/>
+      <contextParameter comment="Date de traitement" name="GDateTraitement" prompt="GDateTraitement?" promptNeeded="false" type="id_String" value="20171217"/>
+      <contextParameter comment="Nom du répertoire de réception à scruter" name="GDir_ToFilter" prompt="GDir_ToFilter?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="XferEntree"/>
+      <contextParameter comment="Nom du fichier" name="GFile" prompt="GFile?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="RF_AF_ARTL.csv"/>
+      <contextParameter comment="Expression régulière pour le filtrage des fichiers de données" name="GFile_Data_RegEx" prompt="GFile_Data_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^[A-Z|0-9]{2,30}_[A-Z|0-9]{2,30}(.xml|(_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).csv))&quot;"/>
+      <contextParameter comment="Expression régulière pour le filtrage des fichiers référentiels" name="GFile_Ref_RegEx" prompt="GFile_Ref_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^RF_[A-Z]{2,3}_[A-Z|0-9]{2,30}(.xml|(_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).csv))&quot;"/>
+      <contextParameter comment="Chemin du fichier" name="GFilepath" prompt="GFilepath?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="_"/>
+      <contextParameter comment="Code correspondant à la valeur &quot;inconnu&quot;" name="GParam_INCONNU" prompt="GParam_INCONNU?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="INCONNU"/>
+      <contextParameter comment="Période Courante" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20171101"/>
+      <contextParameter comment="Nom du répertoire de dépot" name="GRepDepot" prompt="GRepDepot?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+      <contextParameter comment="Répertoire de récéption des fichiers" name="GRepIn" prompt="GRepIn?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/INT/recep/"/>
+      <contextParameter comment="Répertoire temporaire" name="GRepTemp" prompt="GRepTemp?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/INT/tmp/"/>
+      <contextParameter comment="Répertoire de travail Entrées" name="GRepWorkEnt" prompt="GRepWorkEnt?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/INT/work/"/>
+      <contextParameter comment="Répertoire de travail Sorties" name="GRepWorkSort" prompt="GRepWorkSort?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/INT/output/"/>
+      <contextParameter comment="Schema de BDD" name="GSchema" prompt="GSchema?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="_"/>
+      <contextParameter comment="Flag deffinissant la condition &quot;different de&quot;" name="ICondDiff" prompt="ICondDiff?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+      <contextParameter comment="Flag definissant la sondition &quot;égal&quot;" name="ICondEgal" prompt="ICondEgal?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+      <contextParameter comment="Condition &lt;&gt; traduisant different de" name="ICondition" prompt="ICondition?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value=""/>
+      <contextParameter comment="Emplacement du fichier properties du projet" name="IFic_properties" prompt="IFic_properties?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_File" value="/opt/AndrosRSR/INT/param/rsr.properties"/>
+      <contextParameter comment="Statut du fichier (1:Reçu; 2:En cours; 3:Traité; 4:Rejeté)" name="IFic_status" prompt="IFic_status?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+      <contextParameter comment="Code de l'entité juridique AF, NV, MDM" name="IFir_EJ" prompt="IFir_EJ?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="NV"/>
+      <contextParameter comment="Identifiant du fichier traité" name="IFir_id" prompt="IFir_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="0"/>
+      <contextParameter comment="Nom du fichier traité" name="IFir_name" prompt="IFir_name?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="RF_XX_CODE.csv"/>
+      <contextParameter comment="Identifiant du flux en cours" name="IFle_id" prompt="IFle_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value="18"/>
+      <contextParameter comment="Identifiant de l'exécution du job" name="IJex_id" prompt="IJex_id?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_Integer" value=""/>
+      <contextParameter comment="Sous répertoire de dépot du fichier" name="IRep_depot" prompt="IRep_depot?" promptNeeded="false" repositoryContextId="_mUI8kIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
+    </context>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/Users/flaurent/workspace/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_nGJhgI-OEeads5l-Um9p1w" name="DataOperation"/>
+      <routinesParameter id="_nIPzQI-OEeads5l-Um9p1w" name="Mathematical"/>
+      <routinesParameter id="_nKRzkI-OEeads5l-Um9p1w" name="Numeric"/>
+      <routinesParameter id="_nMTz4I-OEeads5l-Um9p1w" name="Relational"/>
+      <routinesParameter id="_nCtzAo-OEeads5l-Um9p1w" name="SQLike"/>
+      <routinesParameter id="_nN_18I-OEeads5l-Um9p1w" name="StringHandling"/>
+      <routinesParameter id="_nQUKII-OEeads5l-Um9p1w" name="TalendDataGenerator"/>
+      <routinesParameter id="_nR8h0I-OEeads5l-Um9p1w" name="TalendDate"/>
+      <routinesParameter id="_nTn80I-OEeads5l-Um9p1w" name="TalendString"/>
+      <routinesParameter id="_ciT_sOSbEeaJTP7wMa4OVg" name="CheckColumn"/>
+      <routinesParameter id="_4I-3MIo6Eea8Ut5bsIN75A" name="Commun"/>
+      <routinesParameter id="_Q5FvAOobEea2HvCMfz9Zrw" name="DateJPlus1"/>
+      <routinesParameter id="_peVlAKsmEeaFWdq13Wi6ng" name="DateJ_1"/>
+      <routinesParameter id="_6lYoMIo6Eea8Ut5bsIN75A" name="RSR"/>
+      <routinesParameter id="_mbbswHLsEee-BJcgi1PfWQ" name="SplitConditionCode"/>
+    </parameters>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="224">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_66c84HaVEeeEM_p1M5TlFw-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tMap_1"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="Out_PCO">
+        <column comment="" key="true" length="38" name="PCO_ID_PER_COUR" nullable="false" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="38" name="PCO_ID_ENT_JUR_GPE" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="38" name="PCO_ID_TYP_DNE_GPE" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="8" name="PCO_PER_COUR" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="8" name="PCO_DER_PER_CLO" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables name="Var" sizeState="INTERMEDIATE">
+          <mapperTableEntries expression="TalendDate.addDate(In_PCO.Periode_courante,&quot;yyyyMMdd&quot;,1,&quot;MM&quot;) " name="Calcul_date_per_cour" type="id_String"/>
+          <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyyMMdd&quot;,Var.Calcul_date_per_cour)" name="PCO_PER_COUR" type="id_Date"/>
+          <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyyMMdd&quot;,In_PCO.Periode_courante)" name="PCO_DER_PER_CLO" type="id_Date"/>
+        </varTables>
+        <outputTables name="Out_PCO" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="PCO_ID_PER_COUR" type="id_Integer"/>
+          <mapperTableEntries expression="Lkp_EJG.EJG_ID_ENT_JUR_GPE " name="PCO_ID_ENT_JUR_GPE" nullable="true" type="id_Integer"/>
+          <mapperTableEntries expression="Lkp_TDG.TDG_ID_TYP_DNE_GPE " name="PCO_ID_TYP_DNE_GPE" nullable="true" type="id_Integer"/>
+          <mapperTableEntries expression="Var.PCO_PER_COUR  " name="PCO_PER_COUR" nullable="true" type="id_Date"/>
+          <mapperTableEntries expression="Var.PCO_DER_PER_CLO  " name="PCO_DER_PER_CLO" nullable="true" type="id_Date"/>
+        </outputTables>
+        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="In_PCO" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="Code_EJG" type="id_String"/>
+          <mapperTableEntries name="Code_type_donnees" type="id_String"/>
+          <mapperTableEntries name="Periode_courante" type="id_String"/>
+        </inputTables>
+        <inputTables innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="Lkp_EJG" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="EJG_ID_ENT_JUR_GPE" type="id_Integer"/>
+          <mapperTableEntries name="EJG_ID_DEV_GPE" type="id_Integer"/>
+          <mapperTableEntries name="EJG_ID_UNITE_ADM_2" type="id_Integer"/>
+          <mapperTableEntries expression="In_PCO.Code_EJG " name="EJG_CO_ENT_JUR_GPE" operator="=" type="id_String"/>
+          <mapperTableEntries name="EJG_LIB_ENT_JUR_GPE" nullable="true" type="id_String"/>
+          <mapperTableEntries name="EJG_FLG_GPE" type="id_Integer"/>
+        </inputTables>
+        <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="Lkp_TDG" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="TDG_ID_TYP_DNE_GPE" type="id_Integer"/>
+          <mapperTableEntries expression="In_PCO.Code_type_donnees " name="TDG_CO_TYP_DNE_GPE" operator="=" type="id_String"/>
+          <mapperTableEntries name="TDG_LIB_TYP_DNE_GPE" nullable="true" type="id_String"/>
+          <mapperTableEntries name="TDG_LIB_TYP_DNE_GPE_ENG" nullable="true" type="id_String"/>
+          <mapperTableEntries name="TDG_LIB_TYP_DNE_GPE_ESP" nullable="true" type="id_String"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dwh_Server"/>
+      <elementParameter field="TEXT" name="HOST" value="context.RSR_bdd_dwh_Server"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+      <elementParameter field="TEXT" name="PORT" value="context.RSR_bdd_dwh_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.RSR_bdd_dwh_Sid"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
+      <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+      <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A - DWH_TRG_ENT_JUR_GPE_EJG"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_ENT_JUR_GPE_EJG&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_ENT_JUR_GPE_EJG.EJG_ID_ENT_JUR_GPE, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_ENT_JUR_GPE_EJG.EJG_ID_DEV_GPE, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_ENT_JUR_GPE_EJG.EJG_ID_UNITE_ADM_2, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_ENT_JUR_GPE_EJG.EJG_CO_ENT_JUR_GPE, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_ENT_JUR_GPE_EJG.EJG_LIB_ENT_JUR_GPE, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_ENT_JUR_GPE_EJG.EJG_FLG_GPE&#10;FROM &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_ENT_JUR_GPE_EJG&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.RSR_bdd_dwh_AdditionalParams"/>
+      <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+      <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+      <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+      <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="EJG_ID_ENT_JUR_GPE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="EJG_ID_DEV_GPE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="EJG_ID_UNITE_ADM_2"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="EJG_CO_ENT_JUR_GPE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="EJG_LIB_ENT_JUR_GPE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="EJG_FLG_GPE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="&quot;DWH_TRG_ENT_JUR_GPE_EJG&quot;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="DWH_TRG_ENT_JUR_GPE_EJG" name="tOracleInput_1">
+        <column comment="" key="true" length="38" name="EJG_ID_ENT_JUR_GPE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="38" name="EJG_ID_DEV_GPE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="38" name="EJG_ID_UNITE_ADM_2" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="15" name="EJG_CO_ENT_JUR_GPE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="50" name="EJG_LIB_ENT_JUR_GPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="EJG_FLG_GPE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <additionalProperties key="Comment" value=""/>
+      </metadata>
+    </node>
+    <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_2"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dwh_Server"/>
+      <elementParameter field="TEXT" name="HOST" value="context.RSR_bdd_dwh_Server"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+      <elementParameter field="TEXT" name="PORT" value="context.RSR_bdd_dwh_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.RSR_bdd_dwh_Sid"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
+      <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+      <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A - DWH_TRG_TYP_DNE_GPE_TDG"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_TYP_DNE_GPE_TDG&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_TYP_DNE_GPE_TDG.TDG_ID_TYP_DNE_GPE, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_TYP_DNE_GPE_TDG.TDG_CO_TYP_DNE_GPE, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_TYP_DNE_GPE_TDG.TDG_LIB_TYP_DNE_GPE, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_TYP_DNE_GPE_TDG.TDG_LIB_TYP_DNE_GPE_ENG, &#10;  &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_TYP_DNE_GPE_TDG.TDG_LIB_TYP_DNE_GPE_ESP&#10;FROM &quot;+context.RSR_bdd_dwh_Schema+&quot;.DWH_TRG_TYP_DNE_GPE_TDG&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.RSR_bdd_dwh_AdditionalParams"/>
+      <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+      <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+      <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+      <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="TDG_ID_TYP_DNE_GPE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TDG_CO_TYP_DNE_GPE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TDG_LIB_TYP_DNE_GPE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TDG_LIB_TYP_DNE_GPE_ENG"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="TDG_LIB_TYP_DNE_GPE_ESP"/>
+        <elementValue elementRef="TRIM" value="false"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="&quot;DWH_TRG_TYP_DNE_GPE_TDG&quot;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="DWH_TRG_TYP_DNE_GPE_TDG" name="tOracleInput_2">
+        <column comment="" key="true" length="38" name="TDG_ID_TYP_DNE_GPE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="15" name="TDG_CO_TYP_DNE_GPE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="50" name="TDG_LIB_TYP_DNE_GPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="50" name="TDG_LIB_TYP_DNE_GPE_ENG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="50" name="TDG_LIB_TYP_DNE_GPE_ESP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+        <additionalProperties key="Comment" value=""/>
+      </metadata>
+    </node>
+    <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="224">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleOutput_1"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.RSR_bdd_dwh_Server"/>
+      <elementParameter field="TEXT" name="HOST" value="context.RSR_bdd_dwh_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.RSR_bdd_dwh_Port"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.RSR_bdd_dwh_Sid"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
+      <elementParameter field="TEXT" name="TABLESCHEMA" value="context.RSR_bdd_dwh_Schema"/>
+      <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TS_PER_COUR_PCO&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A - DWH_TS_PER_COUR_PCO"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+      <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.RSR_bdd_dwh_AdditionalParams"/>
+      <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+      <elementParameter field="TABLE" name="ADD_COLS">
+        <elementValue elementRef="NAME" value="&quot;PCO_ID_PER_COUR&quot;"/>
+        <elementValue elementRef="DATATYPE" value="VARCHAR2(50)"/>
+        <elementValue elementRef="SQL" value="&quot;SEQ_PCO.nextval&quot;"/>
+        <elementValue elementRef="POS" value="REPLACE"/>
+        <elementValue elementRef="REFCOL" value="PCO_ID_PER_COUR"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="PCO_ID_PER_COUR"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="PCO_ID_ENT_JUR_GPE"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="PCO_ID_TYP_DNE_GPE"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="PCO_PER_COUR"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="PCO_DER_PER_CLO"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+      <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+      <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+      <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" show="false" value="false"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+      <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+      <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="&quot;DWH_TS_PER_COUR_PCO&quot;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="DWH_TS_PER_COUR_PCO" name="tOracleOutput_1">
+        <column comment="" key="true" length="38" name="PCO_ID_PER_COUR" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="38" name="PCO_ID_ENT_JUR_GPE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="38" name="PCO_ID_TYP_DNE_GPE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="8" name="PCO_PER_COUR" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="8" name="PCO_DER_PER_CLO" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <additionalProperties key="Comment" value=""/>
+      </metadata>
+      <metadata connector="REJECT" label="DWH_TS_PER_COUR_PCO" name="REJECT">
+        <column comment="" key="true" length="38" name="PCO_ID_PER_COUR" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="38" name="PCO_ID_ENT_JUR_GPE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="38" name="PCO_ID_TYP_DNE_GPE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="8" name="PCO_PER_COUR" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="8" name="PCO_DER_PER_CLO" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+        <additionalProperties key="Comment" value=""/>
+      </metadata>
+    </node>
+    <connection connectorName="FLOW" label="In_PCO" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="In_PCO"/>
+    </connection>
+    <connection connectorName="FLOW" label="Out_PCO" lineStyle="0" metaname="Out_PCO" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tOracleOutput_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Out_PCO"/>
+    </connection>
+    <connection connectorName="FLOW" label="Lkp_EJG" lineStyle="8" metaname="tOracleInput_1" offsetLabelX="-16" offsetLabelY="0" source="tOracleInput_1" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Lkp_EJG"/>
+    </connection>
+    <connection connectorName="FLOW" label="Lkp_TDG" lineStyle="8" metaname="tOracleInput_2" offsetLabelX="17" offsetLabelY="-1" source="tOracleInput_2" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Lkp_TDG"/>
+    </connection>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="INPUT_1"/>
+      <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Insertion d'une nouvelle ligne de période par EJG et par type de données"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;255"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="96" posY="224">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="INPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_1">
+        <column comment="" key="false" length="-1" name="Code_EJG" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Code_type_donnees" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Periode_courante" nullable="false" originalLength="-1" pattern="&quot;yyyyMMdd&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3ca006c4-fe9c-4d7e-950a-5c0d8ce452e0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ekoTOoOYyWoVvTp8/6Fa/WM4mZwGvonhnJCFFzV5ybmeVpF06vuMi7GgHo9C1HXOWvpI8HnKYWQk&#13;
+fnCtDvSBPw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_09c89d17-7445-4558-bc13-ceefeff512cb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LxB/OfIwZiCgY1ePhc7U41U6vbyKW7C1fXOrI6Jp1lql1BjnCbtNCRkp3HKIBfsVwJNCp5Cmk6m6&#13;
+ISQ92ONVww==</DigestValue></Reference></SignedInfo><SignatureValue>YmBPBgOIJzhsSa8cV+r/Q6p8vdjEjoaaab/xAy8pToZ1+iF9PIZDCoIjiZno77sIpfWLOC+pHWJ3&#13;
+u6gRjI/kUt47zDqGOtylIQv4X1eVoZGsmBYxQh8eGBDY5j76NcwW2WaCWDOvskE3fkbILmW1e5Pj&#13;
+tR4QNSLPzgpH458pEkX3aK1zb1QLujHpAzXufcpZ4dfZGMu5RLRNksGkSXau97swlb7UI9ejWCrv&#13;
+7/5j7DXAjLRd5/vyMv9cD68yKbv5l8WXUEroCIRl7lMCwYzBBobesKt+MlpeCzNuYTtOJT+SL0yV&#13;
+RMXrSjm0aoQm80f34yC9pKosoacNJJsnzbUDYg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg&#13;
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#13;
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq&#13;
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46&#13;
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb&#13;
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM&#13;
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE&#13;
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG&#13;
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu&#13;
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0&#13;
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ&#13;
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5&#13;
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ&#13;
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3&#13;
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn&#13;
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as&#13;
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13;
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_09c89d17-7445-4558-bc13-ceefeff512cb" Target="#_3ca006c4-fe9c-4d7e-950a-5c0d8ce452e0"><Timestamp>2020-11-10 18:20:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
