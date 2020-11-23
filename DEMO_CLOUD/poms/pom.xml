@@ -38,13 +38,14 @@
     <module>jobs/process/DEMO_DS/VOLVO/GROUPING/jdgroupingtask_0.1</module>
     <module>jobs/process/DEMO_DS/VOLVO/GROUPING/jddeletegroupingtasks_0.1</module>
     <module>jobs/process/DEMO_DS/VOLVO/MERGING/jdmergingtask_0.1</module>
+    <module>jobs/process/DEMO_DS/VOLVO/RESOLUTION/jddeletemergingtasks_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMO_CLOUD</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
