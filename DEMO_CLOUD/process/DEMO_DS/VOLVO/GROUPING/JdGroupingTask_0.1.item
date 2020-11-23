@@ -295,7 +295,21 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tBufferInput_1"/>
+    <metadata connector="FLOW" name="tBufferInput_1">
+      <column comment="" key="false" length="0" name="TYPE_FIC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="TYPE_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ID_CLI" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NOM_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PRENOM_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="COMMUNE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NJF" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NSS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_NAISSANCE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AGE" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SEXE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DER_VIS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CIVILITE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
@@ -368,25 +382,39 @@
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out_grouping_task" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row1.TYPE_FIC" name="TYPE_FIC" type="id_String"/>
-        <mapperTableEntries expression="row1.TYPE_CLI " name="TYPE_CLI" type="id_String"/>
-        <mapperTableEntries expression="row1.ID_CLI" name="ID_CLI" type="id_Integer"/>
-        <mapperTableEntries expression="row1.NOM_CLI" name="NOM_CLI" type="id_String"/>
-        <mapperTableEntries expression="row1.PRENOM_CLI" name="PRENOM_CLI" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.COMMUNE" name="COMMUNE" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.NJF" name="NJF" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.NSS" name="NSS" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.DATE_NAISSANCE " name="DATE_NAISSANCE" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.SEXE" name="SEXE" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.DER_VIS" name="DER_VIS" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.CIVILITE" name="CIVILITE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.TYPE_FIC" name="TYPE_FIC" type="id_String"/>
+        <mapperTableEntries expression="row2.TYPE_CLI" name="TYPE_CLI" type="id_String"/>
+        <mapperTableEntries expression="row2.ID_CLI" name="ID_CLI" type="id_Integer"/>
+        <mapperTableEntries expression="row2.NOM_CLI" name="NOM_CLI" type="id_String"/>
+        <mapperTableEntries expression="row2.PRENOM_CLI" name="PRENOM_CLI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.COMMUNE" name="COMMUNE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.NJF" name="NJF" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.NSS" name="NSS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.DATE_NAISSANCE" name="DATE_NAISSANCE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.SEXE" name="SEXE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.DER_VIS" name="DER_VIS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.CIVILITE" name="CIVILITE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;)).split(&quot;_&quot;)[2] " name="TDS_GID" type="id_String"/>
         <mapperTableEntries expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" name="TDS_SOURCE" nullable="true" type="id_String"/>
         <mapperTableEntries name="TDS_SCORE" nullable="true" type="id_Double"/>
         <mapperTableEntries name="TDS_DUE_DATE" nullable="true" type="id_Long"/>
         <mapperTableEntries name="TDS_EXTERNAL_ID" nullable="true" type="id_String"/>
       </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE"/>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="TYPE_FIC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TYPE_CLI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ID_CLI" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="NOM_CLI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PRENOM_CLI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="COMMUNE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NJF" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NSS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATE_NAISSANCE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AGE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="SEXE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DER_VIS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CIVILITE" nullable="true" type="id_String"/>
+      </inputTables>
     </nodeData>
   </node>
   <node componentName="tDataStewardshipTaskOutput" componentVersion="0.25.3" offsetLabelX="0" offsetLabelY="0" posX="512" posY="256">
@@ -466,6 +494,47 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tBufferInput_1" offsetLabelX="0" offsetLabelY="0" source="tBufferInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="ID_CLI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRENOM_CLI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DER_VIS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_NAISSANCE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NJF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NSS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COMMUNE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYPE_FIC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYPE_CLI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_CLI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SEXE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CIVILITE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AGE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
@@ -536,13 +605,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5afa37f2-d6e8-4013-b00b-d801b8a1c5c6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2iq6T7NlH0qNP4fJcjhxp5eOpowgkhhsP8S8T81reOcvITkLvrRUW5GRqoXqLu63uGTBSiZJZbrg&#13;
-3B2elZMKqg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_215486c8-3d20-43e4-82c0-6f018dec6157"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>a7j9PJ7nxW/9prGbsvPRekU9aYxOyYaLaiSi4KWtlS+lr6627nuqbMzKiNBym0kZiolnuBR14ouI&#13;
-cXbrFqw/pA==</DigestValue></Reference></SignedInfo><SignatureValue>PPyBMYPlTUuPMKwss4JgdImTlrtBXJ5bwpl4eMOsG5qg0lpr3giwyj0lXntG9ZJ0iVLiSR9Kqvqn&#13;
-DFwl2ly/Qe9se6KGXw67h9VsBCoRK1mT3oVmFaqWOz2c4TGEL/ohEZGT6f7obpA5v3J1lh9hIlLg&#13;
-VtuBU8Vq3fP0a3+vV+LUHJpWHfOpQkxccSlg2mOejBs2ME2AkTbEZdYWlyMYL3QoF9o23kcoZboD&#13;
-PS04EnzqJ9cdgMpaCFW5QboFB78L5VfVU5KI+UxwQ4BGLH5R6rGNBVTT9n9AZw17GfkjT9SKzcCH&#13;
-sJw0pBKGFtlv9S57drZCcuitdKwn0GULl1E8UQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b0b262e5-3378-44b2-9b44-004e94a7a89b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yL14GLbvAD5CQTTz/iq8ZSvaKoGNTmpC2bi6DQf1xDp5Thz8NN5fKtSI3n0S3u8N0X6tuKLK644T&#13;
+txzaMJHbSQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b4eca6f8-c5fb-465d-88be-95c9c2bbbcba"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4pO+yL1fSmdLsJNb4BE7RSunDGaWmaWNyPMrEpLf75Ai5YuRsIi4/62TJ1ytg5eEnV75vjrx2ny+&#13;
+T5TmO6lDZA==</DigestValue></Reference></SignedInfo><SignatureValue>nDLLxZfD5j4kQvbzVy0sCl0jfzefugDFhoCdwCZhJw6Asd1BFUBKBaZ1wd4JD2RTJYfROJuVRq1Q&#13;
+VPWbL+RJjbdv4gSLpLvyW0/ynmShgxnw6Xv6tekwkgjc9QDH/P9z2PZWl6NqO7hXS/BmLQ/WWOSw&#13;
+VTfxKKHdovupRuo4h0L/ApM18OB3fdbS00oAYj6YTmAfEqq3M/ddiZacfIX6jm7ypswdhw7zggMt&#13;
++kp3mzKjuYTSevwjjCeXj1MrOeKRWlhlgpXIehtvoidodh+JHPhsoOD/Fg75NmRy7m4jCPqQogMZ&#13;
+cWkeE00ZNHucOmG48/YXd6zd5e3u6GlQVVzBgA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
@@ -566,4 +635,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_215486c8-3d20-43e4-82c0-6f018dec6157" Target="#_5afa37f2-d6e8-4013-b00b-d801b8a1c5c6"><Timestamp>2020-11-23 13:57:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b4eca6f8-c5fb-465d-88be-95c9c2bbbcba" Target="#_b0b262e5-3378-44b2-9b44-004e94a7a89b"><Timestamp>2020-11-23 13:58:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
