@@ -268,7 +268,36 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="128">
+  <node componentName="tBufferOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBufferOutput_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tBufferOutput_1">
+      <column comment="" key="false" length="0" name="TYPE_FIC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="TYPE_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ID_CLI" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NOM_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PRENOM_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="COMMUNE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NJF" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NSS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_NAISSANCE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AGE" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SEXE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DER_VIS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CIVILITE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBufferInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBufferInput_1"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBufferInput_1"/>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -357,24 +386,10 @@
         <mapperTableEntries name="TDS_DUE_DATE" nullable="true" type="id_Long"/>
         <mapperTableEntries name="TDS_EXTERNAL_ID" nullable="true" type="id_String"/>
       </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="TYPE_FIC" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TYPE_CLI" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ID_CLI" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="NOM_CLI" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PRENOM_CLI" nullable="true" type="id_String"/>
-        <mapperTableEntries name="COMMUNE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="NJF" nullable="true" type="id_String"/>
-        <mapperTableEntries name="NSS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DATE_NAISSANCE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AGE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="SEXE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DER_VIS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CIVILITE" nullable="true" type="id_String"/>
-      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE"/>
     </nodeData>
   </node>
-  <node componentName="tDataStewardshipTaskOutput" componentVersion="0.25.3" offsetLabelX="0" offsetLabelY="0" posX="832" posY="128">
+  <node componentName="tDataStewardshipTaskOutput" componentVersion="0.25.3" offsetLabelX="0" offsetLabelY="0" posX="512" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDataStewardshipTaskOutput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_VIAwEC12Eeug8cQVKx7IZQ"/>
@@ -443,9 +458,16 @@
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tBufferInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tBufferOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tBufferInput_1" offsetLabelX="0" offsetLabelY="0" source="tBufferInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <connection connectorName="FLOW" label="out_grouping_task" lineStyle="0" metaname="out_grouping_task" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDataStewardshipTaskOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -509,13 +531,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c9606166-ec6b-45a0-b088-cf378a5e953c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZS725WVJhEC1zn4dbSkRA5olMP45NX4VMVpVb5Z3qOUJTiQVWs40Pd66uawf86hHjuwkEHQBazUB&#13;
-8TeR8l4xNw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6d34b0eb-1b4e-4111-b10b-d8dfb0ac8cf8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>36BXEveocoULZJmQqDlVYhZCR/8jK62O63jL7IS7EZfl4vNNrFW7kFhZWFg6PI91VnoGc85tB8m5&#13;
-4woakAQkJw==</DigestValue></Reference></SignedInfo><SignatureValue>0cGHH0FPF13z6oYfQfJaaGme3UpxHQJIWwz8GG3Geia2yN3W9wrYLys+G1IiMpO+VRPNbDX6wuES&#13;
-65WLOq5a17n1p3GQXmNHx4r7ZON/xEYXUFqbc3h33z3m9KaWkZqik6tTrR7LyJWS24dMmbaoMKlE&#13;
-GKa2xW7he5/u2649raUqGDQyQ920EaOHZwdZZ+LYbVeZMV/pSd0gsvtRnzOPBbdPmGLelIfTlF+s&#13;
-2rGWZM96HVqp/ZWoeokfAFTEkPsQ11Sd38NwK+BmzLC9UWMpDz4ENBDGXoIYx709cn4brv07ZGuj&#13;
-UJSvbI+FppmG0uDzMP8/y36IVwtK9s0YOJI+bw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tBufferInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5afa37f2-d6e8-4013-b00b-d801b8a1c5c6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2iq6T7NlH0qNP4fJcjhxp5eOpowgkhhsP8S8T81reOcvITkLvrRUW5GRqoXqLu63uGTBSiZJZbrg&#13;
+3B2elZMKqg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_215486c8-3d20-43e4-82c0-6f018dec6157"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>a7j9PJ7nxW/9prGbsvPRekU9aYxOyYaLaiSi4KWtlS+lr6627nuqbMzKiNBym0kZiolnuBR14ouI&#13;
+cXbrFqw/pA==</DigestValue></Reference></SignedInfo><SignatureValue>PPyBMYPlTUuPMKwss4JgdImTlrtBXJ5bwpl4eMOsG5qg0lpr3giwyj0lXntG9ZJ0iVLiSR9Kqvqn&#13;
+DFwl2ly/Qe9se6KGXw67h9VsBCoRK1mT3oVmFaqWOz2c4TGEL/ohEZGT6f7obpA5v3J1lh9hIlLg&#13;
+VtuBU8Vq3fP0a3+vV+LUHJpWHfOpQkxccSlg2mOejBs2ME2AkTbEZdYWlyMYL3QoF9o23kcoZboD&#13;
+PS04EnzqJ9cdgMpaCFW5QboFB78L5VfVU5KI+UxwQ4BGLH5R6rGNBVTT9n9AZw17GfkjT9SKzcCH&#13;
+sJw0pBKGFtlv9S57drZCcuitdKwn0GULl1E8UQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
@@ -539,4 +566,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6d34b0eb-1b4e-4111-b10b-d8dfb0ac8cf8" Target="#_c9606166-ec6b-45a0-b088-cf378a5e953c"><Timestamp>2020-11-23 13:52:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_215486c8-3d20-43e4-82c0-6f018dec6157" Target="#_5afa37f2-d6e8-4013-b00b-d801b8a1c5c6"><Timestamp>2020-11-23 13:57:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
