@@ -296,6 +296,7 @@
       <column comment="" key="false" length="0" name="SEXE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="DER_VIS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CIVILITE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NOM_FIC" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
@@ -314,6 +315,7 @@
         <mapperTableEntries expression="row1.SEXE" name="SEXE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.DER_VIS" name="DER_VIS" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.CIVILITE" name="CIVILITE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" name="NOM_FIC" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="TYPE_FIC" nullable="true" type="id_String"/>
@@ -375,6 +377,8 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CIVILITE"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_FIC"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
@@ -402,6 +406,7 @@
       <column comment="" key="false" length="0" name="SEXE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="DER_VIS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CIVILITE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NOM_FIC" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="288">
@@ -420,8 +425,6 @@
     <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
     <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3TobIC2SEeug8cQVKx7IZQ - metadata"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_w6mJYC16Eeug8cQVKx7IZQ - metadata"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -454,6 +457,8 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="DER_VIS"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CIVILITE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_FIC"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
@@ -497,6 +502,9 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="CIVILITE"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_FIC"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
     </elementParameter>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
@@ -522,6 +530,7 @@
       <column comment="" key="false" length="0" name="SEXE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="DER_VIS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CIVILITE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NOM_FIC" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
       <column comment="" key="false" length="0" name="TYPE_FIC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -537,6 +546,7 @@
       <column comment="" key="false" length="0" name="SEXE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="DER_VIS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CIVILITE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NOM_FIC" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -624,8 +634,8 @@
         <mapperTableEntries expression="row2.SEXE" name="SEXE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.DER_VIS" name="DER_VIS" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.CIVILITE" name="CIVILITE" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;)).split(&quot;_&quot;)[2] " name="TDS_GID" type="id_String"/>
-        <mapperTableEntries expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" name="TDS_SOURCE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.NOM_FIC .split(&quot;_&quot;)[2] " name="TDS_GID" type="id_String"/>
+        <mapperTableEntries expression="row2.NOM_FIC " name="TDS_SOURCE" nullable="true" type="id_String"/>
         <mapperTableEntries name="TDS_SCORE" nullable="true" type="id_Double"/>
         <mapperTableEntries name="TDS_DUE_DATE" nullable="true" type="id_Long"/>
         <mapperTableEntries name="TDS_EXTERNAL_ID" nullable="true" type="id_String"/>
@@ -644,6 +654,7 @@
         <mapperTableEntries name="SEXE" nullable="true" type="id_String"/>
         <mapperTableEntries name="DER_VIS" nullable="true" type="id_String"/>
         <mapperTableEntries name="CIVILITE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NOM_FIC" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -736,6 +747,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="out_fic_temp" lineStyle="0" metaname="out_fic_temp" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputExcel_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_FIC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_fic_temp"/>
   </connection>
@@ -778,6 +794,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="AGE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_FIC"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -859,13 +878,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f8a29ce1-1bef-4e2b-b920-edb8a7fe4db7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OKG5RforYpXX+ezp5CVlL6L8UiAaGjCQB7JVtz03lCEYGflZ89kL0iqootOsQLyvoUg2dXQOWWCB&#13;
-ZnkJm7wLcQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9ed10487-337a-40ab-b3a9-303dd4da7e54"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>U4XdHAaBrAPzBpYRTl7aBnOJKBoF+fAftSOU8QZlnRpOvmD8s7JZkBWWuTurjlnww6M4CQiP2j/M&#13;
-1fqkFCccKA==</DigestValue></Reference></SignedInfo><SignatureValue>uHEEbeT1Av85dUquOZe1hRpQXOwqIcXLz3K50JN36PL4w72hMVLfoLZykkelPuuWucGJraICb4Z+&#13;
-OZ34sAh/XWxv8pMu8MDeq7exKXVpNUdhQiSS/fCn6RUJhQZnxKVMIZUJKJdSMs/2D89cjaeqELr1&#13;
-eXAM9x0PbAi0o/sonlg4lvQIt5gh2IsLYJxvQcwvdpr/yySomaCJBpvQ9b6y/iFeKMI7q8FWPiet&#13;
-XXiTxKivK//dz8HztJdoEUXOfEBsZ2wHpVTwJ/QwJNFDaH65wf+bXp9DIkNezXYiiwZzFsiUhy0H&#13;
-PoqRYq/x+9PMKPch965bWz75ePzdVVHkVN+hWw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b4e46da1-7ee0-4820-a095-0192ed6cbf2c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>j6OnyCjSaVFBfjaGEYgZ0wE5jDRHu14jDV/sQnOohooOjCvPWjmxTGEXe+uHMmj49cQ3ZdJTV9U2&#13;
+ZEnvS1r4sw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ad117fac-b69a-4426-a5cd-60f6e334099c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hmx4aScapI/PEACCemIyzasB0YAV9wcSxsrQdHjTYGl3YLItCx4w7Pr7YXgtowG3P7dxqhbs99Xb&#13;
+eenFqbuujQ==</DigestValue></Reference></SignedInfo><SignatureValue>QbWxP4RS6B3DeQ8RHN2gjT4+4IHNnbM15PYM+vdP+YuSWMNskgC+urLJS0ZpmvxXFUZ4fELF9iNf&#13;
+kYKKJRKFUKhFQrPfc2lYIllrJiO0jAy1Ck/VZcG39ChsKCBBVFuZ9hvmLCWIiQanT6Z6d1eiFnt1&#13;
+netL7QqKsD5YEdkP72Ze/RhNT1X8z9VkV+Ve9oicm2rNIYB9+FQuvfSrLUU1OcrNFQazZtprmtxf&#13;
+TwedD24xe9wo3wb5QNWEzvWTfZ5/+m/6daKpJ/5FbCZaNAOfyaHQ0SDxkw03QJrmsdZZjOmthMKP&#13;
+GfoGWTPK1leOvbhnFW72qglS04iI4rEEaVJdbQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
@@ -889,4 +908,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9ed10487-337a-40ab-b3a9-303dd4da7e54" Target="#_f8a29ce1-1bef-4e2b-b920-edb8a7fe4db7"><Timestamp>2020-11-23 14:03:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ad117fac-b69a-4426-a5cd-60f6e334099c" Target="#_b4e46da1-7ee0-4820-a095-0192ed6cbf2c"><Timestamp>2020-11-23 14:39:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
