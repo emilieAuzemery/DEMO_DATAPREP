@@ -656,7 +656,7 @@
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
     </metadata>
-    <metadata connector="CONFIDENT_GROUPS" label="metadata" name="CONFIDENT_GROUPS">
+    <metadata connector="UNCERTAIN_GROUPS" label="metadata" name="UNCERTAIN_GROUPS">
       <column comment="" key="false" length="0" name="TYPE_FIC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="TYPE_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ID_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -677,7 +677,7 @@
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
     </metadata>
-    <metadata connector="UNCERTAIN_GROUPS" label="metadata" name="UNCERTAIN_GROUPS">
+    <metadata connector="CONFIDENT_GROUPS" label="metadata" name="CONFIDENT_GROUPS">
       <column comment="" key="false" length="0" name="TYPE_FIC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="TYPE_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ID_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1281,13 +1281,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
-  <connection connectorName="CONFIDENT_GROUPS" label="row5" lineStyle="0" metaname="CONFIDENT_GROUPS" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMatchGroup_1" target="tMap_3">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
-  </connection>
-  <connection connectorName="UNCERTAIN_GROUPS" label="row3" lineStyle="0" metaname="UNCERTAIN_GROUPS" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMatchGroup_1" target="tMap_2">
+  <connection connectorName="UNCERTAIN_GROUPS" label="row3" lineStyle="0" metaname="UNCERTAIN_GROUPS" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMatchGroup_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="CONFIDENT_GROUPS" label="row5" lineStyle="0" metaname="CONFIDENT_GROUPS" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMatchGroup_1" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
   <connection connectorName="FLOW" label="out_merging_task" lineStyle="0" metaname="out_merging_task" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDataStewardshipTaskOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1430,13 +1430,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_92649aff-7218-4e15-808b-be4ac3787715"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+1UZqoesHu9emS9QYFxisfAeURPFpmz7bjN43KpXW9kQ7IqQfWGv6vPvUq3jJKJ5H3xTeswDBpR7&#13;
-fLPMchOHoA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_98dc9b58-8da7-42db-a4ab-77612412b7dd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jjHpYMCW/zPi9eudr5KuKDazit/w50uSuaFeLslNJzrD7G5yidn9GpiQ6npF2XETGg3HjH2oRyUl&#13;
-nukqkcLXGA==</DigestValue></Reference></SignedInfo><SignatureValue>ys0eZp+2aWosz4aUQLgBjkui0SyJIi9p/wSymCAFsSF/V298Ek3PAp2UimVjiQBdNLHWmsoLW5K1&#13;
-m4baiKPjdbW+qSxLYvaZW1u6aARBuL8SOK5X+6ZJxCmfrZxXYFWV+4aFCzdmqezCEWHS1LJ8EG4q&#13;
-tYl/4g4/RmNpf2qKLCYtRr7xD9LKLvQRiZMNvcl3X7L1OvalVM0wH7iZJlR22AJ2rrRu9Hh3Lewm&#13;
-LMh0fgipmuYle0vvvfNXB8T/q64XIsEIzTVmYYfnMVqmmK4p8XQHgB8a4SNAb9Ns1jtKYcI5eVme&#13;
-5TF9AQzbgwEscH7BtOy6mUjeoe4KF4siqKVYng==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_66956ef0-12b2-4bf4-a441-8977642b5079"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>W4owWTbU4HegSeT8p/bLMlCoSF2iwv1aFBzyCDp/zEakrQCWjUiX4qp9lXg/HmE0hyNPpxyzKSp+&#13;
+PXhIdw8/Gw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2ce5ebf2-e694-4f2c-b600-c43282a30fac"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mBIEgoCANe6QZyO3efnMAczQyqnhsOW8B0u9AomFuP5Ovt0juiW1z+hCvPN5dihmrcS6o+wQ2Eai&#13;
+XpFcESZ3/Q==</DigestValue></Reference></SignedInfo><SignatureValue>OGyArB1Ik1L+H3mRw9sKDe0aCWVSPUeQKw7xAu2VH/ap3OcnJi74/71BtsFcBt/xqh5yLcIMkRbP&#13;
+McsT+z0UWtgACm6rUo5mSP/DMGIOHZU8SthjDjXyj0YxyDPlQbCUlpsaCQg3DLo7DTvnhMFvh2uv&#13;
+332GYQs2jqRAnqGo/18iLpVCgH2LOHoKcDn/XaOuMI0JUjSiHi8/FWBKSDRvs6Pe+ijyj653ymkZ&#13;
+yDpIEBQ3gKbJ9yNT+JNjSXVVVsZJUcM9+eGGaOdwYbDQO1X5himj3+H3MSqUgmz+k9mwWs2mp3Nh&#13;
+1LIc0sVGcQKbis8toNRWAQiC5M3FV2qVLFoa3A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
@@ -1460,4 +1460,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_98dc9b58-8da7-42db-a4ab-77612412b7dd" Target="#_92649aff-7218-4e15-808b-be4ac3787715"><Timestamp>2020-11-23 16:00:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2ce5ebf2-e694-4f2c-b600-c43282a30fac" Target="#_66956ef0-12b2-4bf4-a441-8977642b5079"><Timestamp>2020-11-23 16:07:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
