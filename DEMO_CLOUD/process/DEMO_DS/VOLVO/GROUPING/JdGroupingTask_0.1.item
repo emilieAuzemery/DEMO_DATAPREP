@@ -147,6 +147,8 @@
     <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
     <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_3TobIC2SEeug8cQVKx7IZQ - metadata"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_w6mJYC16Eeug8cQVKx7IZQ - metadata"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -170,7 +172,9 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NSS"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DNS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_NAISSANCE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AGE"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SEXE"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -205,7 +209,10 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="NSS"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DNS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_NAISSANCE"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AGE"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SEXE"/>
@@ -231,13 +238,14 @@
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
       <column comment="" key="false" length="0" name="TYPE_FIC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="TYPE_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ID_CLI" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ID_CLI" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="NOM_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PRENOM_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="COMMUNE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="NJF" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="NSS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="DNS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_NAISSANCE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AGE" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="SEXE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="DER_VIS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CIVILITE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -245,13 +253,14 @@
     <metadata connector="REJECT" label="metadata" name="REJECT">
       <column comment="" key="false" length="0" name="TYPE_FIC" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="TYPE_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ID_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ID_CLI" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="NOM_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PRENOM_CLI" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="COMMUNE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="NJF" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="NSS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="DNS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_NAISSANCE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AGE" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="SEXE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="DER_VIS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CIVILITE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -331,14 +340,14 @@
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out_grouping_task" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.TYPE_FIC" name="TYPE_FIC" type="id_String"/>
-        <mapperTableEntries expression="row1.TYPE_CLI" name="TYPE_CLI" type="id_String"/>
+        <mapperTableEntries expression="row1.TYPE_CLI " name="TYPE_CLI" type="id_String"/>
         <mapperTableEntries expression="row1.ID_CLI" name="ID_CLI" type="id_Integer"/>
         <mapperTableEntries expression="row1.NOM_CLI" name="NOM_CLI" type="id_String"/>
         <mapperTableEntries expression="row1.PRENOM_CLI" name="PRENOM_CLI" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.COMMUNE" name="COMMUNE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.NJF" name="NJF" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.NSS" name="NSS" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.DNS " name="DATE_NAISSANCE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DATE_NAISSANCE " name="DATE_NAISSANCE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.SEXE" name="SEXE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.DER_VIS" name="DER_VIS" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.CIVILITE" name="CIVILITE" nullable="true" type="id_String"/>
@@ -357,7 +366,8 @@
         <mapperTableEntries name="COMMUNE" nullable="true" type="id_String"/>
         <mapperTableEntries name="NJF" nullable="true" type="id_String"/>
         <mapperTableEntries name="NSS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DNS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATE_NAISSANCE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AGE" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="SEXE" nullable="true" type="id_String"/>
         <mapperTableEntries name="DER_VIS" nullable="true" type="id_String"/>
         <mapperTableEntries name="CIVILITE" nullable="true" type="id_String"/>
@@ -499,13 +509,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2a6bda24-828c-4379-9a3c-50e280219793"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>it+piM5aoisbNx2TKi/2jwG0UsVjlk4vdpo5hseQUUw8iHh2lp2+0xWq4e8nzmriru+VC4Oe/qql&#13;
-fc1KD4Eg7g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_936432a6-6bae-4b5e-b210-5aca62343cb1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OQG+oMQ8SFpwbuvDqMBpXcx9OIash0sSXSqdIPYk5hRUW248Rz903PeV5Shb/6cU+GiAxAPLbdEn&#13;
-pyl1innMvg==</DigestValue></Reference></SignedInfo><SignatureValue>pHpAjZUWlk4MzTleqYBs62l87u/+aqX4bHXey+QJZJNb27FoKYOl3UEGSG9R/7Lxl75teNuXmFin&#13;
-+6vngjIR/m6KRjVwM7Hfl5/JQBvJ0OSfLf34+WxMtrWMYfgq7xF57zDDXcddF0eEODHAEvzC3mBd&#13;
-5SKi5fwgPz8xV0ZvjebycDuvV8aH8S44Fmkf+wDwjzLQQrAcASdvgrwKOBaAX5+Pe23OrtdKkX/T&#13;
-bFvnIE10KV07Ny9ZFTaNdI0yWzq4RqL736ENyAkiV2BAtQRBSzgW/oGPxZ05D+3O7AfmNeSPlu+0&#13;
-vrrSBYWdSVwb3kV0EDldZYSRhwEdO4cwNnFw9Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c9606166-ec6b-45a0-b088-cf378a5e953c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZS725WVJhEC1zn4dbSkRA5olMP45NX4VMVpVb5Z3qOUJTiQVWs40Pd66uawf86hHjuwkEHQBazUB&#13;
+8TeR8l4xNw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6d34b0eb-1b4e-4111-b10b-d8dfb0ac8cf8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>36BXEveocoULZJmQqDlVYhZCR/8jK62O63jL7IS7EZfl4vNNrFW7kFhZWFg6PI91VnoGc85tB8m5&#13;
+4woakAQkJw==</DigestValue></Reference></SignedInfo><SignatureValue>0cGHH0FPF13z6oYfQfJaaGme3UpxHQJIWwz8GG3Geia2yN3W9wrYLys+G1IiMpO+VRPNbDX6wuES&#13;
+65WLOq5a17n1p3GQXmNHx4r7ZON/xEYXUFqbc3h33z3m9KaWkZqik6tTrR7LyJWS24dMmbaoMKlE&#13;
+GKa2xW7he5/u2649raUqGDQyQ920EaOHZwdZZ+LYbVeZMV/pSd0gsvtRnzOPBbdPmGLelIfTlF+s&#13;
+2rGWZM96HVqp/ZWoeokfAFTEkPsQ11Sd38NwK+BmzLC9UWMpDz4ENBDGXoIYx709cn4brv07ZGuj&#13;
+UJSvbI+FppmG0uDzMP8/y36IVwtK9s0YOJI+bw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
@@ -529,4 +539,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_936432a6-6bae-4b5e-b210-5aca62343cb1" Target="#_2a6bda24-828c-4379-9a3c-50e280219793"><Timestamp>2020-11-23 13:51:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6d34b0eb-1b4e-4111-b10b-d8dfb0ac8cf8" Target="#_c9606166-ec6b-45a0-b088-cf378a5e953c"><Timestamp>2020-11-23 13:52:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
