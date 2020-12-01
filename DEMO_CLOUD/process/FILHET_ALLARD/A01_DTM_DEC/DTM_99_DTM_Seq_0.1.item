@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="FA" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="VAR_LOC_CHAMPS_CALCULES" prompt="VAR_LOC_CHAMPS_CALCULES?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_JOB_BTI_PK" prompt="VAR_JOB_BTI_PK?" promptNeeded="false" repositoryContextId="_0EJwAAUjEem5Ds7Od0eaiQ" type="id_BigDecimal" value=""/>
+    <contextParameter comment="" name="VAR_DATE_STATEMENT" prompt="VAR_DATE_STATEMENT?" promptNeeded="false" repositoryContextId="_0EJwAAUjEem5Ds7Od0eaiQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_JOB_LFLO_IDENT" prompt="VAR_JOB_LFLO_IDENT?" promptNeeded="false" repositoryContextId="_0EJwAAUjEem5Ds7Od0eaiQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_JOB_COMMENTAIRES" prompt="VAR_JOB_COMMENTAIRES?" promptNeeded="false" repositoryContextId="_0EJwAAUjEem5Ds7Od0eaiQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_JOB_STATUT_TRAITEMENT" prompt="VAR_JOB_STATUT_TRAITEMENT?" promptNeeded="false" repositoryContextId="_0F1GIPedEeiKzYB2FatEaw" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_JOB_BDL_PK" prompt="VAR_JOB_BDL_PK?" promptNeeded="false" repositoryContextId="_0F1GIPedEeiKzYB2FatEaw" type="id_BigDecimal" value=""/>
+    <contextParameter comment="" name="ODS_CTRL_FLAG" prompt="ODS_CTRL_FLAG?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="ODS_SOURCE" prompt="ODS_SOURCE?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="ODS_STATUT" prompt="ODS_STATUT?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="TRD_ID_CTRL" prompt="TRD_ID_CTRL?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="TRT_ID_CREA" prompt="TRT_ID_CREA?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="TRT_ID_DWH" prompt="TRT_ID_DWH?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="Répertoire variable Contexte" name="VAR_FIC_CONF" prompt="VAR_FIC_CONF?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_FIC_IN" prompt="VAR_FIC_IN?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_FIC_LOG4J" prompt="VAR_FIC_LOG4J?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_FIC_OUT" prompt="VAR_FIC_OUT?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_JOB_MESSAGE_LOG" prompt="VAR_JOB_MESSAGE_LOG?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_REPERTOIRE_ARCHIVE" prompt="VAR_LOC_REPERTOIRE_ARCHIVE?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_PROCESS_INVOLVED" prompt="VAR_PROCESS_INVOLVED?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_AdditionalParams" prompt="BDD_ORACLE_BASE_VERTE_AdditionalParams?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_Login" prompt="BDD_ORACLE_BASE_VERTE_Login?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_Password" prompt="BDD_ORACLE_BASE_VERTE_Password?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_Password" value="RRyLGfljUdg="/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_Port" prompt="BDD_ORACLE_BASE_VERTE_Port?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_String" value="0"/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_Schema" prompt="BDD_ORACLE_BASE_VERTE_Schema?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_Server" prompt="BDD_ORACLE_BASE_VERTE_Server?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_ServiceName" prompt="BDD_ORACLE_BASE_VERTE_ServiceName?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_AdditionalParams" prompt="BDD_ORACLE_DWH_DEC_AdditionalParams?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_Login" prompt="BDD_ORACLE_DWH_DEC_Login?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_Password" prompt="BDD_ORACLE_DWH_DEC_Password?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_Password" value="RRyLGfljUdg="/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_Port" prompt="BDD_ORACLE_DWH_DEC_Port?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_String" value="0"/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_Schema" prompt="BDD_ORACLE_DWH_DEC_Schema?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_Server" prompt="BDD_ORACLE_DWH_DEC_Server?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_ServiceName" prompt="BDD_ORACLE_DWH_DEC_ServiceName?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_AdditionalParams" prompt="BDD_ORACLE_ODS_DEC_AdditionalParams?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_Login" prompt="BDD_ORACLE_ODS_DEC_Login?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_Password" prompt="BDD_ORACLE_ODS_DEC_Password?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_Password" value="RRyLGfljUdg="/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_Port" prompt="BDD_ORACLE_ODS_DEC_Port?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_String" value="0"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_Schema" prompt="BDD_ORACLE_ODS_DEC_Schema?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_Server" prompt="BDD_ORACLE_ODS_DEC_Server?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_ServiceName" prompt="BDD_ORACLE_ODS_DEC_ServiceName?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_AdditionalParams" prompt="BDD_ORACLE_ODS_HIS_DEC_AdditionalParams?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_Login" prompt="BDD_ORACLE_ODS_HIS_DEC_Login?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_Password" prompt="BDD_ORACLE_ODS_HIS_DEC_Password?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_Password" value="RRyLGfljUdg="/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_Port" prompt="BDD_ORACLE_ODS_HIS_DEC_Port?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_String" value="0"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_Schema" prompt="BDD_ORACLE_ODS_HIS_DEC_Schema?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_Server" prompt="BDD_ORACLE_ODS_HIS_DEC_Server?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_ServiceName" prompt="BDD_ORACLE_ODS_HIS_DEC_ServiceName?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_AdditionalParams" prompt="BDD_ORACLE_SIN_DEC_AdditionalParams?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_Login" prompt="BDD_ORACLE_SIN_DEC_Login?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_Password" prompt="BDD_ORACLE_SIN_DEC_Password?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_Password" value="RRyLGfljUdg="/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_Port" prompt="BDD_ORACLE_SIN_DEC_Port?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_String" value="0"/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_Schema" prompt="BDD_ORACLE_SIN_DEC_Schema?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_Server" prompt="BDD_ORACLE_SIN_DEC_Server?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_ServiceName" prompt="BDD_ORACLE_SIN_DEC_ServiceName?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="VAR_EXT_CODE_ERREUR_TALEND" prompt="VAR_EXT_CODE_ERREUR_TALEND?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_EXT_DATE_AUTOMATOR" prompt="VAR_EXT_DATE_AUTOMATOR?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_EXT_FILENAME_VARPROJECT" prompt="Localisation du Fichier Variable Talend (null si pas stocké en fichier) ?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_EXT_ID_AUTOMATOR" prompt="VAR_EXT_ID_AUTOMATOR?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_EXT_IDBDD_VARPROJECT" prompt="Clé Base de données de localisation des Variables Talend ?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_EXT_IDBDD_VARPROJECT_CTX" prompt="Contexte Base de données des Variables Talend ?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_EXT_LOG_LEVEL" prompt="VAR_EXT_LOG_LEVEL?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_EXT_MODE_EXECUTION" prompt="VAR_EXT_MODE_EXECUTION?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="Code du type de motif REJET" name="VAR_LOC_BLC_COD_WARNING_REJET" prompt="VAR_LOC_BLC_COD_WARNING_REJET?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Code du type de motif erreur TALEND" name="VAR_LOC_BLC_COD_WARNING_TALEND" prompt="VAR_LOC_BLC_COD_WARNING_TALEND?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Code du type de motif WARNING" name="VAR_LOC_BLC_COD_WARNING_WARNING" prompt="VAR_LOC_BLC_COD_WARNING_WARNING?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Libellé du type de motif REJET" name="VAR_LOC_BLC_TYP_WARNING_REJET" prompt="VAR_LOC_BLC_TYP_WARNING_REJET?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Libellé du type de motif erreur TALEND" name="VAR_LOC_BLC_TYP_WARNING_TALEND" prompt="VAR_LOC_BLC_TYP_WARNING_TALEND?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Libellé du type de moti WARNING" name="VAR_LOC_BLC_TYP_WARNING_WARNING" prompt="VAR_LOC_BLC_TYP_WARNING_WARNING?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_BVE_VERSION_JOB" prompt="VAR_LOC_BVE_VERSION_JOB?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Code erreur retour" name="VAR_LOC_CODE_ERREUR" prompt="VAR_LOC_CODE_ERREUR?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Niveau de l’importance de l’anomalie détectée" name="VAR_LOC_CTRL_FLAG" prompt="VAR_LOC_CTRL_FLAG?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Short" value=""/>
+    <contextParameter comment="Code de CTRL_FLAG si pas d'erreur" name="VAR_LOC_CTRL_FLAG_OK" prompt="VAR_LOC_CTRL_FLAG_OK?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Code du CTRL_FLAG si erreur TALEND" name="VAR_LOC_CTRL_FLAG_TALEND" prompt="VAR_LOC_CTRL_FLAG_TALEND?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Code du CTRL_FLAG si WARNING" name="VAR_LOC_CTRL_FLAG_WARNING" prompt="VAR_LOC_CTRL_FLAG_WARNING?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Domaine Projet" name="VAR_LOC_DOMAINE_EXECUTION" prompt="VAR_LOC_DOMAINE_EXECUTION?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_DSC_FLUX" prompt="VAR_LOC_DSC_FLUX?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Nom du projet Talend Excéution" name="VAR_LOC_DSC_PROJET_TALEND" prompt="VAR_LOC_DSC_PROJET_TALEND?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Code du traitement en entrée du job Talend" name="VAR_LOC_ID_TRAITEMENT_CREA" prompt="VAR_LOC_ID_TRAITEMENT_CREA?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Code du traitement en entrée du job Talend DWH" name="VAR_LOC_ID_TRAITEMENT_DWH" prompt="VAR_LOC_ID_TRAITEMENT_DWH?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Nombre de Lignes supprimées" name="VAR_LOC_NB_DELETE" prompt="VAR_LOC_NB_DELETE?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Nombre erreur identifiés" name="VAR_LOC_NB_ERREUR" prompt="VAR_LOC_NB_ERREUR?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Nombre de ligne insérées" name="VAR_LOC_NB_INSERT" prompt="VAR_LOC_NB_INSERT?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Nombre de Ligne après traitement" name="VAR_LOC_NB_LIGNE_APRES" prompt="VAR_LOC_NB_LIGNE_APRES?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Nombre de ligne avant Traitement" name="VAR_LOC_NB_LIGNE_AVANT" prompt="VAR_LOC_NB_LIGNE_AVANT?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Nombre de ligne mises a jour" name="VAR_LOC_NB_UPDATE" prompt="VAR_LOC_NB_UPDATE?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Identifiant Talend Process Root" name="VAR_LOC_ROOT_PROCESS_TALEND" prompt="VAR_LOC_ROOT_PROCESS_TALEND?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Sources de données" name="VAR_LOC_SOURCE_DONNEES" prompt="VAR_LOC_SOURCE_DONNEES?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Statut de la ligne ODS après traitement" name="VAR_LOC_STATUT" prompt="VAR_LOC_STATUT?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Short" value=""/>
+    <contextParameter comment="Valeur du code retour KO" name="VAR_LOC_STATUT_KO" prompt="VAR_LOC_STATUT_KO?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Short" value=""/>
+    <contextParameter comment="Valeur du code retour OK" name="VAR_LOC_STATUT_OK" prompt="VAR_LOC_STATUT_OK?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Short" value=""/>
+    <contextParameter comment="Table cible du log - Intégration table DATA_LOG" name="VAR_LOC_TABLE_TRAITEE" prompt="VAR_LOC_TABLE_TRAITEE?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Table cible du log DWH - Intégration table DATA_LOG" name="VAR_LOC_TABLE_TRAITEE_DWH" prompt="VAR_LOC_TABLE_TRAITEE_DWH?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Version du projet Talend" name="VAR_LOC_VER_PROJET_TALEND" prompt="VAR_LOC_VER_PROJET_TALEND?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_JOB_BDL_PK_ID" prompt="VAR_JOB_BDL_PK_ID?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_BigDecimal" value=""/>
+    <contextParameter comment="" name="VAR_LOC_CHAMP_IDENT" prompt="VAR_LOC_CHAMP_IDENT?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_CHAMP_IDENT_DWH" prompt="VAR_LOC_CHAMP_IDENT_DWH?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_CHAMP_IDENT_V9" prompt="VAR_LOC_CHAMP_IDENT_V9?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_CHAMP_PTRLFEVID" prompt="VAR_LOC_CHAMP_PTRLFEVID?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_DATE_FIN" prompt="VAR_LOC_DATE_FIN?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_DB_LINK" prompt="VAR_LOC_DB_LINK?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_FLAG_ACTIF" prompt="VAR_LOC_FLAG_ACTIF?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_LOC_FLAG_NON_ACTIF" prompt="VAR_LOC_FLAG_NON_ACTIF?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_LOC_FLAG_SUPPR" prompt="VAR_LOC_FLAG_SUPPR?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_LOC_REPERTOIRE_TEMP" prompt="VAR_LOC_REPERTOIRE_TEMP?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TABLE_TRAITEE_TEMP" prompt="VAR_LOC_TABLE_TRAITEE_TEMP?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TABLE_TRAITEE_TEMP2" prompt="VAR_LOC_TABLE_TRAITEE_TEMP2?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TRT_ID_SOCLE" prompt="VAR_LOC_TRT_ID_SOCLE?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TYPE_CTRL_COHERENCE" prompt="VAR_LOC_TYPE_CTRL_COHERENCE?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TYPE_CTRL_FORMAT" prompt="VAR_LOC_TYPE_CTRL_FORMAT?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TYPE_CTRL_NULL" prompt="VAR_LOC_TYPE_CTRL_NULL?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TYPE_CTRL_REF" prompt="VAR_LOC_TYPE_CTRL_REF?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_SERVER_From" prompt="SMTP_SERVER_From?" promptNeeded="false" repositoryContextId="_cxhu8NNZEeaX25c_n7Zxjw" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_SERVER_Name" prompt="SMTP_SERVER_Name?" promptNeeded="false" repositoryContextId="_cxhu8NNZEeaX25c_n7Zxjw" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_SERVER_Password" prompt="SMTP_SERVER_Password?" promptNeeded="false" repositoryContextId="_cxhu8NNZEeaX25c_n7Zxjw" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_SERVER_Port" prompt="SMTP_SERVER_Port?" promptNeeded="false" repositoryContextId="_cxhu8NNZEeaX25c_n7Zxjw" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_SERVER_To" prompt="SMTP_SERVER_To?" promptNeeded="false" repositoryContextId="_cxhu8NNZEeaX25c_n7Zxjw" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_SERVER_UserName" prompt="SMTP_SERVER_UserName?" promptNeeded="false" repositoryContextId="_cxhu8NNZEeaX25c_n7Zxjw" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="FA">
+    <contextParameter comment="" name="VAR_LOC_CHAMPS_CALCULES" prompt="VAR_LOC_CHAMPS_CALCULES?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_JOB_BTI_PK" prompt="VAR_JOB_BTI_PK?" promptNeeded="false" repositoryContextId="_0EJwAAUjEem5Ds7Od0eaiQ" type="id_BigDecimal" value=""/>
+    <contextParameter comment="" name="VAR_DATE_STATEMENT" prompt="VAR_DATE_STATEMENT?" promptNeeded="false" repositoryContextId="_0EJwAAUjEem5Ds7Od0eaiQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_JOB_LFLO_IDENT" prompt="VAR_JOB_LFLO_IDENT?" promptNeeded="false" repositoryContextId="_0EJwAAUjEem5Ds7Od0eaiQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_JOB_COMMENTAIRES" prompt="VAR_JOB_COMMENTAIRES?" promptNeeded="false" repositoryContextId="_0EJwAAUjEem5Ds7Od0eaiQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_JOB_STATUT_TRAITEMENT" prompt="VAR_JOB_STATUT_TRAITEMENT?" promptNeeded="false" repositoryContextId="_0F1GIPedEeiKzYB2FatEaw" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_JOB_BDL_PK" prompt="VAR_JOB_BDL_PK?" promptNeeded="false" repositoryContextId="_0F1GIPedEeiKzYB2FatEaw" type="id_BigDecimal" value=""/>
+    <contextParameter comment="" name="ODS_CTRL_FLAG" prompt="ODS_CTRL_FLAG?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="ODS_SOURCE" prompt="ODS_SOURCE?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value="sds"/>
+    <contextParameter comment="" name="ODS_STATUT" prompt="ODS_STATUT?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="TRD_ID_CTRL" prompt="TRD_ID_CTRL?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="TRT_ID_CREA" prompt="TRT_ID_CREA?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="TRT_ID_DWH" prompt="TRT_ID_DWH?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="Répertoire variable Contexte" name="VAR_FIC_CONF" prompt="VAR_FIC_CONF?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_FIC_IN" prompt="VAR_FIC_IN?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_FIC_LOG4J" prompt="VAR_FIC_LOG4J?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_FIC_OUT" prompt="VAR_FIC_OUT?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_JOB_MESSAGE_LOG" prompt="VAR_JOB_MESSAGE_LOG?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_REPERTOIRE_ARCHIVE" prompt="VAR_LOC_REPERTOIRE_ARCHIVE?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_PROCESS_INVOLVED" prompt="VAR_PROCESS_INVOLVED?" promptNeeded="false" repositoryContextId="_z3jeIGfVEei7M8dIF2Odig" type="id_String" value="dsds"/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_AdditionalParams" prompt="BDD_ORACLE_BASE_VERTE_AdditionalParams?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_Login" prompt="BDD_ORACLE_BASE_VERTE_Login?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_Password" prompt="BDD_ORACLE_BASE_VERTE_Password?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_Password" value="RRyLGfljUdg="/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_Port" prompt="BDD_ORACLE_BASE_VERTE_Port?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_String" value="0"/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_Schema" prompt="BDD_ORACLE_BASE_VERTE_Schema?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_Server" prompt="BDD_ORACLE_BASE_VERTE_Server?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_BASE_VERTE_ServiceName" prompt="BDD_ORACLE_BASE_VERTE_ServiceName?" promptNeeded="false" repositoryContextId="_pImQ0HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_AdditionalParams" prompt="BDD_ORACLE_DWH_DEC_AdditionalParams?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_Login" prompt="BDD_ORACLE_DWH_DEC_Login?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_Password" prompt="BDD_ORACLE_DWH_DEC_Password?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_Password" value="RRyLGfljUdg="/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_Port" prompt="BDD_ORACLE_DWH_DEC_Port?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_String" value="0"/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_Schema" prompt="BDD_ORACLE_DWH_DEC_Schema?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_Server" prompt="BDD_ORACLE_DWH_DEC_Server?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_DWH_DEC_ServiceName" prompt="BDD_ORACLE_DWH_DEC_ServiceName?" promptNeeded="false" repositoryContextId="_JIFFMHNIEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_AdditionalParams" prompt="BDD_ORACLE_ODS_DEC_AdditionalParams?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_Login" prompt="BDD_ORACLE_ODS_DEC_Login?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_Password" prompt="BDD_ORACLE_ODS_DEC_Password?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_Password" value="RRyLGfljUdg="/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_Port" prompt="BDD_ORACLE_ODS_DEC_Port?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_String" value="0"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_Schema" prompt="BDD_ORACLE_ODS_DEC_Schema?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_Server" prompt="BDD_ORACLE_ODS_DEC_Server?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_DEC_ServiceName" prompt="BDD_ORACLE_ODS_DEC_ServiceName?" promptNeeded="false" repositoryContextId="_6mHJ4GhtEeaZosSq9E26Jg" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_AdditionalParams" prompt="BDD_ORACLE_ODS_HIS_DEC_AdditionalParams?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_Login" prompt="BDD_ORACLE_ODS_HIS_DEC_Login?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_Password" prompt="BDD_ORACLE_ODS_HIS_DEC_Password?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_Password" value="RRyLGfljUdg="/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_Port" prompt="BDD_ORACLE_ODS_HIS_DEC_Port?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_String" value="0"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_Schema" prompt="BDD_ORACLE_ODS_HIS_DEC_Schema?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_Server" prompt="BDD_ORACLE_ODS_HIS_DEC_Server?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_ODS_HIS_DEC_ServiceName" prompt="BDD_ORACLE_ODS_HIS_DEC_ServiceName?" promptNeeded="false" repositoryContextId="_R78kMIllEeadr4ro2w1ASw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_AdditionalParams" prompt="BDD_ORACLE_SIN_DEC_AdditionalParams?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_Login" prompt="BDD_ORACLE_SIN_DEC_Login?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_Password" prompt="BDD_ORACLE_SIN_DEC_Password?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_Password" value="RRyLGfljUdg="/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_Port" prompt="BDD_ORACLE_SIN_DEC_Port?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_String" value="0"/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_Schema" prompt="BDD_ORACLE_SIN_DEC_Schema?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_Server" prompt="BDD_ORACLE_SIN_DEC_Server?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="BDD_ORACLE_SIN_DEC_ServiceName" prompt="BDD_ORACLE_SIN_DEC_ServiceName?" promptNeeded="false" repositoryContextId="__YkS8HNHEeakdtJ30l_Ugw" type="id_String" value="null"/>
+    <contextParameter comment="" name="VAR_EXT_CODE_ERREUR_TALEND" prompt="VAR_EXT_CODE_ERREUR_TALEND?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_EXT_DATE_AUTOMATOR" prompt="VAR_EXT_DATE_AUTOMATOR?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_EXT_FILENAME_VARPROJECT" prompt="Localisation du Fichier Variable Talend (null si pas stocké en fichier) ?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_EXT_ID_AUTOMATOR" prompt="VAR_EXT_ID_AUTOMATOR?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_EXT_IDBDD_VARPROJECT" prompt="Clé Base de données de localisation des Variables Talend ?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_EXT_IDBDD_VARPROJECT_CTX" prompt="Contexte Base de données des Variables Talend ?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_EXT_LOG_LEVEL" prompt="VAR_EXT_LOG_LEVEL?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_EXT_MODE_EXECUTION" prompt="VAR_EXT_MODE_EXECUTION?" promptNeeded="false" repositoryContextId="_NmZDIGUcEeaxbOsoUIvnyg" type="id_String" value=""/>
+    <contextParameter comment="Code du type de motif REJET" name="VAR_LOC_BLC_COD_WARNING_REJET" prompt="VAR_LOC_BLC_COD_WARNING_REJET?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Code du type de motif erreur TALEND" name="VAR_LOC_BLC_COD_WARNING_TALEND" prompt="VAR_LOC_BLC_COD_WARNING_TALEND?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Code du type de motif WARNING" name="VAR_LOC_BLC_COD_WARNING_WARNING" prompt="VAR_LOC_BLC_COD_WARNING_WARNING?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Libellé du type de motif REJET" name="VAR_LOC_BLC_TYP_WARNING_REJET" prompt="VAR_LOC_BLC_TYP_WARNING_REJET?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Libellé du type de motif erreur TALEND" name="VAR_LOC_BLC_TYP_WARNING_TALEND" prompt="VAR_LOC_BLC_TYP_WARNING_TALEND?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Libellé du type de moti WARNING" name="VAR_LOC_BLC_TYP_WARNING_WARNING" prompt="VAR_LOC_BLC_TYP_WARNING_WARNING?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_BVE_VERSION_JOB" prompt="VAR_LOC_BVE_VERSION_JOB?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Code erreur retour" name="VAR_LOC_CODE_ERREUR" prompt="VAR_LOC_CODE_ERREUR?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Niveau de l’importance de l’anomalie détectée" name="VAR_LOC_CTRL_FLAG" prompt="VAR_LOC_CTRL_FLAG?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Short" value=""/>
+    <contextParameter comment="Code de CTRL_FLAG si pas d'erreur" name="VAR_LOC_CTRL_FLAG_OK" prompt="VAR_LOC_CTRL_FLAG_OK?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Code du CTRL_FLAG si erreur TALEND" name="VAR_LOC_CTRL_FLAG_TALEND" prompt="VAR_LOC_CTRL_FLAG_TALEND?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Code du CTRL_FLAG si WARNING" name="VAR_LOC_CTRL_FLAG_WARNING" prompt="VAR_LOC_CTRL_FLAG_WARNING?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Domaine Projet" name="VAR_LOC_DOMAINE_EXECUTION" prompt="VAR_LOC_DOMAINE_EXECUTION?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_DSC_FLUX" prompt="VAR_LOC_DSC_FLUX?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Nom du projet Talend Excéution" name="VAR_LOC_DSC_PROJET_TALEND" prompt="VAR_LOC_DSC_PROJET_TALEND?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Code du traitement en entrée du job Talend" name="VAR_LOC_ID_TRAITEMENT_CREA" prompt="VAR_LOC_ID_TRAITEMENT_CREA?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Code du traitement en entrée du job Talend DWH" name="VAR_LOC_ID_TRAITEMENT_DWH" prompt="VAR_LOC_ID_TRAITEMENT_DWH?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Nombre de Lignes supprimées" name="VAR_LOC_NB_DELETE" prompt="VAR_LOC_NB_DELETE?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Nombre erreur identifiés" name="VAR_LOC_NB_ERREUR" prompt="VAR_LOC_NB_ERREUR?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Integer" value=""/>
+    <contextParameter comment="Nombre de ligne insérées" name="VAR_LOC_NB_INSERT" prompt="VAR_LOC_NB_INSERT?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Nombre de Ligne après traitement" name="VAR_LOC_NB_LIGNE_APRES" prompt="VAR_LOC_NB_LIGNE_APRES?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Nombre de ligne avant Traitement" name="VAR_LOC_NB_LIGNE_AVANT" prompt="VAR_LOC_NB_LIGNE_AVANT?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Nombre de ligne mises a jour" name="VAR_LOC_NB_UPDATE" prompt="VAR_LOC_NB_UPDATE?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_BigDecimal" value=""/>
+    <contextParameter comment="Identifiant Talend Process Root" name="VAR_LOC_ROOT_PROCESS_TALEND" prompt="VAR_LOC_ROOT_PROCESS_TALEND?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Sources de données" name="VAR_LOC_SOURCE_DONNEES" prompt="VAR_LOC_SOURCE_DONNEES?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Statut de la ligne ODS après traitement" name="VAR_LOC_STATUT" prompt="VAR_LOC_STATUT?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Short" value=""/>
+    <contextParameter comment="Valeur du code retour KO" name="VAR_LOC_STATUT_KO" prompt="VAR_LOC_STATUT_KO?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Short" value=""/>
+    <contextParameter comment="Valeur du code retour OK" name="VAR_LOC_STATUT_OK" prompt="VAR_LOC_STATUT_OK?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_Short" value=""/>
+    <contextParameter comment="Table cible du log - Intégration table DATA_LOG" name="VAR_LOC_TABLE_TRAITEE" prompt="VAR_LOC_TABLE_TRAITEE?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Table cible du log DWH - Intégration table DATA_LOG" name="VAR_LOC_TABLE_TRAITEE_DWH" prompt="VAR_LOC_TABLE_TRAITEE_DWH?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="Version du projet Talend" name="VAR_LOC_VER_PROJET_TALEND" prompt="VAR_LOC_VER_PROJET_TALEND?" promptNeeded="false" repositoryContextId="_Euf1QHLZEeaLrenmi5FRWg" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_JOB_BDL_PK_ID" prompt="VAR_JOB_BDL_PK_ID?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_BigDecimal" value=""/>
+    <contextParameter comment="" name="VAR_LOC_CHAMP_IDENT" prompt="VAR_LOC_CHAMP_IDENT?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_CHAMP_IDENT_DWH" prompt="VAR_LOC_CHAMP_IDENT_DWH?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_CHAMP_IDENT_V9" prompt="VAR_LOC_CHAMP_IDENT_V9?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_CHAMP_PTRLFEVID" prompt="VAR_LOC_CHAMP_PTRLFEVID?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_DATE_FIN" prompt="VAR_LOC_DATE_FIN?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_DB_LINK" prompt="VAR_LOC_DB_LINK?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_FLAG_ACTIF" prompt="VAR_LOC_FLAG_ACTIF?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_LOC_FLAG_NON_ACTIF" prompt="VAR_LOC_FLAG_NON_ACTIF?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_LOC_FLAG_SUPPR" prompt="VAR_LOC_FLAG_SUPPR?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_LOC_REPERTOIRE_TEMP" prompt="VAR_LOC_REPERTOIRE_TEMP?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TABLE_TRAITEE_TEMP" prompt="VAR_LOC_TABLE_TRAITEE_TEMP?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TABLE_TRAITEE_TEMP2" prompt="VAR_LOC_TABLE_TRAITEE_TEMP2?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TRT_ID_SOCLE" prompt="VAR_LOC_TRT_ID_SOCLE?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_Integer" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TYPE_CTRL_COHERENCE" prompt="VAR_LOC_TYPE_CTRL_COHERENCE?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TYPE_CTRL_FORMAT" prompt="VAR_LOC_TYPE_CTRL_FORMAT?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TYPE_CTRL_NULL" prompt="VAR_LOC_TYPE_CTRL_NULL?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="VAR_LOC_TYPE_CTRL_REF" prompt="VAR_LOC_TYPE_CTRL_REF?" promptNeeded="false" repositoryContextId="_FUuncIPzEeaIg5OjRY1rwQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_SERVER_From" prompt="SMTP_SERVER_From?" promptNeeded="false" repositoryContextId="_cxhu8NNZEeaX25c_n7Zxjw" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_SERVER_Name" prompt="SMTP_SERVER_Name?" promptNeeded="false" repositoryContextId="_cxhu8NNZEeaX25c_n7Zxjw" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_SERVER_Password" prompt="SMTP_SERVER_Password?" promptNeeded="false" repositoryContextId="_cxhu8NNZEeaX25c_n7Zxjw" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_SERVER_Port" prompt="SMTP_SERVER_Port?" promptNeeded="false" repositoryContextId="_cxhu8NNZEeaX25c_n7Zxjw" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_SERVER_To" prompt="SMTP_SERVER_To?" promptNeeded="false" repositoryContextId="_cxhu8NNZEeaX25c_n7Zxjw" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_SERVER_UserName" prompt="SMTP_SERVER_UserName?" promptNeeded="false" repositoryContextId="_cxhu8NNZEeaX25c_n7Zxjw" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/Talend-Tools-Studio-20160704_1411-V6.2.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" show="false" value="_VqR60GhuEeaZosSq9E26Jg"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tOracleOutput_servername"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value=""/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.BDD_ORACLE_BASE_VERTE_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.BDD_ORACLE_BASE_VERTE_Port"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.BDD_ORACLE_BASE_VERTE_ServiceName"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.BDD_ORACLE_BASE_VERTE_AdditionalParams"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.BDD_ORACLE_BASE_VERTE_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.BDD_ORACLE_BASE_VERTE_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kud2KPYsSIo9w7amWw7XTlRJAIhJNBTQGNsa8tFcnArgoA=="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;BVE_TS_TALEND_STAT&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;BVE_TS_TALEND_LOG&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_V5_98IHvEei7_In989FydA" name="FilhetAllard_CRITERE_JONITURE_CLE"/>
+    <routinesParameter id="_GVcHMMJWEeioZ5hd95cg1Q" name="FilhetAllard_IdReferentiel"/>
+    <routinesParameter id="_bMbB8ITxEeiUgtMgtDIewQ" name="FilhetAllard_ParseCabinet"/>
+    <routinesParameter id="_nxkgAHOXEeiYgopewFb9ig" name="FilhetAllard_ParseDate"/>
+    <routinesParameter id="_QVmhoIGHEeaXUb7rHJaKyA" name="ConversionTypeChamp"/>
+    <routinesParameter id="_WvUfcNNaEeaX25c_n7Zxjw" name="FormatHTMLMessage"/>
+    <routinesParameter id="_17t50C4-EeuvJrOWEm1eIA" name="Relational"/>
+    <routinesParameter id="_17pBUC4-EeuvJrOWEm1eIA" name="Numeric"/>
+    <routinesParameter id="_18CC4C4-EeuvJrOWEm1eIA" name="TalendString"/>
+    <routinesParameter id="_16qw8C4-EeuvJrOWEm1eIA" name="SQLike"/>
+    <routinesParameter id="_17kv4C4-EeuvJrOWEm1eIA" name="Mathematical"/>
+    <routinesParameter id="_17eCMC4-EeuvJrOWEm1eIA" name="DataOperation"/>
+    <routinesParameter id="_178jUC4-EeuvJrOWEm1eIA" name="TalendDate"/>
+    <routinesParameter id="_173q0C4-EeuvJrOWEm1eIA" name="TalendDataGenerator"/>
+    <routinesParameter id="_17yyUC4-EeuvJrOWEm1eIA" name="StringHandling"/>
+    <routinesParameter id="_18HicC4-EeuvJrOWEm1eIA" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_6"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="BVE_CHARGEMENT_PARAM"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="FA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_Lfh1YGWvEeiVeb-FiFNoKg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="VAR_LOC_DSC_PROJET_TALEND"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="this.jobName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="VAR_LOC_ROOT_PROCESS_TALEND"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="this.jobName"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__PROCESS__&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_6">
+      <column key="false" length="255" name="key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="value" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tContextLoad_1"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tContextLoad_1">
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="2" offsetLabelY="0" posX="416" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_4"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="true"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="&quot;DTM_30_Alim_DTM_&quot;+ context.VAR_LOC_TABLE_TRAITEE"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="DTM_30_Alim_DTM_TD_DEVIS_DA_TOUS;DTM_30_Alim_DTM_TF_CONTRAT_RESIL;DTM_30_Alim_DTM_TF_PRELEVEMENT;DTM_30_Alim_DTM_TF_SINISTRE_TOUS;DTM_30_Alim_DTM_TR_APPORTEUR;DTM_30_Alim_DTM_TR_CABINET_DETAILLE;DTM_30_Alim_DTM_TR_CABINET;DTM_30_Alim_DTM_TR_COMPAGNIE;DTM_30_Alim_DTM_TR_FORMULE;DTM_30_Alim_DTM_TR_MODE_DECLA;DTM_30_Alim_DTM_TR_MODE_ENVOI;DTM_30_Alim_DTM_TR_MOTIF_REJET;DTM_30_Alim_DTM_TR_MOTIF_RESILIATION;DTM_30_Alim_DTM_TR_MOTIF_SANS_SUITE;DTM_30_Alim_DTM_TR_NATURE_SINISTRE;DTM_30_Alim_DTM_TR_PERSONNEL_SERVICE;DTM_30_Alim_DTM_TR_PRODUIT;DTM_30_Alim_DTM_TR_PROVENANCE;DTM_30_Alim_DTM_TR_RESEAU;DTM_30_Alim_DTM_TR_SITUATION_DA;DTM_30_Alim_DTM_TR_TYPE_SINISTRE"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="FA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_DVkM8NASEeqf3rgjuyHJCA;_fvttYL0OEeqxsPrwae5t2Q;_BcofgL0FEeqNgokFb46V4w;_8U8ZkMENEeqeR5qXjsu6Wg;_qcBW0LuUEeqJTNMX8bfK9A;_IIiJgNAOEeqf3rgjuyHJCA;_JpwW0LIhEeq_LcBHECM1iA;_9dskwL0EEeqj-PiuX1C65w;_M0E-gNABEeqf3rgjuyHJCA;_63T9AMBUEeqdw-dBOc7a1Q;_BWyHwMy_Eeqp56UsVadcrg;_WUqvULxKEeqYkbddJc6KIA;_vdWdcLxqEeqxsPrwae5t2Q;_c0eZ0M2tEeql0o8yTeWW7w;_HJce4L9WEeqdw-dBOc7a1Q;_lwE2kMDuEeqeR5qXjsu6Wg;_s5G1kLuaEeqaDYb0oNh4qw;_4ULUcMziEeqp56UsVadcrg;_Ili-QMzwEeqp56UsVadcrg;_D0XzcMzeEeqp56UsVadcrg;_XdswgL9WEeqdw-dBOc7a1Q"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="FA"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__CONTEXT_JOB__&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_4"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Initialisation variable de contexte&#10;&#10;context.VAR_JOB_COMMENTAIRES=&quot;DTM_&quot;+context.VAR_LOC_TABLE_TRAITEE;&#10;context.VAR_LOC_DSC_PROJET_TALEND=context.VAR_LOC_ROOT_PROCESS_TALEND;&#10;context.VAR_LOC_DSC_FLUX=&quot;DTM_&quot;+context.VAR_LOC_TABLE_TRAITEE;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;Mise à jour contextes&lt;br&gt;   début traitement&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="ERROR_JOB" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ERROR_JOB_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRunJob_6" offsetLabelX="0" offsetLabelY="0" source="tRunJob_6" target="tContextLoad_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="value"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="key"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_6" offsetLabelX="0" offsetLabelY="0" source="tRunJob_6" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tRunJob_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_6"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Chargement param exécution"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_4"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Alimentation Table ODS"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ERROR_JOB_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e21f80c1-f715-4f11-b1ca-3f9c3abf3899"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9MR+BVBNU4nzlUQrYLMO6Xw7hgxSEYYG/RdsyA+iHGXbS9NCcgHytg2j0S0orIeytV/naliyz3Hj&#13;
+7nmeI+XOFQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c2e81434-22ac-4525-8aff-b449c1812b3e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FZ4AXagRCwhreDmUJmeN5euaS29rjjop/LntZ4PZrYEbMTOLry2cwjlN30FXMkENyZ/Zlfp1wepk&#13;
+V5V3hdAemQ==</DigestValue></Reference></SignedInfo><SignatureValue>Q04kCW85Oc/SulN+GXU5hs/bfrJj3Hy++tt+RtNJRsHipLWMfCkltX4yRmWp8n21xed1fUKJjL4F&#13;
+kH2CxNqFOPcFPDK1PXVANnN+qPCRQ61o46lu2j+g6DkUl6jJkUAzj3wEJeXAUicD7a6zgyp7z9Lu&#13;
+je1YZNrun3iqPTOx9f4CjL2E2JFpSARumjDb8ou+yUqXQgoB3hZ6PVdjXZJ84JlaD0xkp9PXN1Q7&#13;
+oXiHH0h/bxTR/W9eR8NfhA4KxoBVlXCpITCFASr/ZM85ghNIvXtHzyNVfEwCumJWRKb7RrBLArFz&#13;
+nkSODJMhbZfsESG/BcRJZrDLxWishqXv0NvS4Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg&#13;
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#13;
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq&#13;
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46&#13;
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb&#13;
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM&#13;
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE&#13;
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG&#13;
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu&#13;
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0&#13;
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ&#13;
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5&#13;
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ&#13;
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3&#13;
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn&#13;
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as&#13;
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13;
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c2e81434-22ac-4525-8aff-b449c1812b3e" Target="#_e21f80c1-f715-4f11-b1ca-3f9c3abf3899"><Timestamp>2020-12-01 15:45:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
