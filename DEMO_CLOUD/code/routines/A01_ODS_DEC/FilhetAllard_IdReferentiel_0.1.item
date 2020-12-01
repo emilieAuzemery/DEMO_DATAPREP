@@ -1,0 +1,42 @@
+package routines;
+
+import java.util.Map;
+
+public class FilhetAllard_IdReferentiel {
+    
+public static int fil (Map<Integer, String> myMap, String TLC_MOT_CLE, String TLC_CODE, String TLC_CODE_CABINET  )  {
+	
+     String TLC = TLC_MOT_CLE + TLC_CODE + TLC_CODE_CABINET;
+	 String[] cabinet = new String[]{"AMV", "CFCA", "XEN", "AVS"};
+     
+     Integer TLCIDENT = null;
+     
+     
+     for(Map.Entry<Integer, String> entry : myMap.entrySet()) {
+    	 if(entry.getValue() != null && entry.getValue().equals(TLC)) {
+    		 TLCIDENT = entry.getKey();
+    		 break;
+    	 }
+     }
+     if (TLCIDENT==null) {
+    	 for (int i =0; i<cabinet.length;i++) {
+    		 TLC = TLC_MOT_CLE + TLC_CODE + cabinet[i];
+    		 for(Map.Entry<Integer, String> entry : myMap.entrySet()) {
+    	    	 if(entry.getValue() != null && entry.getValue().equals(TLC)) {
+    	    		 TLCIDENT = entry.getKey();
+    	    		 break;
+    	    	 }
+    	     }
+    		 if (TLCIDENT != null) break;
+   		}
+    }
+    if( TLCIDENT==null) 
+     
+     return -1;
+     else  return TLCIDENT;
+    
+   
+}
+
+} 
+

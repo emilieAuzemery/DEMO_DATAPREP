@@ -1,0 +1,28 @@
+package routines;
+
+public class FilhetAllard_ParseCabinet {
+
+    /** Routine générique transforme un code numérique en code alpha pour certaines tables */
+	
+    public static String ParseCabinet(Integer code_CABINET) {
+    	
+    		/** Code different 1,2,3,6 */
+    	
+    		String code_CAB = "NC"; //La ligne à retourner
+    	
+    		/** Code 1,2,3,6 */
+   	
+    		if (code_CABINET==1) { code_CAB = String.valueOf("AMV"); }
+    	
+    		if (code_CABINET==2) { code_CAB = String.valueOf("AVS"); }
+    	
+    		if (code_CABINET==3) { code_CAB = String.valueOf("CFCA"); }
+    	
+    		if (code_CABINET==6) { code_CAB = String.valueOf("XEN"); }
+    	
+    		//On retourne le code COD_CAB
+    		
+    		return code_CAB;
+    	}
+    	
+}

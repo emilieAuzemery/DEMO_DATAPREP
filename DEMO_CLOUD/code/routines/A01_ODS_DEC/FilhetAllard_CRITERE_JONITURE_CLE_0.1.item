@@ -1,0 +1,75 @@
+package routines;
+
+import java.text.ParseException;
+import java.util.Date;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class FilhetAllard_CRITERE_JONITURE_CLE {
+
+	 /**
+     *Fonction qui génère un critère de jointure selon la cle qu'on lui passe en paramètre.
+     * 
+     * 
+     * elle reçoit une cle de la forme AAAA,BBBB,CCCC et elle retourne une chaine de caratère de la forme  AAAA and BBBB and CCCC
+     * 
+     * 
+     * 
+     *
+     * 
+     * 
+     */
+	
+	
+
+    public static String critere_on_requete_as400(String cle_unique) throws ParseException {
+    	
+    	String[] tab_cle;
+    	try {
+    	 tab_cle= cle_unique.split(",");
+    	 int n=tab_cle.length;
+    	 String on_requete ="(M."+tab_cle[0]+" = TAB."+tab_cle[0]+" or (M."+tab_cle[0]+" is null and TAB."+tab_cle[0]+" is null))";
+    	 if (n>1){
+    	             for(int i=1;i<=n-1;i++)
+    	                {
+    		                on_requete=on_requete+" and (M."+tab_cle[i]+" = TAB."+tab_cle[i]+" or (M."+tab_cle[i]+" is null and TAB."+tab_cle[i]+" is null))";
+    	                }
+    	 
+    	           
+    			 
+		               
+    	          }
+    	 return on_requete;
+    	}
+    	
+    	
+	catch (Exception e) {
+    		
+    		System.out.println("ERREUR LORS DE LA GENERATION DE LA CLE POUR LA JOINTURE LORS DE L'ALIMENTATION DES TABLES ODS_AS400");
+    	    
+    	    return null;
+    	}
+    }	
+	
+	
+}
+
+    	
+    	
+
