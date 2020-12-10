@@ -211,18 +211,18 @@
       <column comment="" key="false" length="-1" name="commune" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_naissance" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="age" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="recent" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="out_log" name="out_log">
-      <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="recent" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="!Relational.ISNULL(in_clients.date_der_visite)?TalendDate.parseDate(&quot;yyyyMMdd&quot;,in_clients.date_der_visite) :null " name="date_der_vis" type="id_Date"/>
+        <mapperTableEntries expression="!Relational.ISNULL(in_clients.date_der_visite)&amp;&amp;!&quot;&quot;.equalsIgnoreCase(in_clients.date_der_visite)?TalendDate.parseDate(&quot;yyyyMMdd&quot;,in_clients.date_der_visite) :null " name="date_der_vis" type="id_Date"/>
       </varTables>
       <outputTables name="out_clients" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="in_clients.id_client " name="id_client" nullable="true" type="id_Integer"/>
@@ -275,7 +275,7 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out_log" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="recent" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
     </metadata>
@@ -300,7 +300,7 @@
       <column comment="" key="false" length="-1" name="commune" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_naissance" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="age" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="recent" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
     </metadata>
   </node>
@@ -343,7 +343,7 @@
       <column comment="" key="false" length="-1" name="commune" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_naissance" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="age" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="recent" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
     </metadata>
   </node>
@@ -388,13 +388,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_67e56f12-80ec-45e3-83f1-48292b39c22f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dgTn80TsCFSakMTy2n2TG0Ejz1xpl7IaHdg93Mfpy8G74+SMZ8/NtfH7Tv69kU2RxjiYLzpcItv6&#13;
-+o1RjldntQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_eed5c5b8-bdc4-47a8-8b10-221c3e603714"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mT2ypbyaZ9nD/WcQuWhDChBlz6eSAl9Uty4lt1Zhde0232YJ4MNSnXuxxwC4aBg3z2rWzpmrTsxC&#13;
-DHevPOuDTQ==</DigestValue></Reference></SignedInfo><SignatureValue>wdYJikqJbw/KnuQtPGhnFWt4qbkuIn/6TxXgLso/pdKyoPVyrSL9jo6/P9Pq0P8Th1s8UA95OjJE&#13;
-tkFq2IVoqquzkGBTQisW0yOzecddXhV/Fth4Tk865gduqWC0jy4/WCGKnR/6HwRT7TqvduDMp+II&#13;
-hdQLKKOEVwSWhtQ9Dw56aWgsRbm9k3gK9kVjNwB73QgeOHrNjEFOCl1D0EGiZhxMVKMQwgHms1tU&#13;
-TSKqIl+IRTh3pGz8uM9VJXUZbVASiXoTnsUNCyKXyv8FD5DvyYWJNwSl8fLAUhPmqIZ6CC7SopBb&#13;
-boQOYmiUKtmgiPGoDWfwHQwmId/auwGpciGY3w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_601fbeab-1218-44d3-b783-5209215d7b50"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/xtE/0+0FO7AUO8Qn25WdWElW+9C19i0SBuyZhuYGD7olHikEyahAnoKRgpqCDdeWl1C8uP0bJ0q&#13;
+1SJ8h5ArZQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e68a9631-dc19-47e9-9bf0-08c0f91bbb13"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2soiM8URZTt962p3Oi5eIWeSv8j6sJpr2jeSUqb/Q9e5qLUNFefydy8d0XZiyO2PJm5mYSfUeDTx&#13;
+EsNUdYdkag==</DigestValue></Reference></SignedInfo><SignatureValue>4X76OiFC4mcrzjeegwIgPG6eokdxLXq4wWv0A8XzxKBk1GR7Xyt2TRjqG3zy8W798BeE98+8GqzX&#13;
+iUdJcK9P39DYu8XWies3dYDANzUMz+5Lx0litg+EnFzVBicLhvfy59vuWL9EpGbXxsAg1eeITatf&#13;
+MSbQxsV0O8huUdhC0i21pIyUrsebg6hfq9isy4OLHHrM1WhfYKk6OSt/qxS68MKzirTY73WorDyk&#13;
+kdV0vmLO52gvVvcuqWhHxOVVzHC6qmXsIrsav1iqjMTvDoEvgETKzUBEAY/v5io1LpyQdmuE9dc1&#13;
+/fmmN6gudSeu/ufuJUgLTbbaE6YeMEjwxiX+Tw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
@@ -418,4 +418,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_eed5c5b8-bdc4-47a8-8b10-221c3e603714" Target="#_67e56f12-80ec-45e3-83f1-48292b39c22f"><Timestamp>2020-12-10 17:17:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e68a9631-dc19-47e9-9bf0-08c0f91bbb13" Target="#_601fbeab-1218-44d3-b783-5209215d7b50"><Timestamp>2020-12-10 17:19:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
