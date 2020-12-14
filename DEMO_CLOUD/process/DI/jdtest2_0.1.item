@@ -195,10 +195,7 @@
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
     <elementParameter field="TABLE" name="INTABLE">
-      <elementValue elementRef="newColumn" value="&quot;XX&quot;"/>
-      <elementValue elementRef="newColumn" value="&quot;EE&quot;"/>
-      <elementValue elementRef="newColumn" value="&quot;AA&quot;"/>
-      <elementValue elementRef="newColumn" value="&quot;BB&quot;"/>
+      <elementValue elementRef="newColumn" value="TalendDate.parseDate(&quot;yyyyMMdd&quot;,&quot;20201215&quot;)"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
@@ -206,7 +203,7 @@
     <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="&quot;yyyyMMdd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="320">
@@ -224,16 +221,18 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out" name="out">
-      <column comment="" key="false" length="-1" name="test" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="&quot;yyyyMMdd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="test" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="!&quot;AA&quot;.equals(row2.newColumn) ?&#13;&#10;&#9;&quot;XX&quot;.equals(row2.newColumn) ?&#13;&#10;&#9;&#9;1&#13;&#10;&#9;&#9;: &quot;EE&quot;.equals(row2.newColumn) ? &#13;&#10;&#9;&#9;&#9;0&#13;&#10;&#9;&#9;&#9;:null&#13;&#10;&#9;:null " name="test" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.newColumn " name="newColumn" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.formatDate(&quot;yyyyMMdd&quot;,row2.newColumn) " name="test" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="newColumn" nullable="true" type="id_String"/>
+        <mapperTableEntries name="newColumn" nullable="true" type="id_Date"/>
       </inputTables>
     </nodeData>
   </node>
@@ -251,6 +250,8 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="test"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
@@ -258,7 +259,8 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out" name="tLogRow_2">
-      <column comment="" key="false" length="-1" name="test" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="&quot;yyyyMMdd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="test" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tLogRow_1">
@@ -288,6 +290,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="test"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="newColumn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
@@ -302,13 +307,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7c02485a-93fd-4f3b-9d2a-9213ee804dd3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LNA+d6pEmQfTpiezZsip0oTGMkT6pjCPDARTk065VWAFTRt3qhUKZnpZeNm174F9RDFtARI3LhYa&#13;
-WQOp/ucreg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_36bd5aa9-f0ac-43fe-99e5-53b82cf47d24"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VlX0D6yLXeGS/J672FVljFH3OYDGJ0JI79Qlvb2BHlA3d+BlU6PsakPGfYMiI+f+dn17/isQgrCe&#13;
-+nIbrttDUQ==</DigestValue></Reference></SignedInfo><SignatureValue>qpReE8x2nKFKXFbQYCoY8OiTvsmIan79kPE3fQBEAz6uZBGQFWjAx8VzXYK4QPUowDL4BhbDysZk&#13;
-Dp1uhOW+eSnR5hY+OejDGXx31Bx2G2e3uyl4eB9WO9501i+n7jguDRglDF/wJcNyq059BKIKlbYo&#13;
-XJxeJZB1XNOzD5irdbMi61MEaA3215AB87dHGbpR+WxSe00Wv2mBqLsoidX0lVtlj3xHGbiYyNRj&#13;
-6oEXkE6QJxAhqcf6hPby3udjZxniZUqnhpUU9Qv/6216GcaFE5SD4rO2CMi6nFY3oxeiKojr0VM5&#13;
-7vK12bpL54URTWQCA1hTQ5I/y82SYsXu0PGZFA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_76f40385-a5c1-4b1e-a336-44ab28a6d5de"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Sf97ojVx2VRGTEckmlLfGqPSNg8a0pKSggMsxbcGpXpdGdkJ7medppu6lZ86AZfv0YGRrCY+7NXS&#13;
++oZvJc36Gg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1cb8b4c5-7933-4f15-a640-5c4d7ea5b3c0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YwKQF6S4yrEvIPVvAYmUv6Dd+G3uLFI7woi6N+VvfD/EWoTufXUTh5zbLyt0Q9DTVGbfwDXhPSJ2&#13;
+Lc8TGtv+Uw==</DigestValue></Reference></SignedInfo><SignatureValue>YtWJ3q+TNVnTEtPZzJ3//5xZkTg6xdeokceWK7+ok+Wm51azlgc+VdUQ1IISXlla/2EiCoTGBDVX&#13;
+DXEK1UgwOfV/wjqOuQDduFVCP0ctLbbI7Yyn0pnNfPYTb87Bv18apCDDi+ds3Qv4D1kiPs23G6ir&#13;
+okq9PIOpDopsILpnB9L1eCjq4etffvk3MpYCX31b4/8IoXGcr+pfc+mmhQCgleVHynvt0C7VXWYM&#13;
+DCo5cCqwHnv9tVfVIHOXCmJqtoWzKvJaMHdEFM684eLL29qpEIQixQINkDJ1AKqapSfk/Mo9rboK&#13;
+yaCmDtqPuz2TnPEIAnnR/BSUQuVeruG6ODRivg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
@@ -332,4 +337,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_36bd5aa9-f0ac-43fe-99e5-53b82cf47d24" Target="#_7c02485a-93fd-4f3b-9d2a-9213ee804dd3"><Timestamp>2020-11-19 15:06:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1cb8b4c5-7933-4f15-a640-5c4d7ea5b3c0" Target="#_76f40385-a5c1-4b1e-a336-44ab28a6d5de"><Timestamp>2020-12-14 14:53:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
