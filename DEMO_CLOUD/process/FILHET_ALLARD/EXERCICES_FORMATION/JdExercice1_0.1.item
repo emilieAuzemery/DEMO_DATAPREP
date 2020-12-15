@@ -214,12 +214,6 @@
       <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="recent" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
     </metadata>
-    <metadata connector="FLOW" label="out_test" name="out_test">
-      <column comment="" key="false" length="-1" name="date_der_vis" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nom" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="age" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
-    </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
@@ -235,12 +229,6 @@
         <mapperTableEntries expression="TalendDate.diffDate(TalendDate.getCurrentDate(),in_clients.date_naissance,&quot;yyyy&quot;) " name="age" nullable="true" type="id_Long"/>
         <mapperTableEntries expression="Var.date_der_vis " name="date_der_visite" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="!Relational.ISNULL(Var.date_der_vis )?&#13;&#10;TalendDate.diffDate(TalendDate.getCurrentDate(),Var.date_der_vis ,&quot;dd&quot;)&lt;=31?true:false&#13;&#10;:false " name="recent" nullable="true" type="id_Boolean"/>
-      </outputTables>
-      <outputTables name="out_test" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Var.date_der_vis " name="date_der_vis" type="id_Date"/>
-        <mapperTableEntries expression="Var.date_der_vis  " name="date_der_visite" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="StringHandling.UPCASE(in_clients.nom)  " name="nom" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="TalendDate.diffDate(TalendDate.getCurrentDate(),in_clients.date_naissance,&quot;yyyy&quot;)  " name="age" nullable="true" type="id_Long"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="in_clients" sizeState="INTERMEDIATE">
         <mapperTableEntries name="id_client" nullable="true" type="id_Integer"/>
@@ -319,39 +307,6 @@
       <column comment="" key="false" length="-1" name="recent" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="320">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="date_der_vis"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="date_der_visite"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nom"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="age"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="out_test" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="date_der_vis" nullable="false" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="date_der_visite" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="nom" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="age" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
-    </metadata>
-  </node>
   <connection connectorName="FLOW" label="in_clients" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="id_client"/>
@@ -376,13 +331,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="in_clients"/>
   </connection>
-  <connection connectorName="FLOW" label="out_clients" lineStyle="0" metaname="out_clients" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tSortRow_1">
+  <connection connectorName="FLOW" label="out_clients" lineStyle="0" metaname="out_clients" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSortRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_clients"/>
-  </connection>
-  <connection connectorName="FLOW" label="out_test" lineStyle="0" metaname="out_test" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_test"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSortRow_1" offsetLabelX="0" offsetLabelY="0" source="tSortRow_1" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -393,13 +344,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_482f8f04-e787-4fc4-8894-5e3d4919473f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZUvp6pd+uaOt15cDNEWjuH7KErSe4neivRJzUWJZsbbnEX5kCbn8gLNCbSb6DVkh1aTKZBMvtzzf&#13;
-x6iUJZbWsg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3e1c1a43-4d37-49fe-b463-d6545c622fc4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SSSQ3+Ig0opW6htpyhlnNEdkWb1wXqsDVNCL9i3HlJDTsR+Si4kmQokkvc9I7194gAo3mPErA34f&#13;
-0598hRPZow==</DigestValue></Reference></SignedInfo><SignatureValue>hTTiIKZxOGmGAdP/o2QdPJIVubae5L+XtM4rw20W0Uihze2VTK5MYLAIfd7L6YF2gjUVymk+4bNV&#13;
-0oib/SSQuTODboKyG1YZ7oyDRXZ0+O8wqh/Av51d97x5CwxAw+rG/z5ynVwxcl7t/fS9u9kioLeP&#13;
-24UPm6Kg7+O5qmW1GLRbdM+zFdPvyk/3WX0ObIfSEtoupZUT5YP21b8Xy/fqT+D6m4KXwKjzSO28&#13;
-X7L8u4LC381HOBqZvbZl7RzEVEUky0bd4JXT7xO8BzuM0dy6VcgWCBMoycgi5o7BRD7PcvWHTz2d&#13;
-kSz63+BRmrVw00+fL3qj7J9Ful7T4fT8/W8u5Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_480af873-dc9f-47dd-9065-48d171e17024"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oTvDGMJtSjO0EB9MzJqMF+DUyJuC76xr5czsiWFvtCtwgdhVeEUq1qvjoO0NNrX9aATC5qRVZXM2&#13;
+0BtGLDzzKA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_47f9a7f9-0c2c-4bf1-9717-0b1533229174"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qOGkN1ITN2fROYI32CEaCVhQKnT/mW1d0ZI/jA7fQlXWk5MW+zU5m60igyWJGgkFTJDnoJRXB7vA&#13;
+Hh0hGlvbFw==</DigestValue></Reference></SignedInfo><SignatureValue>PfopQFMPP9916xApqPlvk6YNFFtWGCHFkTX3/5ACrgVOC33Ug+CeWfDmBa8xjd52O4IruORY1w5k&#13;
+p/SONffwT7JgIjJS+u8EPg6nFd+XpUvfBxDHW26FnGZ72XzkBiUL0JAfn6Gzzt1D5kTZox8SRLPU&#13;
+CO0m8pf0h4D+OVexiwm1fA/9VTxsgKe9gqY8mRdwBXfecJDbHn7885m/8sthHaaOohNM3Baiao4T&#13;
+CddyUajz6YrX8L/7Fa6A1ekj6SyxtK5JKH2E7kjE+rnEkbwYwmxHtMW24RmNdLl7VXt9jyxnIOZW&#13;
+f1cf8+Oc3Il4aIJEhXvk3CgE9MtHRBK2nGtzrw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
@@ -423,4 +374,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3e1c1a43-4d37-49fe-b463-d6545c622fc4" Target="#_482f8f04-e787-4fc4-8894-5e3d4919473f"><Timestamp>2020-12-15 10:13:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_47f9a7f9-0c2c-4bf1-9717-0b1533229174" Target="#_480af873-dc9f-47dd-9065-48d171e17024"><Timestamp>2020-12-15 10:13:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
