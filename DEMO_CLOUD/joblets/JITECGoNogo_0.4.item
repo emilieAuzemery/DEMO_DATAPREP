@@ -20,6 +20,16 @@
       <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
       <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
     </context>
+    <context confirmationNeeded="false" name="Dev">
+      <contextParameter comment="Identifiant du flux traité" name="FLE_ID" prompt="FLE_ID?" promptNeeded="false" repositoryContextId="_ERfsoAAlEeej2Ne8dHUHdw" type="id_String" value=""/>
+      <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="1433"/>
+      <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="10.0.171.215"/>
+      <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="RSR_SUIVI_DEV"/>
+      <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="rsr_suivi_dev"/>
+      <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+      <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
+      <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
+    </context>
     <parameters>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="96"/>
@@ -94,6 +104,12 @@
       <routinesParameter id="_Q5FvAOobEea2HvCMfz9Zrw" name="DateJPlus1"/>
       <routinesParameter id="_peVlAKsmEeaFWdq13Wi6ng" name="DateJ_1"/>
       <routinesParameter id="_6lYoMIo6Eea8Ut5bsIN75A" name="RSR"/>
+      <routinesParameter id="_q_EFYJGtEemnL8byKcTwDw" name="DQTechnical"/>
+      <routinesParameter id="_q8R3IpGtEemnL8byKcTwDw" name="DataMasking"/>
+      <routinesParameter id="_q-xxgJGtEemnL8byKcTwDw" name="DataQualityDependencies"/>
+      <routinesParameter id="_q-rq4JGtEemnL8byKcTwDw" name="DataQuality"/>
+      <routinesParameter id="_q-9-wJGtEemnL8byKcTwDw" name="DqStringHandling"/>
+      <routinesParameter id="_rAH1UJGtEemnL8byKcTwDw" name="TalendStringUtil"/>
     </parameters>
     <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="224">
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
@@ -111,9 +127,8 @@
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlInput_1"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
       <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ezNA0CmSEeecDJL797YE_g"/>
       <elementParameter field="TEXT" name="HOST" value="context.RSR_suivi_mssql_Server"/>
+      <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
       <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
       <elementParameter field="TEXT" name="PORT" value="context.RSR_suivi_mssql_Port"/>
       <elementParameter field="TEXT" name="DB_SCHEMA" value="context.RSR_suivi_mssql_Schema"/>
@@ -157,9 +172,12 @@
       <elementParameter field="EXTERNAL" name="MAP" value=""/>
       <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
       <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-      <elementParameter field="IMAGE" name="PREVIEW" value="_Eop-cD6bEemrHsoPPYBdEQ-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_ERfsoAAlEeej2Ne8dHUHdw-tMap_1-PREVIEW.bmp"/>
       <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
       <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+      <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
       <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
       <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
       <elementParameter field="TEXT" name="LABEL" value="tMap_1"/>
@@ -269,13 +287,13 @@
     </jobletNodes>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_48af404d-1d31-493e-ade1-c4192f67ae08"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cLq1sC362hdSLut8thV8BI6V4C5KylcaRVtPJMXM1fCxuRDhjVRE5Ns4E+O1eRwIguLgHmA6JiRK&#13;
-orqJS9RJSA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5b677e4b-bf18-445c-9006-73a89beb1dd9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SyLUhiT2OSY5Dv+IwmTqB9wYSQI8ZSUcuSf6GQ5Ili0vl4EL8RxVsSZSepWzojQuAij3h+JsW06B&#13;
-7Cp1Jyp0NQ==</DigestValue></Reference></SignedInfo><SignatureValue>H9GiK9d5Jdk0LLPuvKwFUXSuqjXWwhlrRrKKojWEWibBRGHUXQgBNn37MRnv72jmJZ9YpwiUuIrE&#13;
-Z07hTPXZf+VzrNTfOCyyrdWxnwwBOrLLMLKundoL8vXY+Pcd8c01ICFuwMYH+52A+8upSSbkBANr&#13;
-3Hxu4gZDFXyrXOWv0kN+IXUe4RMy7EEjw6Ow9wzWT4CTad/fEMIAyWuxbEYJfvLCT1Is7d3fyhIP&#13;
-TFEIet6dPRAyQqbV+66AxZ6fj5n4pexXocS/EPmauyMs6XXfameG/DO64+3TEtHiwXbn5nSaTryI&#13;
-+FyTyMVXmLn7rDabVUwDJVvFldABacvXL+qGWg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a0dea50d-10c3-4c41-991d-774b3213483f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AAtYGfA1Leuve6XA1O0IqR61SMnzavkQ7ElqjTGK43xLWrNtUtKhqtGBQ90p4wJr9bqSvfI2WNb8&#13;
+q0226gDvmA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e5451642-1e9c-48e2-b68b-086efbad31d5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>A58/fzi1RsbWHnQ3l39J3V2GUwC/4nsMDx86izxGmdkMPO2QHLbxv73gtvA7tnwv9LLx9dtv4i2Z&#13;
+Vf8zEPJ2Ew==</DigestValue></Reference></SignedInfo><SignatureValue>gmIBTvirXB83ALSiMYi6sX2MISpF5Axz2NP1eXoJlBIeFgK7UiMwBkS5prRrxeMXRqe3dGaa7Q4C&#13;
+5TUyikqr93AC0Y7G438TGjYsYK0lhPMdKBwEZsXKYlKK6mKYqzShMYui4asqJxWvHBm25rhGGzKL&#13;
+kPffDGlmJprS1dq0GpBnedEQ2bBcFxBt3LfsFNW9I6+sFjB635rqLhQBNVy+Wkto970JE3jfrVWC&#13;
+YwvQd8+2rMgJGE0t0Y49bMaUCbKQf8p8EMICnbBZcK7vLDs5eJsd8uPtExpNDocBDePmkE/Nqwef&#13;
+eiclhiqzOg8HhQnAJnLxIseHOnr3R4xFFuO+sg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
@@ -299,4 +317,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5b677e4b-bf18-445c-9006-73a89beb1dd9" Target="#_48af404d-1d31-493e-ade1-c4192f67ae08"><Timestamp>2020-11-10 18:20:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e5451642-1e9c-48e2-b68b-086efbad31d5" Target="#_a0dea50d-10c3-4c41-991d-774b3213483f"><Timestamp>2021-02-12 08:35:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
