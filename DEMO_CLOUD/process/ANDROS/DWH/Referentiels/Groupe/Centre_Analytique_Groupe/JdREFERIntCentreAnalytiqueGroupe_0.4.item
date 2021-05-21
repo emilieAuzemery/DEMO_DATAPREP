@@ -2,7 +2,7 @@
   <context confirmationNeeded="false" name="Qualif">
     <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
     <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWH"/>
-    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="l3ONiFMQ2Ws="/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="enc:system.encryption.key.v1:yLEyc/eUVJww8rw9qtWdb32k3B18yB3cGIVN1+t+bNLOiZ4="/>
     <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
     <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWH"/>
     <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
@@ -10,7 +10,7 @@
     <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
     <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="RSR_SUIVI_QUALIF"/>
     <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="rsr_suivi_qualif"/>
-    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="enc:system.encryption.key.v1:C5a8MhZ3xBX70oxfHEgBkAd6NZIUJnhaOSoxVhBj9kaGSQOJ"/>
     <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="1433"/>
     <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
     <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="VM-RSR-SQLSERVER"/>
@@ -20,7 +20,7 @@
     <contextParameter comment="" name="GFile_Data_RegEx" prompt="GFile_Data_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^[A-Z]{2,3}_[A-Z|0-9]{2,30}_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).(csv|xml)&quot;"/>
     <contextParameter comment="Expression régulière pour le filtrage des fichiers" name="GFile_Ref_RegEx" prompt="GFile_Ref_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^RF_[A-Z]{2,3}_[A-Z|0-9]{2,30}_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).csv&quot;"/>
     <contextParameter comment="Chemin du fichier" name="GFilepath" prompt="GFilepath?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="_"/>
-    <contextParameter comment="Période Courante" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20171201"/>
+    <contextParameter comment="Période Courante" internalId="_3vm6QLogEeuMbOvVy3nQTw" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20171201"/>
     <contextParameter comment="Nom du répertoire de dépot" name="GRepDepot" prompt="GRepDepot?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
     <contextParameter comment="Répertoire de récéption des fichiers" name="GRepIn" prompt="GRepIn?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/QUALIF/recep/"/>
     <contextParameter comment="Répertoire temporaire" name="GRepTemp" prompt="GRepTemp?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/QUALIF/tmp/"/>
@@ -52,7 +52,7 @@
   <context confirmationNeeded="false" name="Dev">
     <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
     <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDEV"/>
-    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="HP/xWhNDmQWCaKDXJhrK9g=="/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="enc:system.encryption.key.v1:fqRYysDmKgu/jztRAnNEOIpfrQviaZb9ybG9xO4UtdpYrmR8Xpk="/>
     <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
     <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDEV"/>
     <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
@@ -60,7 +60,7 @@
     <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
     <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="RSR_SUIVI_DEV"/>
     <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="rsr_suivi_dev"/>
-    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="enc:system.encryption.key.v1:e+KHv8oqKcz54uZu3j2YqFlU9ZyJtESPiWp3DNyGm2sNplsC"/>
     <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="1433"/>
     <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
     <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="VM-RSR-SQLSERVER"/>
@@ -70,7 +70,7 @@
     <contextParameter comment="" name="GFile_Data_RegEx" prompt="GFile_Data_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^[A-Z]{2,3}_[A-Z|0-9]{2,30}_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).(csv|xml)&quot;"/>
     <contextParameter comment="Expression régulière pour le filtrage des fichiers" name="GFile_Ref_RegEx" prompt="GFile_Ref_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^RF_[A-Z]{2,3}_[A-Z|0-9]{2,30}_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).csv&quot;"/>
     <contextParameter comment="Chemin du fichier" name="GFilepath" prompt="GFilepath?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="_"/>
-    <contextParameter comment="Période Courante" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20170501"/>
+    <contextParameter comment="Période Courante" internalId="_3vm6QbogEeuMbOvVy3nQTw" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20170501"/>
     <contextParameter comment="Nom du répertoire de dépot" name="GRepDepot" prompt="GRepDepot?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
     <contextParameter comment="Répertoire de récéption des fichiers" name="GRepIn" prompt="GRepIn?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="C:\projets\AndrosRSR\recep\"/>
     <contextParameter comment="Répertoire temporaire" name="GRepTemp" prompt="GRepTemp?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="C:\projets\AndrosRSR\tmp\"/>
@@ -102,7 +102,7 @@
   <context confirmationNeeded="false" name="Int">
     <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
     <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWHINT"/>
-    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="kAeNw1uFxNCpu8zbA4QVKQ=="/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="enc:system.encryption.key.v1:3QK25VnER/JhYmhx31sbGoMARZrs/WMWP5UTAMuDR0OKU6LD8g=="/>
     <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
     <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWHINT"/>
     <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
@@ -110,7 +110,7 @@
     <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
     <contextParameter comment="Date de traitement" name="GDateTraitement" prompt="GDateTraitement?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="20171217"/>
     <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="RSR_SUIVI_INT"/>
-    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="C/vyLrnO43Aw4wBXGWNeeQ=="/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_Password" value="enc:system.encryption.key.v1:F+APBh5rza6OXMJQ7//x8HM6XcMKx8cVYi2rHhArO7SaDmls"/>
     <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="rsr_suivi_int"/>
     <contextParameter comment="Nom du répertoire de réception à scruter" name="GDir_ToFilter" prompt="GDir_ToFilter?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="XferEntree"/>
     <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value=""/>
@@ -120,7 +120,7 @@
     <contextParameter comment="Expression régulière pour le filtrage des fichiers" name="GFile_Ref_RegEx" prompt="GFile_Ref_RegEx?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="&quot;^RF_[A-Z]{2,3}_[A-Z|0-9]{2,30}_(19|20)\\d\\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([01]\\d|2[0-3])([0-5]\\d).csv&quot;"/>
     <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" repositoryContextId="_0OSM4CmTEeecDJL797YE_g" type="id_String" value="VM-RSR-SQLSERVER"/>
     <contextParameter comment="Chemin du fichier" name="GFilepath" prompt="GFilepath?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="_"/>
-    <contextParameter comment="Période Courante" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20171101"/>
+    <contextParameter comment="Période Courante" internalId="_3vm6QrogEeuMbOvVy3nQTw" name="GPerCourante" prompt="GPerCourante?" promptNeeded="false" type="id_String" value="20171101"/>
     <contextParameter comment="Nom du répertoire de dépot" name="GRepDepot" prompt="GRepDepot?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="DATA_XXXX"/>
     <contextParameter comment="Répertoire de récéption des fichiers" name="GRepIn" prompt="GRepIn?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/INT/recep/"/>
     <contextParameter comment="Répertoire temporaire" name="GRepTemp" prompt="GRepTemp?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_Directory" value="/opt/AndrosRSR/INT/tmp/"/>
@@ -190,7 +190,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:DKY+VScXe7l1ozlfberOooFLXaW6PkYiPeD+8hJ+"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -225,7 +225,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:N7otiYtIXGOjeGKFo5U3BRpisDKOnZfwc8mFaod6"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -294,7 +294,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Lj6gQJZuxSOsVEQ5t2qAh1MixwfyUAtzRkje5HBWd/51wWB62PVUC+T4pRyV+v9GAuI1dx/wii4="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.RSR_bdd_dwh_AdditionalParams"/>
@@ -326,7 +326,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ixjuzxb5BEDD5aGVHUkp7Ytng0wDSvnFJ7bvdgRjM0rlgPiUkKaz4RTOrSQOcCr3cd52d9ei8gY="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.RSR_bdd_dwh_AdditionalParams"/>
@@ -494,7 +494,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:WagtNprPRH4qCx1SJaoq5KjAYlwsVc658g6ILDox0yRJmHmlm9ZDhwrmKyIjXa6YOsLqp9k5EHU="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A - DWH_TRG_DEV_GPE_DEG"/>
@@ -759,7 +759,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:mJQsXImz7kXqyi9waFtYuQIm+VF7IPw5WjVV4k8JBiNv36b9TCkAeOoRVGW47WUKwS9mq5ltJrs="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_CEN_ANA_GPE_CAG&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -879,7 +879,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:HddDA/qTu1XP2xTqPRejQZUkeajGGG8c8wv05X9p8b3DwSVfUaAOkcWloiTHjanTMPIlnGxw70o="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_CEN_ANA_GPE_CAG&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -1046,7 +1046,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:L4twEXrcZbzhv/cAXLI2hQYwv2NpTl96vu+7DH0rmpOxRZuMenbwd8YtoWejTR9xlk2UDXJeziM="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_CEN_ANA_GPE_CAG&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1129,7 +1129,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:V3lzW+aeR1iB5UwYmm9o+Kl7rFQ5oFq2Xoa4hFaJ7nnL5W4S5x8mD2GgSAExqHPhsiimZjdjgLA="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_CEN_ANA_GPE_CAG&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -1541,34 +1541,32 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6717c49e-f451-4c4f-bc96-846d5c750343"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2BDXyq7elPVDL8PLNYKW1A7tM3Y3031jl3RSvQt9DJlhaRdLGnho3LINzc4g7RP9dmRjLh1fkv6k&#13;
-mGFr2/uRqQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2d6273c6-9d5d-4260-8377-7964159cff25"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ev+B2zXMlsp+7sDwKJrmJSpnfB4AaEO9uRFZ5KzblFr2eSiuK0LC7PR635d1Z+HvUWMVswPxxpeP&#13;
-qff3xcMubQ==</DigestValue></Reference></SignedInfo><SignatureValue>m73bqENkJT4z9IL/peYiU1oQ6fOogQriq9Ok+Q7mQngWQ2QOVc1/LRCw163h6JoF+v+fuZqfCK3r&#13;
-O5IzyQWZ/QW9acLI24egiO+QNnAKDVqW/QXN2MR2nVLmK9gkHX2kufNHNC2Ua0UVlI+VQ7sIKq+O&#13;
-TEDd5Q5qjbv7suDZaOa47BTZekTY+cnHd8cVGQN/W1vbW29Kd+ZGYSUv5Oo3lDfRUTYd5SMqNcOS&#13;
-XCKjGugtaDvdphvZr2mSh/Rxuf/Hgv0czRB8oH2L6gSGQucDily7DGIka+aiu2gMJJ3Y1MQ+TVlh&#13;
-/GMvry+w5NmVC18ZiJDqPLZl33JJsqvXCnqnRw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
-BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
-RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
-LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
-VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg&#13;
-RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#13;
-ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq&#13;
-rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46&#13;
-UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb&#13;
-lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM&#13;
-sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE&#13;
-FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG&#13;
-A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu&#13;
-FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0&#13;
-bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ&#13;
-KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5&#13;
-ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ&#13;
-Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3&#13;
-S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn&#13;
-QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as&#13;
-r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13;
-EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
-BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
-6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2d6273c6-9d5d-4260-8377-7964159cff25" Target="#_6717c49e-f451-4c4f-bc96-846d5c750343"><Timestamp>2020-11-10 18:30:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_576b65a6-ca8e-4cff-9fd3-2335b0b7221e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nRW+i4Ky4nUgtaQYzRXPXnGaqQKiDVLLK8f5enmJ1Bh64ZOSPYbw386K2bbWtfJEL374fHfWqCs6&#13;
+utvnipUEyQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_28e9b67c-2f38-4705-ac56-9f410397098b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YSSdtf6y6Oy9u1R/VFWPjtFCOETJ2rcjrWvShDmUWYPUsmtqDTp9T5syCgwhTbj0x0jYoSUE80KO&#13;
+cawy8k3E6w==</DigestValue></Reference></SignedInfo><SignatureValue>nRwTUjSxS/BkYaT8G3jmHnJ8efTaVZGcyjgZn04l7G55mYoy/yMh7ljEMUXbJLXuQcmTnTTsa3GE&#13;
+0KfsOKf/VRdHdue3mC4U24FU2FAC1e7L2bXeCruG6iYUc3wnTAcPTVT0WC+hSN5uW7kKaEAOI1up&#13;
+FwZCTeRGzNhRxEIqEaZLHi0Y0kgRUWDvKUlo0at6ajfHW6J1FcE0igMJM63QI42kgqW74HlL8lsi&#13;
+dhYm/jVHQL4rgH43EcPz/GNMV4fjydO02nUr2hc2ea0cTV+ihU96FL497J2k4UrNNYZrsAiRH8vc&#13;
+nEwTiJ8dCdpKUf+yia3wMUs3toY2Snm5bpvnSQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_28e9b67c-2f38-4705-ac56-9f410397098b" Target="#_576b65a6-ca8e-4cff-9fd3-2335b0b7221e"><Timestamp>2021-05-21 10:39:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

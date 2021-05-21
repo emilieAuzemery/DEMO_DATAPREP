@@ -2,7 +2,7 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="RSR_bdd_dwh_AdditionalParams" prompt="RSR_bdd_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value=""/>
     <contextParameter comment="" name="RSR_bdd_dwh_Login" prompt="RSR_bdd_dwh_Login?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWH"/>
-    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="l3ONiFMQ2Ws="/>
+    <contextParameter comment="" name="RSR_bdd_dwh_Password" prompt="RSR_bdd_dwh_Password?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_Password" value="enc:system.encryption.key.v1:8z5GyOVB+FqazP4RGvjc5jxk3EMWE7/K/fHGr9NOcgPdUf4="/>
     <contextParameter comment="" name="RSR_bdd_dwh_Port" prompt="RSR_bdd_dwh_Port?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="1521"/>
     <contextParameter comment="" name="RSR_bdd_dwh_Schema" prompt="RSR_bdd_dwh_Schema?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="RSRDWH"/>
     <contextParameter comment="" name="RSR_bdd_dwh_Server" prompt="RSR_bdd_dwh_Server?" promptNeeded="false" repositoryContextId="_Db0IQIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.211"/>
@@ -10,7 +10,7 @@
     <contextParameter comment="" name="RSR_bdd_suivi_AdditionalParams" prompt="RSR_bdd_suivi_AdditionalParams?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="RSR_bdd_suivi_Database" prompt="RSR_bdd_suivi_Database?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_String" value="RSR_SUIVI"/>
     <contextParameter comment="" name="RSR_bdd_suivi_Login" prompt="RSR_bdd_suivi_Login?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_String" value="talend"/>
-    <contextParameter comment="" name="RSR_bdd_suivi_Password" prompt="RSR_bdd_suivi_Password?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_Password" value="bBphaG+QWuasY1KGSWXjBw=="/>
+    <contextParameter comment="" name="RSR_bdd_suivi_Password" prompt="RSR_bdd_suivi_Password?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_Password" value="enc:system.encryption.key.v1:ylfW3Mg+FSRArOg7JrBkZ2PBCivKaPUQhfMP0oPbozGY8HyNmIM="/>
     <contextParameter comment="" name="RSR_bdd_suivi_Port" prompt="RSR_bdd_suivi_Port?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_String" value="3306"/>
     <contextParameter comment="" name="RSR_bdd_suivi_Server" prompt="RSR_bdd_suivi_Server?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.212"/>
     <contextParameter comment="Date de traitement" name="GDateTraitement" prompt="GDateTraitement?" promptNeeded="false" repositoryContextId="_g3dRcIo6Eea8Ut5bsIN75A" type="id_String" value="20161217"/>
@@ -61,7 +61,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:V6oUr65bm0c+fSVW3ks+SPedkI6VBIYoU2fDXc56"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -96,7 +96,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:EnCnIeUXJi8zcwii9ahmihdJu+chhGbuIPB6AYI8"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -174,7 +174,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EMPqdR50cwgB4ao8AyKj5yYMKyb8q5Ivcgb60GxW7+8XiTziukkkpuJMRuG3VnpSSyzYXeXbEoA="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_A1XVUIo3Eea8Ut5bsIN75A - DWH_TRG_ART_ARTG"/>
@@ -1020,7 +1020,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sMCSoPzx80A7cvi7z5zq2p/aV66YqWeEvMrRGIwsN19hgjXmf7rXKWprfD3ynlJpp2dMclpQ5RY="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_ART_ARTG&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -1429,7 +1429,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zrg+IxiA8pTI5IQNZw4CcOJftcmShSx910E5Mgb2rURsFKRd50e7DjlvvNEOK2yfK//9J/EYrZU="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_ART_ARTG&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -1508,7 +1508,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:UszxxErhCbOSqUVnfvxC0o/ukZLGsUeFJ7VUANYwUZHwFlFtQ2MYPP7jcFemUkrjZ74pJmVPLQM="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_ART_ARTG&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -2192,7 +2192,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:amJjTjcouwUgmZChaNLcdigCFg2poPuG9Oq1TgwGCz5nS8ctW3DIM/w1O09ao3p0J1XczKVZe2A="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_ART_ARTG&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -3170,7 +3170,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mF5ZnH/QF2+q2gh35R8IPhGv+l61nJNCzMSPhnUpUOwHGhBaoifo5oqy6s+XmcexiPsNMQTbFIs="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_RES_DISTR_GROUPE_RDG&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3222,7 +3222,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xhoYNDGhEC8NJQic6pn+0JDGDlF8fe66hLhSZkMNm5phtLAB1MFCeZ9oJs+NUZDnPtrTf/cIzys="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_ART_ARTG&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -3890,7 +3890,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ilDdjp63fBq574e+rMUKombgoWJHHyhntQSBKaSapxToWotmyktQZKvbTuOJWQx+yMWThv7a8EA="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_ART_ARTG&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3951,7 +3951,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:un12tpsMnfefnu2YmZ5ClAsFqSesg3x6BS6qhZ316FrrQAMz04UG7PTfwmYFxd1BPTsP9ZAY3Qc="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_TYPE_STOCK_GPE_TSG&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -4003,7 +4003,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BMKzYsWRXwvcOMfZT8vYaItpG+O9n9A9Mv1henHfU4GMFB4M+vLW2suI/rzbSZUHnJENDwri7jk="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_TYPE_RAYON_GPE_TRG&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -4059,7 +4059,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AhYWtqLbwflyoYVuLAz0x9RfdZfie9s1CI1vTglwIxYPcWZavrbV8ZgntGKSnsnHPwbODVz4CGA="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_FORM_GPE_FGP&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -4111,7 +4111,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pmwLbecAL5tIZUENhWEqDSvAfNbFtOj8Y75rKvw52EdHp3iQZLUUq0maa3z/5pKpU95RNXnJxFc="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_CONT_CON&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -4163,7 +4163,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9CMKm5BFP1OnEekc8xQIqTHqorfRS5RbdU9XjOWJkx+jv500BOzOZl8anjdukwfRWgHbUT1UN5A="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_TYPE_ART_GEN_TAG&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -4219,7 +4219,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.RSR_bdd_dwh_Sid"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.RSR_bdd_dwh_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_dwh_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufYf9oZR9cw/I4z5TlOAOc1Pi6tHXT8CxE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HlvtWSb5RBNxnxPyTchidDJSZvb+eAcBpZX40ZmSna2UbzZQd8kSXsWqX9j4SY1c08cxkAK3IbY="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_TRG_FAM_INDUS_GPE_FIG&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -5241,34 +5241,32 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_668d7ad5-f059-4c65-abe1-727385a3c390"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pDhNR2Dbe+gvW+hAly0A0gjUVfc6UPtgH854KKTF59w4dQH25oBZ5lYnaYPsT0eGEvTnXOH+0U7/&#13;
-BDOJUNjWRw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5f0cd946-0b9d-4cae-a513-6590a07d5a3e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YyTS2C3THoumIrDd0jlENfE+BLL1vvoVj/b7qWxRhA2lhjmLKlGiItk3aJUGOY4KoPH/H5mpzu4g&#13;
-3+dsBHSxhg==</DigestValue></Reference></SignedInfo><SignatureValue>L/JmBsoWpAV1ruw2o6U0F34T0lH4Nu2n4o+DKtCdK1ZTDpFdeBNOT552PjIl1Gy31uz2mAAYt//B&#13;
-cTUid93YYuOQdOHKKsZPIIZdZAL2yyqD/za8pLqzFWzlVxhbR/gfE5LsSYGZuZU9BKE7tDGPwx7o&#13;
-jtAmHgLAaMe6UNbnToEu2uznuhN74ugX5vhAs+XsegiuCJ5XOgXq6lO61WyclBrzXenY+J3f4SnP&#13;
-ylYzYYGWLFnE6Xmmaq7dsBr/tI53gyBpjihqD22+0poU2cm7DHiPB0jQUYymZh1ocTv4535AAo4h&#13;
-9yC4u5lYEKV1JisC9DwSHaewy9CPFWM/ilQrLA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM&#13;
-BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im&#13;
-RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k&#13;
-LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD&#13;
-VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg&#13;
-RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#13;
-ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq&#13;
-rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46&#13;
-UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb&#13;
-lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM&#13;
-sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE&#13;
-FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG&#13;
-A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu&#13;
-FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0&#13;
-bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ&#13;
-KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5&#13;
-ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ&#13;
-Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3&#13;
-S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn&#13;
-QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as&#13;
-r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s&#13;
-EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI&#13;
-BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c&#13;
-6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX&#13;
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5f0cd946-0b9d-4cae-a513-6590a07d5a3e" Target="#_668d7ad5-f059-4c65-abe1-727385a3c390"><Timestamp>2020-11-10 18:29:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_19708bc2-3e61-4118-abfa-db08809021fd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+jumXwzUdeA40rovPPnaU003flvM5VYtil3b3BozpduL7zoFbjAU2MEtcnc+pmv133mlIzANh3Ei&#13;
+NCkQ+y4TzA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_64af2397-4153-4d6c-b544-ecaf12307404"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>V4sw8An66xSqNs3bCnPFgedvNgQO21I9szDmVpXH4P45gcnf1dcToIvUZIXsw4yc43+hcnkgfY97&#13;
+BnRR7SxxLQ==</DigestValue></Reference></SignedInfo><SignatureValue>bvYQ3No9szKPthdHDYLxzETkmMvWNzxcwLwMYEB9tErFwXIrqnR6ThAffsiRDxbmOZobwx8k7h3n&#13;
+4X6VoiQ/gcq3reuGtYi9l0A6CllRvVLwT9Bl6PgrVXjr5bryYHnL6sOC7JBRORjs2H6URccy8MTM&#13;
+kFmOSv8QwJjQhBYybSGyyopXps0DUcEdE0CbnrVzD5JN+RZ+BImUZusgli/kYHnLUtmamkR/RvBb&#13;
+u/lVWM7nzu41Q+PVcPQ2Fvh6A9c8lW7JnCZWs5agOcBarnEV7A4EIyYg+JsTLvp6JOsaxl6TMT28&#13;
+dxQQsYO6YGMQNeI5tYqPBppU/AXblfCDJjsYLQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_64af2397-4153-4d6c-b544-ecaf12307404" Target="#_19708bc2-3e61-4118-abfa-db08809021fd"><Timestamp>2021-05-21 10:38:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

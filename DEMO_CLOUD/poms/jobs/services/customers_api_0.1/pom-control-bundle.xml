@@ -11,7 +11,7 @@
   <groupId>org.example.demo_cloud.service</groupId>
   <artifactId>Customers_API-control-bundle</artifactId>
   <version>0.1.0</version>
-  <name>DEMO_CLOUD Customers_API-0.1.0 (0.1,Services) Control Bundle</name>
+  <name>DEMO_CLOUD Customers_API-${project.version} (0.1,Services) Control Bundle</name>
   <properties>
     <cloud.publisher.skip>true</cloud.publisher.skip>
   </properties>
@@ -33,6 +33,30 @@
           <archive>
             <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
           </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>fabric8-maven-plugin</artifactId>
+        <version>4.0.0</version>
+        <executions>
+          <execution>
+            <id>start</id>
+            <phase>none</phase>
+            <configuration>
+              <skip>true</skip>
+            </configuration>
+          </execution>
+          <execution>
+            <id>push-image</id>
+            <phase>none</phase>
+            <configuration>
+              <skip>true</skip>
+            </configuration>
+          </execution>
+        </executions>
+        <configuration>
+          <skip>true</skip>
         </configuration>
       </plugin>
     </plugins>
