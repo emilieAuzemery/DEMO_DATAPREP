@@ -4,89 +4,89 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example.demo_cloud</groupId>
   <artifactId>code.Master</artifactId>
-  <version>7.1.1</version>
+  <version>7.3.1</version>
   <packaging>pom</packaging>
   <name>DEMO_CLOUD Codes Master</name>
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
-    <module>jobs/process/jdtest_0.1</module>
+    <module>jobs/joblets/BASE_VERTE/bve_debut_job_0.1</module>
+    <module>jobs/joblets/BASE_VERTE/bve_fin_job_0.1</module>
+    <module>jobs/joblets/error_job_0.1</module>
+    <module>jobs/joblets/jitecgonogo_0.4</module>
+    <module>jobs/joblets/jllogjd_0.1</module>
+    <module>jobs/process/CDC/jdanalyserejets_0.1</module>
+    <module>jobs/process/CDC/jdanalyserejetsvalo_0.1</module>
+    <module>jobs/process/CDC/jdmajig_0.1</module>
+    <module>jobs/process/CDC/jdrecodvalo_0.1</module>
+    <module>jobs/process/CDC/jdrecodvalo_rejets_0.1</module>
+    <module>jobs/process/CDC/jdtranscofichier_0.1</module>
+    <module>jobs/process/DEMO_DS/VOLVO/GROUPING/jddeletegroupingtasks_0.1</module>
+    <module>jobs/process/DEMO_DS/VOLVO/GROUPING/jdgroupingtask_0.1</module>
+    <module>jobs/process/DEMO_DS/VOLVO/MERGING/jddeletemergingtasks_0.1</module>
+    <module>jobs/process/DEMO_DS/VOLVO/MERGING/jdgetuniquerecords_0.1</module>
+    <module>jobs/process/DEMO_DS/VOLVO/MERGING/jdmergingtask_0.1</module>
+    <module>jobs/process/DEMO_DS/VOLVO/PREPARATION/jdpreparationfichiersclients_0.1</module>
+    <module>jobs/process/DEMO_DS/VOLVO/RESOLUTION/jddeleteresolutiontasks_0.1</module>
+    <module>jobs/process/DEMO_DS/VOLVO/RESOLUTION/jdgetresolvedtasks_0.1</module>
+    <module>jobs/process/DEMO_DS/VOLVO/RESOLUTION/jdloadresolutiontasks_0.1</module>
+    <module>jobs/process/DEMO_PREP/jdpreparationdonnees_0.1</module>
+    <module>jobs/process/DEMO_PREP/jdpreparationdonneesdynamique_0.1</module>
+    <module>jobs/process/DEMO_PREP/jspreparationdonnees2_0.1</module>
+    <module>jobs/process/DEMO_PREP/jspreparationdonnees_0.1</module>
+    <module>jobs/process/DI/recupabsenceemployee_0.1</module>
     <module>jobs/process/DataPrep/bonus/jobprepdonnees_0.1</module>
     <module>jobs/process/DataPrep/jobconcatenatefiles_0.1</module>
     <module>jobs/process/DataPrep/jobmergingcampaign_0.1</module>
     <module>jobs/process/DataPrep/jobpreparedonnees_0.1</module>
     <module>jobs/process/DataPrep/jobrecuptachevalidee_0.1</module>
-    <module>jobs/process/testroutinecarole_0.1</module>
-    <module>jobs/process/CDC/jdmajig_0.1</module>
-    <module>jobs/process/CDC/jdanalyserejets_0.1</module>
-    <module>jobs/process/CDC/jdrecodvalo_0.1</module>
-    <module>jobs/process/CDC/jdrecodvalo_rejets_0.1</module>
-    <module>jobs/process/CDC/jdanalyserejetsvalo_0.1</module>
-    <module>jobs/process/CDC/jdtranscofichier_0.1</module>
-    <module>jobs/process/DEMO_PREP/jdpreparationdonnees_0.1</module>
-    <module>jobs/process/DEMO_PREP/jdpreparationdonneesdynamique_0.1</module>
-    <module>jobs/process/DEMO_PREP/jspreparationdonnees_0.1</module>
-    <module>jobs/process/DEMO_PREP/jspreparationdonnees2_0.1</module>
-    <module>jobs/process/DEMO_DS/VOLVO/RESOLUTION/jddeleteresolutiontasks_0.1</module>
-    <module>jobs/process/DEMO_DS/VOLVO/RESOLUTION/jdgetresolvedtasks_0.1</module>
-    <module>jobs/process/DEMO_DS/VOLVO/RESOLUTION/jdloadresolutiontasks_0.1</module>
-    <module>jobs/process/DEMO_DS/VOLVO/PREPARATION/jdpreparationfichiersclients_0.1</module>
-    <module>jobs/process/DEMO_DS/VOLVO/GROUPING/jdgroupingtask_0.1</module>
-    <module>jobs/process/DEMO_DS/VOLVO/GROUPING/jddeletegroupingtasks_0.1</module>
-    <module>jobs/process/DEMO_DS/VOLVO/MERGING/jdmergingtask_0.1</module>
-    <module>jobs/process/DEMO_DS/VOLVO/MERGING/jddeletemergingtasks_0.1</module>
-    <module>jobs/process/DEMO_DS/VOLVO/MERGING/jdgetuniquerecords_0.1</module>
-    <module>jobs/joblets/BASE_VERTE/bve_debut_job_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_ODS_DEC/AA_10_ODS_DOMAINE_SINISTRE/ods_30_alim_a_ods_f_sinas_dossier_0.1</module>
-    <module>jobs/joblets/error_job_0.1</module>
-    <module>jobs/joblets/BASE_VERTE/bve_fin_job_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_reseau_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_mode_decla_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_td_devis_da_tous_0.1</module>
     <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tf_contrat_resil_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_produit_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tf_contrat_stock_0.1</module>
     <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tf_prelevement_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tf_sinistre_tous_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_apporteur_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_cabinet_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_cabinet_detaille_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_compagnie_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_formule_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_mode_decla_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_mode_envoi_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_motif_rejet_0.1</module>
     <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_motif_resiliation_0.1</module>
     <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_motif_sans_suite_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_apporteur_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_formule_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_situation_da_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_99_dtm_seq_0.1</module>
     <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_nature_sinistre_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_cabinet_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tf_sinistre_tous_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_ODS_DEC/AA_99_ODS_GEN/BVE_CHGT_PARAM/bve_chargement_param_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_compagnie_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_provenance_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_mode_envoi_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_cabinet_detaille_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tf_contrat_stock_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_motif_rejet_0.1</module>
     <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_personnel_service_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_produit_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_provenance_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_reseau_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_situation_da_0.1</module>
     <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_tr_type_sinistre_0.1</module>
-    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_30_alim_dtm_td_devis_da_tous_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_DTM_DEC/dtm_99_dtm_seq_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_ODS_DEC/AA_10_ODS_DOMAINE_SINISTRE/ods_30_alim_a_ods_f_sinas_dossier_0.1</module>
+    <module>jobs/process/FILHET_ALLARD/A01_ODS_DEC/AA_99_ODS_GEN/BVE_CHGT_PARAM/bve_chargement_param_0.1</module>
     <module>jobs/process/FILHET_ALLARD/EXERCICES_FORMATION/jdexercice1_0.1</module>
     <module>jobs/process/FILHET_ALLARD/EXERCICES_FORMATION/jdexercice2_0.1</module>
     <module>jobs/process/FILHET_ALLARD/EXERCICES_FORMATION/jdexercice3_0.1</module>
     <module>jobs/process/FILHET_ALLARD/EXERCICES_FORMATION/jdexercice4_0.1</module>
-    <module>jobs/joblets/jllogjd_0.1</module>
-    <module>jobs/joblets/jitecgonogo_0.4</module>
     <module>jobs/process/LogsCloud/auditlogscloud_0.1</module>
-    <module>jobs/services/customers_api_0.1</module>
-    <module>jobs/routes/customers_0.1</module>
-    <module>jobs/process/TRAVAIL/jdtestcontexts_0.1</module>
     <module>jobs/process/TRAVAIL/jdmontauban_0.1</module>
     <module>jobs/process/TRAVAIL/jdsetxmlformat_0.1</module>
     <module>jobs/process/TRAVAIL/jdtestapiecocert_0.1</module>
     <module>jobs/process/TRAVAIL/jdtestapivs_0.1</module>
+    <module>jobs/process/TRAVAIL/jdtestcontexts_0.1</module>
     <module>jobs/process/TRAVAIL/jdtestlancejob_0.1</module>
-    <module>jobs/process/DI/recupabsenceemployee_0.1</module>
+    <module>jobs/process/jdtest_0.1</module>
+    <module>jobs/process/testroutinecarole_0.1</module>
+    <module>jobs/routes/customers_0.1</module>
+    <module>jobs/services/customers_api_0.1</module>
   </modules>
   <properties>
+    <signer.version>7.3.1</signer.version>
     <talend.project.name>DEMO_CLOUD</talend.project.name>
     <encoding>UTF-8</encoding>
-    <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
@@ -103,7 +103,22 @@
             <dependency>
               <groupId>org.eclipse.tycho</groupId>
               <artifactId>tycho-compiler-jdt</artifactId>
-              <version>1.0.0</version>
+              <version>1.4.0</version>
+            </dependency>
+            <dependency>
+              <groupId>org.codehaus.plexus</groupId>
+              <artifactId>plexus-utils</artifactId>
+              <version>3.0.24</version>
+            </dependency>
+            <dependency>
+              <groupId>org.apache.commons</groupId>
+              <artifactId>commons-compress</artifactId>
+              <version>1.19</version>
+            </dependency>
+            <dependency>
+              <groupId>commons-codec</groupId>
+              <artifactId>commons-codec</artifactId>
+              <version>1.15</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -115,10 +130,29 @@
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.codehaus.plexus</groupId>
+              <artifactId>plexus-utils</artifactId>
+              <version>3.0.24</version>
+            </dependency>
+          </dependencies>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.codehaus.plexus</groupId>
+              <artifactId>plexus-utils</artifactId>
+              <version>3.0.24</version>
+            </dependency>
+            <dependency>
+              <groupId>org.apache.commons</groupId>
+              <artifactId>commons-compress</artifactId>
+              <version>1.19</version>
+            </dependency>
+          </dependencies>
           <configuration>
             <archive>
               <addMavenDescriptor>false</addMavenDescriptor>
@@ -128,10 +162,56 @@
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
           <version>3.0.0</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.codehaus.plexus</groupId>
+              <artifactId>plexus-utils</artifactId>
+              <version>3.0.24</version>
+            </dependency>
+            <dependency>
+              <groupId>org.apache.commons</groupId>
+              <artifactId>commons-compress</artifactId>
+              <version>1.19</version>
+            </dependency>
+          </dependencies>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.20</version>
+          <version>2.12.4</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.codehaus.plexus</groupId>
+              <artifactId>plexus-utils</artifactId>
+              <version>3.0.24</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.5.1</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.codehaus.plexus</groupId>
+              <artifactId>plexus-utils</artifactId>
+              <version>3.0.24</version>
+            </dependency>
+            <dependency>
+              <groupId>commons-codec</groupId>
+              <artifactId>commons-codec</artifactId>
+              <version>1.15</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.7</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.codehaus.plexus</groupId>
+              <artifactId>plexus-utils</artifactId>
+              <version>3.0.24</version>
+            </dependency>
+          </dependencies>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -139,7 +219,7 @@
       <plugin>
         <groupId>org.talend.ci</groupId>
         <artifactId>builder-maven-plugin</artifactId>
-        <version>${talend.version}</version>
+        <version>7.3.5</version>
         <executions>
           <execution>
             <phase>generate-sources</phase>
@@ -148,6 +228,13 @@
             </goals>
           </execution>
         </executions>
+        <dependencies>
+          <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.15</version>
+          </dependency>
+        </dependencies>
       </plugin>
     </plugins>
   </build>
@@ -155,11 +242,68 @@
     <profile>
       <id>docker</id>
       <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>io.fabric8</groupId>
+              <artifactId>fabric8-maven-plugin</artifactId>
+              <version>4.0.0</version>
+              <dependencies>
+                <dependency>
+                  <groupId>io.fabric8</groupId>
+                  <artifactId>docker-maven-plugin</artifactId>
+                  <version>0.29.0</version>
+                  <exclusions>
+                    <exclusion>
+                      <artifactId>bcpkix-jdk15on</artifactId>
+                      <groupId>org.bouncycastle</groupId>
+                    </exclusion>
+                  </exclusions>
+                </dependency>
+                <dependency>
+                  <groupId>org.bouncycastle</groupId>
+                  <artifactId>bcpkix-jdk15on</artifactId>
+                  <version>1.68</version>
+                </dependency>
+                <dependency>
+                  <groupId>org.apache.commons</groupId>
+                  <artifactId>commons-compress</artifactId>
+                  <version>1.19</version>
+                </dependency>
+                <dependency>
+                  <groupId>com.fasterxml.jackson.core</groupId>
+                  <artifactId>jackson-annotations</artifactId>
+                  <version>2.11.4</version>
+                </dependency>
+                <dependency>
+                  <groupId>com.fasterxml.jackson.core</groupId>
+                  <artifactId>jackson-core</artifactId>
+                  <version>2.11.4</version>
+                </dependency>
+                <dependency>
+                  <groupId>com.fasterxml.jackson.core</groupId>
+                  <artifactId>jackson-databind</artifactId>
+                  <version>2.11.4</version>
+                </dependency>
+                <dependency>
+                  <groupId>com.fasterxml.jackson.dataformat</groupId>
+                  <artifactId>jackson-dataformat-yaml</artifactId>
+                  <version>2.11.4</version>
+                </dependency>
+                <dependency>
+                  <groupId>com.fasterxml.jackson.module</groupId>
+                  <artifactId>jackson-module-jaxb-annotations</artifactId>
+                  <version>2.11.4</version>
+                </dependency>
+              </dependencies>
+            </plugin>
+          </plugins>
+        </pluginManagement>
         <plugins>
           <plugin>
             <groupId>io.fabric8</groupId>
             <artifactId>fabric8-maven-plugin</artifactId>
-            <version>3.5.37</version>
+            <version>4.0.0</version>
             <executions>
               <execution>
                 <id>start</id>
@@ -176,6 +320,13 @@
                 </goals>
               </execution>
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcpkix-jdk15on</artifactId>
+                <version>1.68</version>
+              </dependency>
+            </dependencies>
             <configuration>
               <skip>${docker.skip}</skip>
               <autoPull>once</autoPull>
@@ -219,7 +370,7 @@
           <plugin>
             <groupId>org.talend.ci</groupId>
             <artifactId>cloudpublisher-maven-plugin</artifactId>
-            <version>${talend.version}</version>
+            <version>7.3.1</version>
             <executions>
               <execution>
                 <phase>deploy</phase>
